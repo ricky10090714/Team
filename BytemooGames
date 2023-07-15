@@ -1,0 +1,299 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TitleRed = Instance.new("TextLabel")
+local Frame_2 = Instance.new("Frame")
+local centerMystic = Instance.new("TextButton")
+local whiteoff = Instance.new("TextButton")
+local serverhop = Instance.new("TextButton")
+local whiteon = Instance.new("TextButton")
+local BankMystic = Instance.new("TextButton")
+local BankSpawn = Instance.new("TextButton")
+local collapse = Instance.new("TextButton")
+local TextButton = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Frame.BorderColor3 = Color3.fromRGB(72, 72, 72)
+Frame.Position = UDim2.new(0.0674508214, 0, 0.117884576, 0)
+Frame.Size = UDim2.new(0, 137, 0, 319)
+
+TitleRed.Name = "TitleRed"
+TitleRed.Parent = Frame
+TitleRed.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TitleRed.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TitleRed.Position = UDim2.new(-0.00175188622, 0, 0.0186567158, 0)
+TitleRed.Size = UDim2.new(0, 137, 0, 29)
+TitleRed.Font = Enum.Font.LuckiestGuy
+TitleRed.Text = "    Bytemoo"
+TitleRed.TextColor3 = Color3.fromRGB(255, 0, 0)
+TitleRed.TextSize = 20.000
+TitleRed.TextXAlignment = Enum.TextXAlignment.Left
+
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Frame_2.BorderColor3 = Color3.fromRGB(153, 153, 153)
+Frame_2.Position = UDim2.new(0.0343358405, 0, 0.109565757, 0)
+Frame_2.Size = UDim2.new(0, 126, 0, 278)
+
+centerMystic.Name = "centerMystic"
+centerMystic.Parent = Frame_2
+centerMystic.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+centerMystic.Position = UDim2.new(0.0446443111, 0, 0.024725385, 0)
+centerMystic.Size = UDim2.new(0, 114, 0, 29)
+centerMystic.Font = Enum.Font.LuckiestGuy
+centerMystic.Text = "Center"
+centerMystic.TextColor3 = Color3.fromRGB(0, 0, 0)
+centerMystic.TextSize = 20.000
+centerMystic.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+centerMystic.TextStrokeTransparency = 0.000
+centerMystic.TextWrapped = true
+
+whiteoff.Name = "whiteoff"
+whiteoff.Parent = Frame_2
+whiteoff.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+whiteoff.Position = UDim2.new(0.0480727255, 0, 0.574905872, 0)
+whiteoff.Size = UDim2.new(0, 113, 0, 30)
+whiteoff.Font = Enum.Font.LuckiestGuy
+whiteoff.Text = "White Off"
+whiteoff.TextColor3 = Color3.fromRGB(0, 0, 0)
+whiteoff.TextSize = 20.000
+whiteoff.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+whiteoff.TextStrokeTransparency = 0.000
+whiteoff.TextWrapped = true
+
+serverhop.Name = "serverhop"
+serverhop.Parent = Frame_2
+serverhop.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+serverhop.Position = UDim2.new(0.0382620208, 0, 0.1512236, 0)
+serverhop.Size = UDim2.new(0, 114, 0, 30)
+serverhop.Font = Enum.Font.LuckiestGuy
+serverhop.Text = "ServerHop"
+serverhop.TextColor3 = Color3.fromRGB(0, 0, 0)
+serverhop.TextSize = 20.000
+serverhop.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+serverhop.TextStrokeTransparency = 0.000
+serverhop.TextWrapped = true
+
+whiteon.Name = "whiteon"
+whiteon.Parent = Frame_2
+whiteon.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+whiteon.Position = UDim2.new(0.0541348271, 0, 0.442970008, 0)
+whiteon.Size = UDim2.new(0, 113, 0, 30)
+whiteon.Font = Enum.Font.LuckiestGuy
+whiteon.Text = "White On"
+whiteon.TextColor3 = Color3.fromRGB(0, 0, 0)
+whiteon.TextSize = 20.000
+whiteon.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+whiteon.TextStrokeTransparency = 0.000
+whiteon.TextWrapped = true
+
+BankMystic.Name = "BankMystic"
+BankMystic.Parent = Frame_2
+BankMystic.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+BankMystic.Position = UDim2.new(0.0428182036, 0, 0.728254437, 0)
+BankMystic.Size = UDim2.new(0, 114, 0, 30)
+BankMystic.Font = Enum.Font.LuckiestGuy
+BankMystic.Text = "Bank myst"
+BankMystic.TextColor3 = Color3.fromRGB(0, 0, 0)
+BankMystic.TextSize = 20.000
+BankMystic.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+BankMystic.TextStrokeTransparency = 0.000
+BankMystic.TextWrapped = true
+
+BankSpawn.Name = "BankSpawn"
+BankSpawn.Parent = Frame_2
+BankSpawn.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+BankSpawn.Position = UDim2.new(0.0370759517, 0, 0.862541258, 0)
+BankSpawn.Size = UDim2.new(0, 114, 0, 29)
+BankSpawn.Font = Enum.Font.LuckiestGuy
+BankSpawn.Text = "BankSpawn"
+BankSpawn.TextColor3 = Color3.fromRGB(0, 0, 0)
+BankSpawn.TextSize = 18.000
+BankSpawn.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+BankSpawn.TextStrokeTransparency = 0.000
+BankSpawn.TextWrapped = true
+
+collapse.Name = "collapse"
+collapse.Parent = Frame_2
+collapse.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+collapse.Position = UDim2.new(0.0370758772, 0, 0.28095758, 0)
+collapse.Size = UDim2.new(0, 114, 0, 29)
+collapse.Font = Enum.Font.LuckiestGuy
+collapse.Text = "Collapse"
+collapse.TextColor3 = Color3.fromRGB(0, 0, 0)
+collapse.TextSize = 20.000
+collapse.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+collapse.TextStrokeTransparency = 0.000
+collapse.TextWrapped = true
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.Position = UDim2.new(0.863543987, 0, 0.0386590548, 0)
+TextButton.Size = UDim2.new(0, 14, 0, 18)
+TextButton.Font = Enum.Font.LuckiestGuy
+TextButton.Text = "X"
+TextButton.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextButton.TextSize = 14.000
+
+-- Scripts:
+
+local function HDOJHM_fake_script() -- Frame.Drag 
+	local script = Instance.new('LocalScript', Frame)
+
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(HDOJHM_fake_script)()
+local function XDXJX_fake_script() -- centerMystic.centerMystic 
+	local script = Instance.new('Script', centerMystic)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
+		a.CFrame = CFrame.new(9078, -15, 2491)
+		
+	end)
+end
+coroutine.wrap(XDXJX_fake_script)()
+local function CJPJO_fake_script() -- whiteoff.whiteoff 
+	local script = Instance.new('Script', whiteoff)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		game:GetService("RunService"):Set3dRenderingEnabled(true)
+	end)
+end
+coroutine.wrap(CJPJO_fake_script)()
+local function IZNHBLD_fake_script() -- serverhop.serverhop 
+	local script = Instance.new('Script', serverhop)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local PlaceID = game.PlaceId
+		local AllIDs = {}
+		local foundAnything = ""
+		local actualHour = os.date("!*t").hour
+		local Deleted = false
+		local File = pcall(function()
+			AllIDs = game:GetService('HttpService'):JSONDecode(readfile("NotSameServers.json"))
+		end)
+		if not File then
+			table.insert(AllIDs, actualHour)
+			writefile("NotSameServers.json", game:GetService('HttpService'):JSONEncode(AllIDs))
+		end
+		function TPReturner()
+			local Site;
+			if foundAnything == "" then
+				Site = game.HttpService:JSONDecode(game:HttpGet('https://games.roblox.com/v1/games/' .. PlaceID .. '/servers/Public?sortOrder=Asc&limit=100'))
+			else
+				Site = game.HttpService:JSONDecode(game:HttpGet('https://games.roblox.com/v1/games/' .. PlaceID .. '/servers/Public?sortOrder=Asc&limit=100&cursor=' .. foundAnything))
+			end
+			local ID = ""
+			if Site.nextPageCursor and Site.nextPageCursor ~= "null" and Site.nextPageCursor ~= nil then
+				foundAnything = Site.nextPageCursor
+			end
+			local num = 0;
+			for i,v in pairs(Site.data) do
+				local Possible = true
+				ID = tostring(v.id)
+				if tonumber(v.maxPlayers) > tonumber(v.playing) then
+					for _,Existing in pairs(AllIDs) do
+						if num ~= 0 then
+							if ID == tostring(Existing) then
+								Possible = false
+							end
+						else
+							if tonumber(actualHour) ~= tonumber(Existing) then
+								local delFile = pcall(function()
+									delfile("NotSameServers.json")
+									AllIDs = {}
+									table.insert(AllIDs, actualHour)
+								end)
+							end
+						end
+						num = num + 1
+					end
+					if Possible == true then
+						table.insert(AllIDs, ID)
+						wait()
+						pcall(function()
+							writefile("NotSameServers.json", game:GetService('HttpService'):JSONEncode(AllIDs))
+							wait()
+							game:GetService("TeleportService"):TeleportToPlaceInstance(PlaceID, ID, game.Players.LocalPlayer)
+						end)
+						wait(4)
+					end
+				end
+			end
+		end
+	
+		function Teleport()
+			while wait() do
+				pcall(function()
+					TPReturner()
+					if foundAnything ~= "" then
+						TPReturner()
+					end
+				end)
+			end
+		end
+	
+		-- If you'd like to use a script before server hopping (Like a Automatic Chest collector you can put the Teleport() after it collected everything.
+		Teleport()
+	end)
+end
+coroutine.wrap(IZNHBLD_fake_script)()
+local function RSZZICJ_fake_script() -- whiteon.whiteon 
+	local script = Instance.new('Script', whiteon)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game:GetService("RunService"):Set3dRenderingEnabled(false)
+	end)
+end
+coroutine.wrap(RSZZICJ_fake_script)()
+local function AGFXLVX_fake_script() -- BankMystic.BankMystic 
+	local script = Instance.new('Script', BankMystic)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
+		a.CFrame = CFrame.new(9258, -15, 2906)
+	end)
+end
+coroutine.wrap(AGFXLVX_fake_script)()
+local function CQER_fake_script() -- BankSpawn.BankSpawn 
+	local script = Instance.new('Script', BankSpawn)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
+		a.CFrame = CFrame.new(232, 98, 358)
+	end)
+end
+coroutine.wrap(CQER_fake_script)()
+local function YNHVLC_fake_script() -- collapse.BankSpawn 
+	local script = Instance.new('Script', collapse)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
+		a.CFrame = CFrame.new(253, 101, 56)
+	end)
+end
+coroutine.wrap(YNHVLC_fake_script)()
+local function ETMK_fake_script() -- TextButton.quitbutton 
+	local script = Instance.new('Script', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(ETMK_fake_script)()
