@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/BytemooServer11"))()
