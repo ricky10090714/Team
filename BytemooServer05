@@ -6,11 +6,11 @@ Configs = {
         ["Diamonds"] = false
     },
     CyberCavern = {
-        ["Giant Chest"] = false,
+        ["Giant Chest"] = true,
         ["Diamonds"] = true
     },
     ParadiseCave = {
-        ["Diamonds"] = true
+        ["Diamonds"] = false
     },
     Farming = {
         ["Pet Sending"] = "Single",
