@@ -3,6 +3,7 @@
 
 -- Instances:
 
+local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local Frame_2 = Instance.new("Frame")
 local centerMystic = Instance.new("TextButton")
@@ -17,7 +18,10 @@ local TextButton = Instance.new("TextButton")
 
 --Properties:
 
-Frame.Parent = game.StarterGui.ScreenGui
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
 Frame.BorderColor3 = Color3.fromRGB(72, 72, 72)
 Frame.Position = UDim2.new(0.0674508139, 0, 0.1435256, 0)
@@ -145,14 +149,14 @@ TextButton.TextSize = 14.000
 
 -- Scripts:
 
-local function FGCDV_fake_script() -- Frame.Drag 
+local function IVPM_fake_script() -- Frame.Drag 
 	local script = Instance.new('LocalScript', Frame)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(FGCDV_fake_script)()
-local function DQXQYY_fake_script() -- centerMystic.centerMystic 
+coroutine.wrap(IVPM_fake_script)()
+local function PJVADJ_fake_script() -- centerMystic.centerMystic 
 	local script = Instance.new('Script', centerMystic)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -161,8 +165,8 @@ local function DQXQYY_fake_script() -- centerMystic.centerMystic
 		
 	end)
 end
-coroutine.wrap(DQXQYY_fake_script)()
-local function SNAEW_fake_script() -- whiteoff.whiteoff 
+coroutine.wrap(PJVADJ_fake_script)()
+local function MCFMA_fake_script() -- whiteoff.whiteoff 
 	local script = Instance.new('Script', whiteoff)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -170,8 +174,8 @@ local function SNAEW_fake_script() -- whiteoff.whiteoff
 		game:GetService("RunService"):Set3dRenderingEnabled(true)
 	end)
 end
-coroutine.wrap(SNAEW_fake_script)()
-local function TCOUNLW_fake_script() -- serverhop.serverhop 
+coroutine.wrap(MCFMA_fake_script)()
+local function WYHKQ_fake_script() -- serverhop.serverhop 
 	local script = Instance.new('Script', serverhop)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -248,16 +252,16 @@ local function TCOUNLW_fake_script() -- serverhop.serverhop
 		Teleport()
 	end)
 end
-coroutine.wrap(TCOUNLW_fake_script)()
-local function LLGXR_fake_script() -- whiteon.whiteon 
+coroutine.wrap(WYHKQ_fake_script)()
+local function OMSCH_fake_script() -- whiteon.whiteon 
 	local script = Instance.new('Script', whiteon)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("RunService"):Set3dRenderingEnabled(false)
 	end)
 end
-coroutine.wrap(LLGXR_fake_script)()
-local function YPHXGO_fake_script() -- BankMystic.BankMystic 
+coroutine.wrap(OMSCH_fake_script)()
+local function JNFWN_fake_script() -- BankMystic.BankMystic 
 	local script = Instance.new('Script', BankMystic)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -266,8 +270,8 @@ local function YPHXGO_fake_script() -- BankMystic.BankMystic
 		a.CFrame = CFrame.new(9258, -15, 2906)
 	end)
 end
-coroutine.wrap(YPHXGO_fake_script)()
-local function SCID_fake_script() -- BankSpawn.BankSpawn 
+coroutine.wrap(JNFWN_fake_script)()
+local function YIYUK_fake_script() -- BankSpawn.BankSpawn 
 	local script = Instance.new('Script', BankSpawn)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -275,8 +279,8 @@ local function SCID_fake_script() -- BankSpawn.BankSpawn
 		a.CFrame = CFrame.new(232, 98, 358)
 	end)
 end
-coroutine.wrap(SCID_fake_script)()
-local function NQRW_fake_script() -- collapse.BankSpawn 
+coroutine.wrap(YIYUK_fake_script)()
+local function TMAF_fake_script() -- collapse.BankSpawn 
 	local script = Instance.new('Script', collapse)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -285,20 +289,20 @@ local function NQRW_fake_script() -- collapse.BankSpawn
 		a.CFrame = CFrame.new(253, 101, 56)
 	end)
 end
-coroutine.wrap(NQRW_fake_script)()
-local function BZNNBWB_fake_script() -- GrayArea.GrayArea 
+coroutine.wrap(TMAF_fake_script)()
+local function UMPWCNP_fake_script() -- GrayArea.GrayArea 
 	local script = Instance.new('Script', GrayArea)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/GrayArea"))()
 	end)
 end
-coroutine.wrap(BZNNBWB_fake_script)()
-local function NTJXFH_fake_script() -- TextButton.quitbutton 
+coroutine.wrap(UMPWCNP_fake_script)()
+local function RTGIMAA_fake_script() -- TextButton.quitbutton 
 	local script = Instance.new('Script', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(NTJXFH_fake_script)()
+coroutine.wrap(RTGIMAA_fake_script)()
