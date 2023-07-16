@@ -21,19 +21,19 @@ Frame.Parent = game.StarterGui.ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
 Frame.BorderColor3 = Color3.fromRGB(72, 72, 72)
 Frame.Position = UDim2.new(0.0674508139, 0, 0.1435256, 0)
-Frame.Size = UDim2.new(0, 130, 0, 263)
+Frame.Size = UDim2.new(0, 122, 0, 263)
 
 Frame_2.Parent = Frame
 Frame_2.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
 Frame_2.BorderColor3 = Color3.fromRGB(153, 153, 153)
-Frame_2.Position = UDim2.new(0.0343357958, 0, 0.0147478562, 0)
-Frame_2.Size = UDim2.new(0, 121, 0, 256)
+Frame_2.Position = UDim2.new(0.0343357958, 0, 0.0147478804, 0)
+Frame_2.Size = UDim2.new(0, 113, 0, 256)
 
 centerMystic.Name = "centerMystic"
 centerMystic.Parent = Frame_2
 centerMystic.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-centerMystic.Position = UDim2.new(0.0446442515, 0, 0.0247253999, 0)
-centerMystic.Size = UDim2.new(0, 109, 0, 29)
+centerMystic.Position = UDim2.new(0.0611731149, 0, 0.0208191574, 0)
+centerMystic.Size = UDim2.new(0, 103, 0, 29)
 centerMystic.Font = Enum.Font.LuckiestGuy
 centerMystic.Text = "Center"
 centerMystic.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -45,8 +45,8 @@ centerMystic.TextWrapped = true
 whiteoff.Name = "whiteoff"
 whiteoff.Parent = Frame_2
 whiteoff.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-whiteoff.Position = UDim2.new(0.0401361659, 0, 0.616967261, 0)
-whiteoff.Size = UDim2.new(0, 107, 0, 30)
+whiteoff.Position = UDim2.new(0.0401361622, 0, 0.60915482, 0)
+whiteoff.Size = UDim2.new(0, 105, 0, 30)
 whiteoff.Font = Enum.Font.LuckiestGuy
 whiteoff.Text = "White Off"
 whiteoff.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -58,8 +58,8 @@ whiteoff.TextWrapped = true
 serverhop.Name = "serverhop"
 serverhop.Parent = Frame_2
 serverhop.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-serverhop.Position = UDim2.new(0.0382619798, 0, 0.137078941, 0)
-serverhop.Size = UDim2.new(0, 109, 0, 30)
+serverhop.Position = UDim2.new(0.0547909066, 0, 0.137078941, 0)
+serverhop.Size = UDim2.new(0, 104, 0, 30)
 serverhop.Font = Enum.Font.LuckiestGuy
 serverhop.Text = "ServerHop"
 serverhop.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -71,8 +71,8 @@ serverhop.TextWrapped = true
 whiteon.Name = "whiteon"
 whiteon.Parent = Frame_2
 whiteon.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-whiteon.Position = UDim2.new(0.0461983159, 0, 0.502381265, 0)
-whiteon.Size = UDim2.new(0, 108, 0, 30)
+whiteon.Position = UDim2.new(0.0461983159, 0, 0.494568765, 0)
+whiteon.Size = UDim2.new(0, 105, 0, 30)
 whiteon.Font = Enum.Font.LuckiestGuy
 whiteon.Text = "White On"
 whiteon.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -85,7 +85,7 @@ BankMystic.Name = "BankMystic"
 BankMystic.Parent = Frame_2
 BankMystic.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 BankMystic.Position = UDim2.new(0.0348815918, 0, 0.761245847, 0)
-BankMystic.Size = UDim2.new(0, 109, 0, 30)
+BankMystic.Size = UDim2.new(0, 105, 0, 30)
 BankMystic.Font = Enum.Font.LuckiestGuy
 BankMystic.Text = "Bankmystic"
 BankMystic.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -98,7 +98,7 @@ BankSpawn.Name = "BankSpawn"
 BankSpawn.Parent = Frame_2
 BankSpawn.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 BankSpawn.Position = UDim2.new(0.0453402922, 0, 0.879483342, 0)
-BankSpawn.Size = UDim2.new(0, 107, 0, 29)
+BankSpawn.Size = UDim2.new(0, 104, 0, 29)
 BankSpawn.Font = Enum.Font.LuckiestGuy
 BankSpawn.Text = "BankSpawn"
 BankSpawn.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -110,8 +110,8 @@ BankSpawn.TextWrapped = true
 collapse.Name = "collapse"
 collapse.Parent = Frame_2
 collapse.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-collapse.Position = UDim2.new(0.0370758288, 0, 0.252668262, 0)
-collapse.Size = UDim2.new(0, 108, 0, 29)
+collapse.Position = UDim2.new(0.0536047556, 0, 0.252668262, 0)
+collapse.Size = UDim2.new(0, 103, 0, 29)
 collapse.Font = Enum.Font.LuckiestGuy
 collapse.Text = "Collapse"
 collapse.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -123,8 +123,8 @@ collapse.TextWrapped = true
 GrayArea.Name = "GrayArea"
 GrayArea.Parent = Frame_2
 GrayArea.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-GrayArea.Position = UDim2.new(0.0529490076, 0, 0.385820299, 0)
-GrayArea.Size = UDim2.new(0, 107, 0, 29)
+GrayArea.Position = UDim2.new(0.0364200808, 0, 0.38582027, 0)
+GrayArea.Size = UDim2.new(0, 105, 0, 29)
 GrayArea.Font = Enum.Font.LuckiestGuy
 GrayArea.Text = "Gray Area"
 GrayArea.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -145,14 +145,14 @@ TextButton.TextSize = 14.000
 
 -- Scripts:
 
-local function CGXKEKQ_fake_script() -- Frame.Drag 
+local function FGCDV_fake_script() -- Frame.Drag 
 	local script = Instance.new('LocalScript', Frame)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(CGXKEKQ_fake_script)()
-local function RFYYJXZ_fake_script() -- centerMystic.centerMystic 
+coroutine.wrap(FGCDV_fake_script)()
+local function DQXQYY_fake_script() -- centerMystic.centerMystic 
 	local script = Instance.new('Script', centerMystic)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -161,8 +161,8 @@ local function RFYYJXZ_fake_script() -- centerMystic.centerMystic
 		
 	end)
 end
-coroutine.wrap(RFYYJXZ_fake_script)()
-local function CQODRTP_fake_script() -- whiteoff.whiteoff 
+coroutine.wrap(DQXQYY_fake_script)()
+local function SNAEW_fake_script() -- whiteoff.whiteoff 
 	local script = Instance.new('Script', whiteoff)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -170,8 +170,8 @@ local function CQODRTP_fake_script() -- whiteoff.whiteoff
 		game:GetService("RunService"):Set3dRenderingEnabled(true)
 	end)
 end
-coroutine.wrap(CQODRTP_fake_script)()
-local function CILFYR_fake_script() -- serverhop.serverhop 
+coroutine.wrap(SNAEW_fake_script)()
+local function TCOUNLW_fake_script() -- serverhop.serverhop 
 	local script = Instance.new('Script', serverhop)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -248,16 +248,16 @@ local function CILFYR_fake_script() -- serverhop.serverhop
 		Teleport()
 	end)
 end
-coroutine.wrap(CILFYR_fake_script)()
-local function OMGAL_fake_script() -- whiteon.whiteon 
+coroutine.wrap(TCOUNLW_fake_script)()
+local function LLGXR_fake_script() -- whiteon.whiteon 
 	local script = Instance.new('Script', whiteon)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("RunService"):Set3dRenderingEnabled(false)
 	end)
 end
-coroutine.wrap(OMGAL_fake_script)()
-local function ZCERADL_fake_script() -- BankMystic.BankMystic 
+coroutine.wrap(LLGXR_fake_script)()
+local function YPHXGO_fake_script() -- BankMystic.BankMystic 
 	local script = Instance.new('Script', BankMystic)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -266,8 +266,8 @@ local function ZCERADL_fake_script() -- BankMystic.BankMystic
 		a.CFrame = CFrame.new(9258, -15, 2906)
 	end)
 end
-coroutine.wrap(ZCERADL_fake_script)()
-local function KPISLD_fake_script() -- BankSpawn.BankSpawn 
+coroutine.wrap(YPHXGO_fake_script)()
+local function SCID_fake_script() -- BankSpawn.BankSpawn 
 	local script = Instance.new('Script', BankSpawn)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -275,8 +275,8 @@ local function KPISLD_fake_script() -- BankSpawn.BankSpawn
 		a.CFrame = CFrame.new(232, 98, 358)
 	end)
 end
-coroutine.wrap(KPISLD_fake_script)()
-local function WEVZJL_fake_script() -- collapse.BankSpawn 
+coroutine.wrap(SCID_fake_script)()
+local function NQRW_fake_script() -- collapse.BankSpawn 
 	local script = Instance.new('Script', collapse)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -285,20 +285,20 @@ local function WEVZJL_fake_script() -- collapse.BankSpawn
 		a.CFrame = CFrame.new(253, 101, 56)
 	end)
 end
-coroutine.wrap(WEVZJL_fake_script)()
-local function XISNPMX_fake_script() -- GrayArea.GrayArea 
+coroutine.wrap(NQRW_fake_script)()
+local function BZNNBWB_fake_script() -- GrayArea.GrayArea 
 	local script = Instance.new('Script', GrayArea)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/GrayArea"))()
 	end)
 end
-coroutine.wrap(XISNPMX_fake_script)()
-local function NTQVOR_fake_script() -- TextButton.quitbutton 
+coroutine.wrap(BZNNBWB_fake_script)()
+local function NTJXFH_fake_script() -- TextButton.quitbutton 
 	local script = Instance.new('Script', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(NTQVOR_fake_script)()
+coroutine.wrap(NTJXFH_fake_script)()
