@@ -1,8 +1,8 @@
 script_key="TvFnXUnYUFoBGJhBmBcPJwyicsFBOfGj";
 Configs = {
     MysticMine = {
-        ["Giant Chest"] = false,
-        ["Diamonds"] = false
+        ["Giant Chest"] = true,
+        ["Diamonds"] = true
     },
     CyberCavern = {
         ["Giant Chest"] = false,
