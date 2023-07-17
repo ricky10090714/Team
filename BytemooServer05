@@ -1,1 +1,45 @@
-
+script_key="TvFnXUnYUFoBGJhBmBcPJwyicsFBOfGj";
+Configs = {
+    MysticMine = {
+        ["Giant Chest"] = true,
+        ["Diamonds"] = true
+    },
+    CyberCavern = {
+        ["Giant Chest"] = false,
+        ["Diamonds"] = false
+    },
+    ParadiseCave = {
+        ["Diamonds"] = false
+    },
+    Farming = {
+        ["Pet Sending"] = "Single",
+        ["Auto Orbs"] = true,
+        ["Auto Lootbags"] = true
+    },
+    Fruits = {
+        ["Minimum Fruits"] = 10,
+        ["Maximum Fruits"] = 20,
+        ["Enabled"] = true
+    },
+    Boosts = {
+        ["Triple Server Damage"] = false,
+        ["Triple Damage"] = true
+    },
+    Webhooks = {
+        ["Webhook Url"] = "Your Wbehook Url",
+        ["Time Frame"] = 60
+    },
+    Mailbox = {
+        ["Recipient"] = "jl_465", 
+        ["Minimum Diamonds"] = 50000000000, 
+        ["Enabled"] = true
+    },
+    Performance = {
+        ["Disable Orb Rendering"] = true,
+        ["Disable Lootbags"] = true,
+        ["Disable 3D Rendering"] = false,
+        ["Hide Username"] = false,
+        ["FPSCap"] = 60
+    }
+}
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/21b86b12222bd279cbf3d0aa61d8c701.lua"))()
