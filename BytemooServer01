@@ -12,7 +12,7 @@ Configs = {
         ["Diamonds"] = false
     },
     Farming = {
-        ["Pet Sending"] = "Single",
+        ["Pet Sending"] = "All",
         ["Auto Orbs"] = true,
         ["Auto Lootbags"] = true
     },
