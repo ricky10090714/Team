@@ -1,8 +1,8 @@
 script_key="TvFnXUnYUFoBGJhBmBcPJwyicsFBOfGj";
 Configs = {
     MysticMine = {
-        ["Giant Chest"] = true,
-        ["Diamonds"] = true
+        ["Giant Chest"] = false,
+        ["Diamonds"] = false
     },
     CyberCavern = {
         ["Giant Chest"] = false,
@@ -17,8 +17,8 @@ Configs = {
         ["Auto Lootbags"] = true
     },
     Fruits = {
-        ["Minimum Fruits"] = 10,
-        ["Maximum Fruits"] = 20,
+        ["Minimum Fruits"] = 180,
+        ["Maximum Fruits"] = 200,
         ["Enabled"] = true
     },
     Boosts = {
@@ -30,7 +30,7 @@ Configs = {
         ["Time Frame"] = 60
     },
     Mailbox = {
-        ["Recipient"] = "jl_465", 
+        ["Recipient"] = "RayLoverbey23", 
         ["Minimum Diamonds"] = 50000000000, 
         ["Enabled"] = true
     },
