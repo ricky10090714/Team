@@ -46,12 +46,13 @@ end
 
 
 		TeleportToWorld("Pixel", "Pixel Vault")
-		create_platform(3587.14, -38, 2456.29)
+		create_platform(3500.14, -38, 2456.29)
 
 		task.wait(0.1)
 
-		Teleport(3587.14, -35, 2456.29)
-wait(30)
+		Teleport(3500.14, -35, 2456.29)
+
+wait(20)
 
 script_key="vOwThXUrdytWYVEOBafxIzDDSoZEqSQo";
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/fc715fb43902af268c335a5c7269be5e.lua"))()
