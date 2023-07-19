@@ -1,7 +1,4 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
+loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/Ray"))()
 
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
