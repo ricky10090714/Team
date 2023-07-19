@@ -6,20 +6,21 @@
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local Frame_2 = Instance.new("Frame")
-local centerMystic = Instance.new("TextButton")
-local whiteoff = Instance.new("TextButton")
-local whiteon = Instance.new("TextButton")
-local collapse = Instance.new("TextButton")
-local Serverhop = Instance.new("TextButton")
+local BankSpawn = Instance.new("TextButton")
+local MilkupScript = Instance.new("TextButton")
+local PixelVault = Instance.new("TextButton")
+local MailSpawn = Instance.new("TextButton")
 local TextButton = Instance.new("TextButton")
 local TitleRed = Instance.new("TextLabel")
 local Frame_3 = Instance.new("Frame")
-local Frame_4 = Instance.new("Frame")
-local BankMystic = Instance.new("TextButton")
-local BankSpawn = Instance.new("TextButton")
-local Silva = Instance.new("TextButton")
 local TextButton_2 = Instance.new("TextButton")
 local TitleRed_2 = Instance.new("TextLabel")
+local Frame_4 = Instance.new("Frame")
+local whiteoff = Instance.new("TextButton")
+local whiteon = Instance.new("TextButton")
+local collapse = Instance.new("TextButton")
+local Silva = Instance.new("TextButton")
+local Serverhop = Instance.new("TextButton")
 
 --Properties:
 
@@ -29,33 +30,125 @@ ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
 Frame.BorderColor3 = Color3.fromRGB(72, 72, 72)
-Frame.Position = UDim2.new(0.0771411657, 0, 0.332425475, 0)
-Frame.Size = UDim2.new(0, 122, 0, 190)
+Frame.Position = UDim2.new(0.825268209, 0, 0.670123518, 0)
+Frame.Size = UDim2.new(0, 141, 0, 159)
 
 Frame_2.Parent = Frame
 Frame_2.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
 Frame_2.BorderColor3 = Color3.fromRGB(153, 153, 153)
-Frame_2.Position = UDim2.new(0.0343357772, 0, 0.138729006, 0)
-Frame_2.Size = UDim2.new(0, 113, 0, 160)
+Frame_2.Position = UDim2.new(0.0270922687, 0, 0.209999979, 0)
+Frame_2.Size = UDim2.new(0, 133, 0, 119)
 
-centerMystic.Name = "centerMystic"
-centerMystic.Parent = Frame_2
-centerMystic.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-centerMystic.Position = UDim2.new(0.0599999987, 0, 0.0350000001, 0)
-centerMystic.Size = UDim2.new(0, 100, 0, 26)
-centerMystic.Font = Enum.Font.LuckiestGuy
-centerMystic.Text = "Center"
-centerMystic.TextColor3 = Color3.fromRGB(0, 0, 0)
-centerMystic.TextSize = 18.000
-centerMystic.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-centerMystic.TextStrokeTransparency = 0.000
-centerMystic.TextWrapped = true
-centerMystic.TextYAlignment = Enum.TextYAlignment.Bottom
+BankSpawn.Name = "Bank Spawn"
+BankSpawn.Parent = Frame_2
+BankSpawn.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+BankSpawn.Position = UDim2.new(0.0329999998, 0, 0.519999981, 0)
+BankSpawn.Size = UDim2.new(0, 125, 0, 24)
+BankSpawn.Font = Enum.Font.LuckiestGuy
+BankSpawn.Text = "Spawn Bank"
+BankSpawn.TextColor3 = Color3.fromRGB(0, 0, 0)
+BankSpawn.TextSize = 16.000
+BankSpawn.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+BankSpawn.TextStrokeTransparency = 0.000
+BankSpawn.TextWrapped = true
+
+MilkupScript.Name = "Milkup Script"
+MilkupScript.Parent = Frame_2
+MilkupScript.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+MilkupScript.Position = UDim2.new(0.0329999998, 0, 0.277999997, 0)
+MilkupScript.Size = UDim2.new(0, 125, 0, 24)
+MilkupScript.Font = Enum.Font.LuckiestGuy
+MilkupScript.Text = "Milkup script"
+MilkupScript.TextColor3 = Color3.fromRGB(0, 0, 0)
+MilkupScript.TextSize = 16.000
+MilkupScript.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+MilkupScript.TextStrokeTransparency = 0.000
+MilkupScript.TextWrapped = true
+
+PixelVault.Name = "PixelVault"
+PixelVault.Parent = Frame_2
+PixelVault.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+PixelVault.Position = UDim2.new(0.0329999998, 0, 0.0299999993, 0)
+PixelVault.Size = UDim2.new(0, 125, 0, 24)
+PixelVault.Font = Enum.Font.LuckiestGuy
+PixelVault.Text = "Pixel Vault"
+PixelVault.TextColor3 = Color3.fromRGB(0, 0, 0)
+PixelVault.TextSize = 18.000
+PixelVault.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+PixelVault.TextStrokeTransparency = 0.000
+PixelVault.TextWrapped = true
+
+MailSpawn.Name = "Mail Spawn"
+MailSpawn.Parent = Frame_2
+MailSpawn.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+MailSpawn.Position = UDim2.new(0.0329999998, 0, 0.769999981, 0)
+MailSpawn.Size = UDim2.new(0, 125, 0, 24)
+MailSpawn.Font = Enum.Font.LuckiestGuy
+MailSpawn.Text = "Spawn Mail"
+MailSpawn.TextColor3 = Color3.fromRGB(0, 0, 0)
+MailSpawn.TextSize = 16.000
+MailSpawn.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+MailSpawn.TextStrokeTransparency = 0.000
+MailSpawn.TextWrapped = true
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.Position = UDim2.new(0.867594123, 0, 0.0611653849, 0)
+TextButton.Size = UDim2.new(0, 11, 0, 13)
+TextButton.Font = Enum.Font.LuckiestGuy
+TextButton.Text = "X"
+TextButton.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextButton.TextSize = 14.000
+
+TitleRed.Name = "TitleRed"
+TitleRed.Parent = TextButton
+TitleRed.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+TitleRed.BorderColor3 = Color3.fromRGB(27, 27, 27)
+TitleRed.Position = UDim2.new(-8.63457203, 0, -0.0442670286, 0)
+TitleRed.Size = UDim2.new(0, 77, 0, 14)
+TitleRed.Font = Enum.Font.GothamBold
+TitleRed.Text = "Games"
+TitleRed.TextColor3 = Color3.fromRGB(255, 0, 0)
+TitleRed.TextSize = 18.000
+
+Frame_3.Parent = ScreenGui
+Frame_3.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Frame_3.BorderColor3 = Color3.fromRGB(72, 72, 72)
+Frame_3.Position = UDim2.new(0.0771411657, 0, 0.332425475, 0)
+Frame_3.Size = UDim2.new(0, 122, 0, 190)
+
+TextButton_2.Parent = Frame_3
+TextButton_2.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+TextButton_2.BorderColor3 = Color3.fromRGB(27, 27, 27)
+TextButton_2.Position = UDim2.new(0.867426813, 0, 0.0326560177, 0)
+TextButton_2.Size = UDim2.new(0, 11, 0, 13)
+TextButton_2.Font = Enum.Font.LuckiestGuy
+TextButton_2.Text = "X"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_2.TextSize = 14.000
+
+TitleRed_2.Name = "TitleRed"
+TitleRed_2.Parent = Frame_3
+TitleRed_2.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+TitleRed_2.BorderColor3 = Color3.fromRGB(27, 27, 27)
+TitleRed_2.Position = UDim2.new(0.183609754, 0, 0.0326560624, 0)
+TitleRed_2.Size = UDim2.new(0, 77, 0, 14)
+TitleRed_2.Font = Enum.Font.GothamBold
+TitleRed_2.Text = "Bytemoo"
+TitleRed_2.TextColor3 = Color3.fromRGB(255, 0, 0)
+TitleRed_2.TextSize = 18.000
+
+Frame_4.Parent = Frame_3
+Frame_4.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Frame_4.BorderColor3 = Color3.fromRGB(153, 153, 153)
+Frame_4.Position = UDim2.new(0.0343357772, 0, 0.138729006, 0)
+Frame_4.Size = UDim2.new(0, 113, 0, 160)
 
 whiteoff.Name = "whiteoff"
-whiteoff.Parent = Frame_2
+whiteoff.Parent = Frame_4
 whiteoff.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-whiteoff.Position = UDim2.new(0.0599999987, 0, 0.819999993, 0)
+whiteoff.Position = UDim2.new(0.0599999987, 0, 0.625, 0)
 whiteoff.Size = UDim2.new(0, 100, 0, 26)
 whiteoff.Font = Enum.Font.LuckiestGuy
 whiteoff.Text = "White Off"
@@ -67,9 +160,9 @@ whiteoff.TextWrapped = true
 whiteoff.TextYAlignment = Enum.TextYAlignment.Bottom
 
 whiteon.Name = "whiteon"
-whiteon.Parent = Frame_2
+whiteon.Parent = Frame_4
 whiteon.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-whiteon.Position = UDim2.new(0.0599999987, 0, 0.625, 0)
+whiteon.Position = UDim2.new(0.0599999987, 0, 0.425000012, 0)
 whiteon.Size = UDim2.new(0, 100, 0, 26)
 whiteon.Font = Enum.Font.LuckiestGuy
 whiteon.Text = "White On"
@@ -81,9 +174,9 @@ whiteon.TextWrapped = true
 whiteon.TextYAlignment = Enum.TextYAlignment.Bottom
 
 collapse.Name = "collapse"
-collapse.Parent = Frame_2
+collapse.Parent = Frame_4
 collapse.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-collapse.Position = UDim2.new(0.0599999987, 0, 0.230000004, 0)
+collapse.Position = UDim2.new(0.0599999987, 0, 0.0280000009, 0)
 collapse.Size = UDim2.new(0, 100, 0, 26)
 collapse.Font = Enum.Font.LuckiestGuy
 collapse.Text = "Collapse"
@@ -94,10 +187,24 @@ collapse.TextStrokeTransparency = 0.000
 collapse.TextWrapped = true
 collapse.TextYAlignment = Enum.TextYAlignment.Bottom
 
+Silva.Name = "Silva"
+Silva.Parent = Frame_4
+Silva.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Silva.Position = UDim2.new(0.0599999987, 0, 0.228, 0)
+Silva.Size = UDim2.new(0, 100, 0, 25)
+Silva.Font = Enum.Font.LuckiestGuy
+Silva.Text = "Silva"
+Silva.TextColor3 = Color3.fromRGB(0, 0, 0)
+Silva.TextSize = 18.000
+Silva.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Silva.TextStrokeTransparency = 0.000
+Silva.TextWrapped = true
+Silva.TextYAlignment = Enum.TextYAlignment.Bottom
+
 Serverhop.Name = "Serverhop"
-Serverhop.Parent = Frame_2
+Serverhop.Parent = Frame_4
 Serverhop.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-Serverhop.Position = UDim2.new(0.0599999987, 0, 0.430000007, 0)
+Serverhop.Position = UDim2.new(0.0599999987, 0, 0.824999988, 0)
 Serverhop.Size = UDim2.new(0, 100, 0, 26)
 Serverhop.Font = Enum.Font.LuckiestGuy
 Serverhop.Text = "ServerHop"
@@ -108,119 +215,187 @@ Serverhop.TextStrokeTransparency = 0.000
 Serverhop.TextWrapped = true
 Serverhop.TextYAlignment = Enum.TextYAlignment.Bottom
 
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
-TextButton.BorderColor3 = Color3.fromRGB(27, 27, 27)
-TextButton.Position = UDim2.new(0.867426813, 0, 0.0326560177, 0)
-TextButton.Size = UDim2.new(0, 11, 0, 13)
-TextButton.Font = Enum.Font.LuckiestGuy
-TextButton.Text = "X"
-TextButton.TextColor3 = Color3.fromRGB(255, 0, 0)
-TextButton.TextSize = 14.000
-
-TitleRed.Name = "TitleRed"
-TitleRed.Parent = Frame
-TitleRed.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
-TitleRed.BorderColor3 = Color3.fromRGB(27, 27, 27)
-TitleRed.Position = UDim2.new(0.183609754, 0, 0.0326560624, 0)
-TitleRed.Size = UDim2.new(0, 77, 0, 14)
-TitleRed.Font = Enum.Font.GothamBold
-TitleRed.Text = "Bytemoo"
-TitleRed.TextColor3 = Color3.fromRGB(255, 0, 0)
-TitleRed.TextSize = 18.000
-
-Frame_3.Parent = ScreenGui
-Frame_3.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
-Frame_3.BorderColor3 = Color3.fromRGB(72, 72, 72)
-Frame_3.Position = UDim2.new(0.828383505, 0, 0.671370447, 0)
-Frame_3.Size = UDim2.new(0, 138, 0, 120)
-
-Frame_4.Parent = Frame_3
-Frame_4.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
-Frame_4.BorderColor3 = Color3.fromRGB(153, 153, 153)
-Frame_4.Position = UDim2.new(0.0199999996, 0, 0.209999993, 0)
-Frame_4.Size = UDim2.new(0, 133, 0, 92)
-
-BankMystic.Name = "BankMystic"
-BankMystic.Parent = Frame_4
-BankMystic.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-BankMystic.Position = UDim2.new(0.0207615905, 0, 0.678031385, 0)
-BankMystic.Size = UDim2.new(0, 125, 0, 24)
-BankMystic.Font = Enum.Font.LuckiestGuy
-BankMystic.Text = "Bankmystic"
-BankMystic.TextColor3 = Color3.fromRGB(0, 0, 0)
-BankMystic.TextSize = 16.000
-BankMystic.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-BankMystic.TextStrokeTransparency = 0.000
-BankMystic.TextWrapped = true
-
-BankSpawn.Name = "BankSpawn"
-BankSpawn.Parent = Frame_4
-BankSpawn.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-BankSpawn.Position = UDim2.new(0.0282799285, 0, 0.359443039, 0)
-BankSpawn.Size = UDim2.new(0, 125, 0, 25)
-BankSpawn.Font = Enum.Font.LuckiestGuy
-BankSpawn.Text = "BankSpawn"
-BankSpawn.TextColor3 = Color3.fromRGB(0, 0, 0)
-BankSpawn.TextSize = 16.000
-BankSpawn.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-BankSpawn.TextStrokeTransparency = 0.000
-BankSpawn.TextWrapped = true
-
-Silva.Name = "Silva"
-Silva.Parent = Frame_4
-Silva.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-Silva.Position = UDim2.new(0.0334426761, 0, 0.0466822162, 0)
-Silva.Size = UDim2.new(0, 125, 0, 26)
-Silva.Font = Enum.Font.LuckiestGuy
-Silva.Text = "Silva Script"
-Silva.TextColor3 = Color3.fromRGB(0, 0, 0)
-Silva.TextSize = 18.000
-Silva.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-Silva.TextStrokeTransparency = 0.000
-Silva.TextWrapped = true
-
-TextButton_2.Parent = Frame_3
-TextButton_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_2.Position = UDim2.new(0.867594123, 0, 0.0611653849, 0)
-TextButton_2.Size = UDim2.new(0, 11, 0, 13)
-TextButton_2.Font = Enum.Font.LuckiestGuy
-TextButton_2.Text = "X"
-TextButton_2.TextColor3 = Color3.fromRGB(255, 0, 0)
-TextButton_2.TextSize = 14.000
-
-TitleRed_2.Name = "TitleRed"
-TitleRed_2.Parent = TextButton_2
-TitleRed_2.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
-TitleRed_2.BorderColor3 = Color3.fromRGB(27, 27, 27)
-TitleRed_2.Position = UDim2.new(-8.63457203, 0, -0.0442670286, 0)
-TitleRed_2.Size = UDim2.new(0, 77, 0, 14)
-TitleRed_2.Font = Enum.Font.GothamBold
-TitleRed_2.Text = "Games"
-TitleRed_2.TextColor3 = Color3.fromRGB(255, 0, 0)
-TitleRed_2.TextSize = 18.000
-
 -- Scripts:
 
-local function TAIHONV_fake_script() -- Frame.Drag 
+local function RHSDPD_fake_script() -- Frame.Drag 
 	local script = Instance.new('LocalScript', Frame)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(TAIHONV_fake_script)()
-local function FVRLS_fake_script() -- centerMystic.centerMystic 
-	local script = Instance.new('Script', centerMystic)
+coroutine.wrap(RHSDPD_fake_script)()
+local function SMMHR_fake_script() -- BankSpawn.Bank Spawn 
+	local script = Instance.new('Script', BankSpawn)
 
 	script.Parent.MouseButton1Click:Connect(function()
+		local Library = require(game:GetService("ReplicatedStorage").Library)
+		local Network = require(game:GetService("ReplicatedStorage").Library.Client.Network)
+		local Fire, Invoke = Network.Fire, Network.Invoke
+		local old
+		old = hookfunction(getupvalue(Fire, 1), function(...)
+			return true
+		end)
+	
+	
+	
+		function TeleportToWorld(world, area)
+			Library.WorldCmds.Load(world)
+			wait(0.25)
+			local areaTeleport = Library.WorldCmds.GetMap().Teleports:FindFirstChild(area)
+			Library.Signal.Fire("Teleporting")
+			task.wait(0.25)
+			local Character = game.Players.LocalPlayer.Character
+			local Humanoid = Character.Humanoid
+			local HumanoidRootPart = Character.HumanoidRootPart
+			Character:PivotTo(areaTeleport.CFrame +
+				areaTeleport.CFrame.UpVector * (Humanoid.HipHeight + HumanoidRootPart.Size.Y / 2))
+			Library.Network.Fire("Performed Teleport", area)
+			task.wait(0.25)
+		end
+	
+	
+	
+	
+		TeleportToWorld("Spawn", "Shop")
+		task.wait(3)
 		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
-		a.CFrame = CFrame.new(9078, -15, 2491)
-		
+		a.CFrame = CFrame.new(230, 99, 358)
 	end)
 end
-coroutine.wrap(FVRLS_fake_script)()
-local function QEDFJB_fake_script() -- whiteoff.whiteoff 
+coroutine.wrap(SMMHR_fake_script)()
+local function GGTJUNS_fake_script() -- MilkupScript.Milkup Script 
+	local script = Instance.new('Script', MilkupScript)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script_key="vOwThXUrdytWYVEOBafxIzDDSoZEqSQo";
+		loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/fc715fb43902af268c335a5c7269be5e.lua"))()
+	
+	end)
+end
+coroutine.wrap(GGTJUNS_fake_script)()
+local function FCXB_fake_script() -- PixelVault.PixelVault 
+	local script = Instance.new('Script', PixelVault)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local Library = require(game:GetService("ReplicatedStorage").Library)
+		local Network = require(game:GetService("ReplicatedStorage").Library.Client.Network)
+		local Fire, Invoke = Network.Fire, Network.Invoke
+		local old
+		old = hookfunction(getupvalue(Fire, 1), function(...)
+			return true
+		end)
+	
+	
+		function TeleportToWorld(world, area)
+			Library.WorldCmds.Load(world)
+			wait(0.25)
+			local areaTeleport = Library.WorldCmds.GetMap().Teleports:FindFirstChild(area)
+			Library.Signal.Fire("Teleporting")
+			task.wait(0.25)
+			local Character = game.Players.LocalPlayer.Character
+			local Humanoid = Character.Humanoid
+			local HumanoidRootPart = Character.HumanoidRootPart
+			Character:PivotTo(areaTeleport.CFrame +
+				areaTeleport.CFrame.UpVector * (Humanoid.HipHeight + HumanoidRootPart.Size.Y / 2))
+			Library.Network.Fire("Performed Teleport", area)
+			task.wait(0.25)
+		end
+	
+		wait(10)
+		function Teleport(x, y, z)
+			local character = game:GetService("Players").LocalPlayer.Character or
+				game:GetService("Players").LocalPlayer.CharacterAdded:Wait()
+			local humanoid = character:WaitForChild("Humanoid")
+			local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+			CurrentPosition = character:WaitForChild("HumanoidRootPart").CFrame
+			task.wait()
+	
+			humanoidRootPart.CFrame = CFrame.new(x, y, z)
+		end
+	
+	
+		local function create_platform(x, y, z)
+			local p = Instance.new("Part")
+			p.Anchored = true
+			p.Name = "plat"
+			p.Position = Vector3.new(x, y, z)
+			p.Size = Vector3.new(10, 1, 10)
+			p.Parent = game.Workspace
+		end
+	
+	
+		TeleportToWorld("Pixel", "Pixel Vault")
+		create_platform(3500.14, -38, 2456.29)
+	
+		task.wait(0.1)
+	
+		Teleport(3500.14, -35, 2456.29)
+	end)
+end
+coroutine.wrap(FCXB_fake_script)()
+local function GTJJB_fake_script() -- MailSpawn.Mail Spawn 
+	local script = Instance.new('Script', MailSpawn)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local Library = require(game:GetService("ReplicatedStorage").Library)
+		local Network = require(game:GetService("ReplicatedStorage").Library.Client.Network)
+		local Fire, Invoke = Network.Fire, Network.Invoke
+		local old
+		old = hookfunction(getupvalue(Fire, 1), function(...)
+			return true
+		end)
+	
+	
+	
+		function TeleportToWorld(world, area)
+			Library.WorldCmds.Load(world)
+			wait(0.25)
+			local areaTeleport = Library.WorldCmds.GetMap().Teleports:FindFirstChild(area)
+			Library.Signal.Fire("Teleporting")
+			task.wait(0.25)
+			local Character = game.Players.LocalPlayer.Character
+			local Humanoid = Character.Humanoid
+			local HumanoidRootPart = Character.HumanoidRootPart
+			Character:PivotTo(areaTeleport.CFrame +
+				areaTeleport.CFrame.UpVector * (Humanoid.HipHeight + HumanoidRootPart.Size.Y / 2))
+			Library.Network.Fire("Performed Teleport", area)
+			task.wait(0.25)
+		end
+	
+	
+	
+	
+		TeleportToWorld("Spawn", "Shop")
+		task.wait(3)
+		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
+		a.CFrame = CFrame.new(257, 99, 352)
+	end)
+end
+coroutine.wrap(GTJJB_fake_script)()
+local function CNWJ_fake_script() -- TextButton.quitbutton 
+	local script = Instance.new('Script', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(CNWJ_fake_script)()
+local function SLAU_fake_script() -- Frame_3.Drag 
+	local script = Instance.new('LocalScript', Frame_3)
+
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(SLAU_fake_script)()
+local function RMMQVO_fake_script() -- TextButton_2.quitbutton 
+	local script = Instance.new('Script', TextButton_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(RMMQVO_fake_script)()
+local function TXISXRC_fake_script() -- whiteoff.whiteoff 
 	local script = Instance.new('Script', whiteoff)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -228,26 +403,77 @@ local function QEDFJB_fake_script() -- whiteoff.whiteoff
 		game:GetService("RunService"):Set3dRenderingEnabled(true)
 	end)
 end
-coroutine.wrap(QEDFJB_fake_script)()
-local function DVPLY_fake_script() -- whiteon.whiteon 
+coroutine.wrap(TXISXRC_fake_script)()
+local function KSCAHDU_fake_script() -- whiteon.whiteon 
 	local script = Instance.new('Script', whiteon)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("RunService"):Set3dRenderingEnabled(false)
 	end)
 end
-coroutine.wrap(DVPLY_fake_script)()
-local function WSCE_fake_script() -- collapse.BankSpawn 
+coroutine.wrap(KSCAHDU_fake_script)()
+local function YUFI_fake_script() -- collapse.BankSpawn 
 	local script = Instance.new('Script', collapse)
 
 	script.Parent.MouseButton1Click:Connect(function()
-	
 		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
 		a.CFrame = CFrame.new(253, 101, 56)
 	end)
 end
-coroutine.wrap(WSCE_fake_script)()
-local function LZOMLU_fake_script() -- Serverhop.serverhop 
+coroutine.wrap(YUFI_fake_script)()
+local function ITHLR_fake_script() -- Silva.Silva 
+	local script = Instance.new('Script', Silva)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script_key="TvFnXUnYUFoBGJhBmBcPJwyicsFBOfGj";
+		Configs = {
+			MysticMine = {
+				["Giant Chest"] = true,
+				["Diamonds"] = true
+			},
+			CyberCavern = {
+				["Giant Chest"] = false,
+				["Diamonds"] = false
+			},
+			ParadiseCave = {
+				["Diamonds"] = false
+			},
+			Farming = {
+				["Pet Sending"] = "Single",
+				["Auto Orbs"] = true,
+				["Auto Lootbags"] = true
+			},
+			Fruits = {
+				["Minimum Fruits"] = 10,
+				["Maximum Fruits"] = 20,
+				["Enabled"] = true
+			},
+			Boosts = {
+				["Triple Server Damage"] = false,
+				["Triple Damage"] = true
+			},
+			Webhooks = {
+				["Webhook Url"] = "Your Wbehook Url",
+				["Time Frame"] = 60
+			},
+			Mailbox = {
+				["Recipient"] = "jl_465", 
+				["Minimum Diamonds"] = 50000000000, 
+				["Enabled"] = true
+			},
+			Performance = {
+				["Disable Orb Rendering"] = true,
+				["Disable Lootbags"] = true,
+				["Disable 3D Rendering"] = false,
+				["Hide Username"] = false,
+				["FPSCap"] = 60
+			}
+		}
+		loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/21b86b12222bd279cbf3d0aa61d8c701.lua"))()
+	end)
+end
+coroutine.wrap(ITHLR_fake_script)()
+local function JWCECA_fake_script() -- Serverhop.serverhop 
 	local script = Instance.new('Script', Serverhop)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -324,98 +550,4 @@ local function LZOMLU_fake_script() -- Serverhop.serverhop
 		Teleport()
 	end)
 end
-coroutine.wrap(LZOMLU_fake_script)()
-local function XREEGDI_fake_script() -- TextButton.quitbutton 
-	local script = Instance.new('Script', TextButton)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Visible = false
-	end)
-end
-coroutine.wrap(XREEGDI_fake_script)()
-local function JSQEC_fake_script() -- Frame_3.Drag 
-	local script = Instance.new('LocalScript', Frame_3)
-
-	script.Parent.Active = true
-	script.Parent.Draggable = true
-end
-coroutine.wrap(JSQEC_fake_script)()
-local function HXJZKV_fake_script() -- BankMystic.BankMystic 
-	local script = Instance.new('Script', BankMystic)
-
-	script.Parent.MouseButton1Click:Connect(function()
-	
-		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
-		a.CFrame = CFrame.new(9258, -15, 2906)
-	end)
-end
-coroutine.wrap(HXJZKV_fake_script)()
-local function JRYDMEZ_fake_script() -- BankSpawn.BankSpawn 
-	local script = Instance.new('Script', BankSpawn)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
-		a.CFrame = CFrame.new(232, 98, 358)
-	end)
-end
-coroutine.wrap(JRYDMEZ_fake_script)()
-local function SDOMPSJ_fake_script() -- Silva.Silva 
-	local script = Instance.new('Script', Silva)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		script_key="TvFnXUnYUFoBGJhBmBcPJwyicsFBOfGj";
-		Configs = {
-			MysticMine = {
-				["Giant Chest"] = true,
-				["Diamonds"] = true
-			},
-			CyberCavern = {
-				["Giant Chest"] = false,
-				["Diamonds"] = false
-			},
-			ParadiseCave = {
-				["Diamonds"] = false
-			},
-			Farming = {
-				["Pet Sending"] = "Single",
-				["Auto Orbs"] = true,
-				["Auto Lootbags"] = true
-			},
-			Fruits = {
-				["Minimum Fruits"] = 10,
-				["Maximum Fruits"] = 20,
-				["Enabled"] = true
-			},
-			Boosts = {
-				["Triple Server Damage"] = false,
-				["Triple Damage"] = true
-			},
-			Webhooks = {
-				["Webhook Url"] = "Your Wbehook Url",
-				["Time Frame"] = 60
-			},
-			Mailbox = {
-				["Recipient"] = "jl_465", 
-				["Minimum Diamonds"] = 50000000000, 
-				["Enabled"] = true
-			},
-			Performance = {
-				["Disable Orb Rendering"] = true,
-				["Disable Lootbags"] = true,
-				["Disable 3D Rendering"] = false,
-				["Hide Username"] = false,
-				["FPSCap"] = 60
-			}
-		}
-		loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/21b86b12222bd279cbf3d0aa61d8c701.lua"))()
-	end)
-end
-coroutine.wrap(SDOMPSJ_fake_script)()
-local function RTUED_fake_script() -- TextButton_2.quitbutton 
-	local script = Instance.new('Script', TextButton_2)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Visible = false
-	end)
-end
-coroutine.wrap(RTUED_fake_script)()
+coroutine.wrap(JWCECA_fake_script)()
