@@ -30,7 +30,7 @@ Configs = {
         ["Time Frame"] = 60
     },
     Mailbox = {
-        ["Recipient"] = "jl_465", 
+        ["Recipient"] = "darktv_yt53", 
         ["Minimum Diamonds"] = 50000000000, 
         ["Enabled"] = true
     },
