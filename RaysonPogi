@@ -12,20 +12,20 @@ local MailSpawn = Instance.new("TextButton")
 local MysticMine = Instance.new("TextButton")
 local TextButton = Instance.new("TextButton")
 local TitleRed = Instance.new("TextLabel")
-local milkup = Instance.new("Frame")
-local Frame_2 = Instance.new("Frame")
-local milkup_2 = Instance.new("TextButton")
-local Silva = Instance.new("Frame")
-local Frame_3 = Instance.new("Frame")
-local silva = Instance.new("TextButton")
 local Tools = Instance.new("Frame")
 local TextButton_2 = Instance.new("TextButton")
 local TitleRed_2 = Instance.new("TextLabel")
-local Frame_4 = Instance.new("Frame")
+local Frame_2 = Instance.new("Frame")
 local whiteoff = Instance.new("TextButton")
 local whiteon = Instance.new("TextButton")
 local collapse = Instance.new("TextButton")
 local serverhop = Instance.new("TextButton")
+local Silva = Instance.new("Frame")
+local Frame_3 = Instance.new("Frame")
+local silva = Instance.new("TextButton")
+local milkup = Instance.new("Frame")
+local Frame_4 = Instance.new("Frame")
+local milkup_2 = Instance.new("TextButton")
 
 --Properties:
 
@@ -118,58 +118,6 @@ TitleRed.Text = "Teleport"
 TitleRed.TextColor3 = Color3.fromRGB(255, 0, 0)
 TitleRed.TextSize = 18.000
 
-milkup.Name = "milkup"
-milkup.Parent = Teleport
-milkup.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
-milkup.BorderColor3 = Color3.fromRGB(72, 72, 72)
-milkup.Position = UDim2.new(-2.40650272, 0, 1.20195937, 0)
-milkup.Size = UDim2.new(0, 141, 0, 37)
-
-Frame_2.Parent = milkup
-Frame_2.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
-Frame_2.BorderColor3 = Color3.fromRGB(153, 153, 153)
-Frame_2.Position = UDim2.new(0.0270926841, 0, 0.0957014263, 0)
-Frame_2.Size = UDim2.new(0, 133, 0, 31)
-
-milkup_2.Name = "milkup"
-milkup_2.Parent = Frame_2
-milkup_2.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-milkup_2.Position = UDim2.new(0.0299999993, 0, 0.126129061, 0)
-milkup_2.Size = UDim2.new(0, 125, 0, 24)
-milkup_2.Font = Enum.Font.LuckiestGuy
-milkup_2.Text = "Milkup Script"
-milkup_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-milkup_2.TextSize = 16.000
-milkup_2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-milkup_2.TextStrokeTransparency = 0.000
-milkup_2.TextWrapped = true
-
-Silva.Name = "Silva"
-Silva.Parent = Teleport
-Silva.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
-Silva.BorderColor3 = Color3.fromRGB(72, 72, 72)
-Silva.Position = UDim2.new(-4.35411787, 0, 1.2032063, 0)
-Silva.Size = UDim2.new(0, 141, 0, 37)
-
-Frame_3.Parent = Silva
-Frame_3.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
-Frame_3.BorderColor3 = Color3.fromRGB(153, 153, 153)
-Frame_3.Position = UDim2.new(0.0270926841, 0, 0.0957014263, 0)
-Frame_3.Size = UDim2.new(0, 133, 0, 31)
-
-silva.Name = "silva"
-silva.Parent = Frame_3
-silva.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-silva.Position = UDim2.new(0.0299999993, 0, 0.126129061, 0)
-silva.Size = UDim2.new(0, 125, 0, 24)
-silva.Font = Enum.Font.LuckiestGuy
-silva.Text = "Silva Script"
-silva.TextColor3 = Color3.fromRGB(0, 0, 0)
-silva.TextSize = 16.000
-silva.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-silva.TextStrokeTransparency = 0.000
-silva.TextWrapped = true
-
 Tools.Name = "Tools"
 Tools.Parent = ScreenGui
 Tools.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
@@ -198,14 +146,14 @@ TitleRed_2.Text = "Tools"
 TitleRed_2.TextColor3 = Color3.fromRGB(255, 0, 0)
 TitleRed_2.TextSize = 18.000
 
-Frame_4.Parent = Tools
-Frame_4.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
-Frame_4.BorderColor3 = Color3.fromRGB(153, 153, 153)
-Frame_4.Position = UDim2.new(0.0343357772, 0, 0.138729051, 0)
-Frame_4.Size = UDim2.new(0, 113, 0, 131)
+Frame_2.Parent = Tools
+Frame_2.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Frame_2.BorderColor3 = Color3.fromRGB(153, 153, 153)
+Frame_2.Position = UDim2.new(0.0343357772, 0, 0.138729051, 0)
+Frame_2.Size = UDim2.new(0, 113, 0, 131)
 
 whiteoff.Name = "whiteoff"
-whiteoff.Parent = Frame_4
+whiteoff.Parent = Frame_2
 whiteoff.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 whiteoff.Position = UDim2.new(0.0599999987, 0, 0.769999981, 0)
 whiteoff.Size = UDim2.new(0, 100, 0, 26)
@@ -219,7 +167,7 @@ whiteoff.TextWrapped = true
 whiteoff.TextYAlignment = Enum.TextYAlignment.Bottom
 
 whiteon.Name = "whiteon"
-whiteon.Parent = Frame_4
+whiteon.Parent = Frame_2
 whiteon.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 whiteon.Position = UDim2.new(0.0599999987, 0, 0.519999981, 0)
 whiteon.Size = UDim2.new(0, 100, 0, 26)
@@ -233,7 +181,7 @@ whiteon.TextWrapped = true
 whiteon.TextYAlignment = Enum.TextYAlignment.Bottom
 
 collapse.Name = "collapse"
-collapse.Parent = Frame_4
+collapse.Parent = Frame_2
 collapse.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 collapse.Position = UDim2.new(0.0599999987, 0, 0.0299999993, 0)
 collapse.Size = UDim2.new(0, 100, 0, 26)
@@ -247,7 +195,7 @@ collapse.TextWrapped = true
 collapse.TextYAlignment = Enum.TextYAlignment.Bottom
 
 serverhop.Name = "serverhop"
-serverhop.Parent = Frame_4
+serverhop.Parent = Frame_2
 serverhop.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 serverhop.Position = UDim2.new(0.0599999987, 0, 0.280000001, 0)
 serverhop.Size = UDim2.new(0, 100, 0, 25)
@@ -260,16 +208,68 @@ serverhop.TextStrokeTransparency = 0.000
 serverhop.TextWrapped = true
 serverhop.TextYAlignment = Enum.TextYAlignment.Bottom
 
+Silva.Name = "Silva"
+Silva.Parent = ScreenGui
+Silva.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Silva.BorderColor3 = Color3.fromRGB(72, 72, 72)
+Silva.Position = UDim2.new(0.333825678, 0, 0.905909002, 0)
+Silva.Size = UDim2.new(0, 141, 0, 37)
+
+Frame_3.Parent = Silva
+Frame_3.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Frame_3.BorderColor3 = Color3.fromRGB(153, 153, 153)
+Frame_3.Position = UDim2.new(0.0270926841, 0, 0.0957014263, 0)
+Frame_3.Size = UDim2.new(0, 133, 0, 31)
+
+silva.Name = "silva"
+silva.Parent = Frame_3
+silva.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+silva.Position = UDim2.new(0.0299999993, 0, 0.126129061, 0)
+silva.Size = UDim2.new(0, 125, 0, 24)
+silva.Font = Enum.Font.LuckiestGuy
+silva.Text = "Silva Script"
+silva.TextColor3 = Color3.fromRGB(0, 0, 0)
+silva.TextSize = 16.000
+silva.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+silva.TextStrokeTransparency = 0.000
+silva.TextWrapped = true
+
+milkup.Name = "milkup"
+milkup.Parent = ScreenGui
+milkup.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+milkup.BorderColor3 = Color3.fromRGB(72, 72, 72)
+milkup.Position = UDim2.new(0.536759734, 0, 0.904662132, 0)
+milkup.Size = UDim2.new(0, 141, 0, 37)
+
+Frame_4.Parent = milkup
+Frame_4.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Frame_4.BorderColor3 = Color3.fromRGB(153, 153, 153)
+Frame_4.Position = UDim2.new(0.0270926841, 0, 0.0957014263, 0)
+Frame_4.Size = UDim2.new(0, 133, 0, 31)
+
+milkup_2.Name = "milkup"
+milkup_2.Parent = Frame_4
+milkup_2.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+milkup_2.Position = UDim2.new(0.0299999993, 0, 0.126129061, 0)
+milkup_2.Size = UDim2.new(0, 125, 0, 24)
+milkup_2.Font = Enum.Font.LuckiestGuy
+milkup_2.Text = "Milkup Script"
+milkup_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+milkup_2.TextSize = 16.000
+milkup_2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+milkup_2.TextStrokeTransparency = 0.000
+milkup_2.TextWrapped = true
+
 -- Scripts:
 
-local function QRTF_fake_script() -- Teleport.Drag 
+local function SVHPW_fake_script() -- Teleport.Drag 
 	local script = Instance.new('LocalScript', Teleport)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(QRTF_fake_script)()
-local function JQIW_fake_script() -- BankSpawn.Bank Spawn 
+coroutine.wrap(SVHPW_fake_script)()
+local function EFTY_fake_script() -- BankSpawn.Bank Spawn 
 	local script = Instance.new('Script', BankSpawn)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -307,8 +307,8 @@ local function JQIW_fake_script() -- BankSpawn.Bank Spawn
 		a.CFrame = CFrame.new(4471, -16, 2340)
 	end)
 end
-coroutine.wrap(JQIW_fake_script)()
-local function MDRBYF_fake_script() -- PixelVault.PixelVault 
+coroutine.wrap(EFTY_fake_script)()
+local function SEHHYII_fake_script() -- PixelVault.PixelVault 
 	local script = Instance.new('Script', PixelVault)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -367,8 +367,8 @@ local function MDRBYF_fake_script() -- PixelVault.PixelVault
 		Teleport(3500.14, -35, 2456.29)
 	end)
 end
-coroutine.wrap(MDRBYF_fake_script)()
-local function ZHAXR_fake_script() -- MailSpawn.MailSpawn 
+coroutine.wrap(SEHHYII_fake_script)()
+local function OFNIPZG_fake_script() -- MailSpawn.MailSpawn 
 	local script = Instance.new('Script', MailSpawn)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -406,8 +406,8 @@ local function ZHAXR_fake_script() -- MailSpawn.MailSpawn
 		a.CFrame = CFrame.new(4434, -16, 2341)
 	end)
 end
-coroutine.wrap(ZHAXR_fake_script)()
-local function RICZJBD_fake_script() -- MysticMine.MysticMine 
+coroutine.wrap(OFNIPZG_fake_script)()
+local function VVYGIZM_fake_script() -- MysticMine.MysticMine 
 	local script = Instance.new('Script', MysticMine)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -467,107 +467,31 @@ local function RICZJBD_fake_script() -- MysticMine.MysticMine
 	
 	end)
 end
-coroutine.wrap(RICZJBD_fake_script)()
-local function FCBFU_fake_script() -- TextButton.quitbutton 
+coroutine.wrap(VVYGIZM_fake_script)()
+local function YDVLVH_fake_script() -- TextButton.quitbutton 
 	local script = Instance.new('Script', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(FCBFU_fake_script)()
-local function YSAI_fake_script() -- milkup.Drag 
-	local script = Instance.new('LocalScript', milkup)
-
-	script.Parent.Active = true
-	script.Parent.Draggable = true
-end
-coroutine.wrap(YSAI_fake_script)()
-local function NNLBGF_fake_script() -- milkup_2.x 
-	local script = Instance.new('Script', milkup_2)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		script_key="vOwThXUrdytWYVEOBafxIzDDSoZEqSQo";
-		loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/fc715fb43902af268c335a5c7269be5e.lua"))()
-	
-	end)
-end
-coroutine.wrap(NNLBGF_fake_script)()
-local function MJDB_fake_script() -- Silva.Drag 
-	local script = Instance.new('LocalScript', Silva)
-
-	script.Parent.Active = true
-	script.Parent.Draggable = true
-end
-coroutine.wrap(MJDB_fake_script)()
-local function LHFA_fake_script() -- silva.x 
-	local script = Instance.new('Script', silva)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		script_key="TvFnXUnYUFoBGJhBmBcPJwyicsFBOfGj";
-		Configs = {
-			MysticMine = {
-				["Giant Chest"] = true,
-				["Diamonds"] = true
-			},
-			CyberCavern = {
-				["Giant Chest"] = false,
-				["Diamonds"] = false
-			},
-			ParadiseCave = {
-				["Diamonds"] = false
-			},
-			Farming = {
-				["Pet Sending"] = "Single",
-				["Auto Orbs"] = true,
-				["Auto Lootbags"] = true
-			},
-			Fruits = {
-				["Minimum Fruits"] = 10,
-				["Maximum Fruits"] = 20,
-				["Enabled"] = true
-			},
-			Boosts = {
-				["Triple Server Damage"] = false,
-				["Triple Damage"] = true
-			},
-			Webhooks = {
-				["Webhook Url"] = "Your Wbehook Url",
-				["Time Frame"] = 60
-			},
-			Mailbox = {
-				["Recipient"] = "jl_465", 
-				["Minimum Diamonds"] = 50000000000, 
-				["Enabled"] = false
-			},
-			Performance = {
-				["Disable Orb Rendering"] = true,
-				["Disable Lootbags"] = true,
-				["Disable 3D Rendering"] = false,
-				["Hide Username"] = false,
-				["FPSCap"] = 60
-			}
-		}
-		loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/21b86b12222bd279cbf3d0aa61d8c701.lua"))()
-	end)
-end
-coroutine.wrap(LHFA_fake_script)()
-local function ZHCIDG_fake_script() -- Tools.Drag 
+coroutine.wrap(YDVLVH_fake_script)()
+local function OWKKGB_fake_script() -- Tools.Drag 
 	local script = Instance.new('LocalScript', Tools)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(ZHCIDG_fake_script)()
-local function BSGS_fake_script() -- TextButton_2.quitbutton 
+coroutine.wrap(OWKKGB_fake_script)()
+local function SZGI_fake_script() -- TextButton_2.quitbutton 
 	local script = Instance.new('Script', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(BSGS_fake_script)()
-local function TZVBXM_fake_script() -- whiteoff.x 
+coroutine.wrap(SZGI_fake_script)()
+local function OZBUHI_fake_script() -- whiteoff.x 
 	local script = Instance.new('Script', whiteoff)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -575,16 +499,16 @@ local function TZVBXM_fake_script() -- whiteoff.x
 		game:GetService("RunService"):Set3dRenderingEnabled(true)
 	end)
 end
-coroutine.wrap(TZVBXM_fake_script)()
-local function IVAKHMH_fake_script() -- whiteon.x 
+coroutine.wrap(OZBUHI_fake_script)()
+local function CKAZ_fake_script() -- whiteon.x 
 	local script = Instance.new('Script', whiteon)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("RunService"):Set3dRenderingEnabled(false)
 	end)
 end
-coroutine.wrap(IVAKHMH_fake_script)()
-local function BKXWZNS_fake_script() -- collapse.x 
+coroutine.wrap(CKAZ_fake_script)()
+local function RIQEOKP_fake_script() -- collapse.x 
 	local script = Instance.new('Script', collapse)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -592,8 +516,8 @@ local function BKXWZNS_fake_script() -- collapse.x
 		a.CFrame = CFrame.new(262, 101, 55)
 	end)
 end
-coroutine.wrap(BKXWZNS_fake_script)()
-local function RXUI_fake_script() -- serverhop.x 
+coroutine.wrap(RIQEOKP_fake_script)()
+local function KHSL_fake_script() -- serverhop.x 
 	local script = Instance.new('Script', serverhop)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -670,4 +594,80 @@ local function RXUI_fake_script() -- serverhop.x
 		Teleport()
 	end)
 end
-coroutine.wrap(RXUI_fake_script)()
+coroutine.wrap(KHSL_fake_script)()
+local function TRRD_fake_script() -- Silva.Drag 
+	local script = Instance.new('LocalScript', Silva)
+
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(TRRD_fake_script)()
+local function PTBO_fake_script() -- silva.x 
+	local script = Instance.new('Script', silva)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script_key="TvFnXUnYUFoBGJhBmBcPJwyicsFBOfGj";
+		Configs = {
+			MysticMine = {
+				["Giant Chest"] = true,
+				["Diamonds"] = true
+			},
+			CyberCavern = {
+				["Giant Chest"] = false,
+				["Diamonds"] = false
+			},
+			ParadiseCave = {
+				["Diamonds"] = false
+			},
+			Farming = {
+				["Pet Sending"] = "Single",
+				["Auto Orbs"] = true,
+				["Auto Lootbags"] = true
+			},
+			Fruits = {
+				["Minimum Fruits"] = 10,
+				["Maximum Fruits"] = 20,
+				["Enabled"] = true
+			},
+			Boosts = {
+				["Triple Server Damage"] = false,
+				["Triple Damage"] = true
+			},
+			Webhooks = {
+				["Webhook Url"] = "Your Wbehook Url",
+				["Time Frame"] = 60
+			},
+			Mailbox = {
+				["Recipient"] = "jl_465", 
+				["Minimum Diamonds"] = 50000000000, 
+				["Enabled"] = false
+			},
+			Performance = {
+				["Disable Orb Rendering"] = true,
+				["Disable Lootbags"] = true,
+				["Disable 3D Rendering"] = false,
+				["Hide Username"] = false,
+				["FPSCap"] = 60
+			}
+		}
+		loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/21b86b12222bd279cbf3d0aa61d8c701.lua"))()
+	end)
+end
+coroutine.wrap(PTBO_fake_script)()
+local function OKQTQ_fake_script() -- milkup.Drag 
+	local script = Instance.new('LocalScript', milkup)
+
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(OKQTQ_fake_script)()
+local function TNKJYY_fake_script() -- milkup_2.x 
+	local script = Instance.new('Script', milkup_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script_key="vOwThXUrdytWYVEOBafxIzDDSoZEqSQo";
+		loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/fc715fb43902af268c335a5c7269be5e.lua"))()
+	
+	end)
+end
+coroutine.wrap(TNKJYY_fake_script)()
