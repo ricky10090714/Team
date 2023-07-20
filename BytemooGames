@@ -17,7 +17,6 @@ local MilkupScript = Instance.new("TextButton")
 local Frame_4 = Instance.new("Frame")
 local SilvaScript = Instance.new("TextButton")
 local Frame_5 = Instance.new("Frame")
-local TextButton_2 = Instance.new("TextButton")
 local TitleRed_2 = Instance.new("TextLabel")
 local Frame_6 = Instance.new("Frame")
 local extra = Instance.new("TextButton")
@@ -119,7 +118,7 @@ TitleRed.TextSize = 18.000
 Frame_3.Parent = Frame
 Frame_3.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
 Frame_3.BorderColor3 = Color3.fromRGB(153, 153, 153)
-Frame_3.Position = UDim2.new(-2.26368737, 0, 0.82904762, 0)
+Frame_3.Position = UDim2.new(-1.41262352, 0, 1.08267081, 0)
 Frame_3.Size = UDim2.new(0, 143, 0, 35)
 
 MilkupScript.Name = "Milkup Script"
@@ -138,7 +137,7 @@ MilkupScript.TextWrapped = true
 Frame_4.Parent = Frame
 Frame_4.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
 Frame_4.BorderColor3 = Color3.fromRGB(153, 153, 153)
-Frame_4.Position = UDim2.new(-4.88070869, 0, 0.82904762, 0)
+Frame_4.Position = UDim2.new(-3.6041131, 0, 1.08267081, 0)
 Frame_4.Size = UDim2.new(0, 138, 0, 35)
 
 SilvaScript.Name = "SilvaScript"
@@ -154,21 +153,11 @@ SilvaScript.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 SilvaScript.TextStrokeTransparency = 0.000
 SilvaScript.TextWrapped = true
 
-Frame_5.Parent = ScreenGui
+Frame_5.Parent = Frame
 Frame_5.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
 Frame_5.BorderColor3 = Color3.fromRGB(72, 72, 72)
-Frame_5.Position = UDim2.new(0.0771411657, 0, 0.332425475, 0)
+Frame_5.Position = UDim2.new(-6.44058943, 0, -1.6458354, 0)
 Frame_5.Size = UDim2.new(0, 122, 0, 190)
-
-TextButton_2.Parent = Frame_5
-TextButton_2.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
-TextButton_2.BorderColor3 = Color3.fromRGB(27, 27, 27)
-TextButton_2.Position = UDim2.new(0.867426813, 0, 0.0326560177, 0)
-TextButton_2.Size = UDim2.new(0, 11, 0, 13)
-TextButton_2.Font = Enum.Font.LuckiestGuy
-TextButton_2.Text = "X"
-TextButton_2.TextColor3 = Color3.fromRGB(255, 0, 0)
-TextButton_2.TextSize = 14.000
 
 TitleRed_2.Name = "TitleRed"
 TitleRed_2.Parent = Frame_5
@@ -177,15 +166,15 @@ TitleRed_2.BorderColor3 = Color3.fromRGB(27, 27, 27)
 TitleRed_2.Position = UDim2.new(0.183609754, 0, 0.0326560624, 0)
 TitleRed_2.Size = UDim2.new(0, 77, 0, 14)
 TitleRed_2.Font = Enum.Font.GothamBold
-TitleRed_2.Text = "Bytemoo"
+TitleRed_2.Text = "Tools"
 TitleRed_2.TextColor3 = Color3.fromRGB(255, 0, 0)
 TitleRed_2.TextSize = 18.000
 
 Frame_6.Parent = Frame_5
 Frame_6.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
 Frame_6.BorderColor3 = Color3.fromRGB(153, 153, 153)
-Frame_6.Position = UDim2.new(0.0343357772, 0, 0.138729006, 0)
-Frame_6.Size = UDim2.new(0, 113, 0, 160)
+Frame_6.Position = UDim2.new(0.0343357772, 0, 0.138729051, 0)
+Frame_6.Size = UDim2.new(0, 112, 0, 160)
 
 extra.Name = "extra"
 extra.Parent = Frame_6
@@ -193,7 +182,7 @@ extra.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 extra.Position = UDim2.new(0.0599999987, 0, 0.824999988, 0)
 extra.Size = UDim2.new(0, 100, 0, 26)
 extra.Font = Enum.Font.LuckiestGuy
-extra.Text = "x"
+extra.Text = "Gray Area"
 extra.TextColor3 = Color3.fromRGB(0, 0, 0)
 extra.TextSize = 17.000
 extra.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
@@ -259,14 +248,14 @@ serverhop.TextYAlignment = Enum.TextYAlignment.Bottom
 
 -- Scripts:
 
-local function HJBRXC_fake_script() -- Frame.Drag 
+local function ICGWRKS_fake_script() -- Frame.Drag 
 	local script = Instance.new('LocalScript', Frame)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(HJBRXC_fake_script)()
-local function GPVIQDY_fake_script() -- _4BankSpawn.Bank Spawn 
+coroutine.wrap(ICGWRKS_fake_script)()
+local function JYLLN_fake_script() -- _4BankSpawn.Bank Spawn 
 	local script = Instance.new('Script', _4BankSpawn)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -304,8 +293,8 @@ local function GPVIQDY_fake_script() -- _4BankSpawn.Bank Spawn
 		a.CFrame = CFrame.new(4471, -16, 2340)
 	end)
 end
-coroutine.wrap(GPVIQDY_fake_script)()
-local function RXEA_fake_script() -- _2PixelVault.PixelVault 
+coroutine.wrap(JYLLN_fake_script)()
+local function MSLOH_fake_script() -- _2PixelVault.PixelVault 
 	local script = Instance.new('Script', _2PixelVault)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -364,8 +353,8 @@ local function RXEA_fake_script() -- _2PixelVault.PixelVault
 		Teleport(3500.14, -35, 2456.29)
 	end)
 end
-coroutine.wrap(RXEA_fake_script)()
-local function YNHD_fake_script() -- _3MailSpawn.Mail Spawn 
+coroutine.wrap(MSLOH_fake_script)()
+local function UYBIUAD_fake_script() -- _3MailSpawn.Mail Spawn 
 	local script = Instance.new('Script', _3MailSpawn)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -403,8 +392,8 @@ local function YNHD_fake_script() -- _3MailSpawn.Mail Spawn
 		a.CFrame = CFrame.new(4434, -16, 2341)
 	end)
 end
-coroutine.wrap(YNHD_fake_script)()
-local function DORAZ_fake_script() -- _1MysticMine.PixelVault 
+coroutine.wrap(UYBIUAD_fake_script)()
+local function AVNS_fake_script() -- _1MysticMine.PixelVault 
 	local script = Instance.new('Script', _1MysticMine)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -463,16 +452,16 @@ local function DORAZ_fake_script() -- _1MysticMine.PixelVault
 		Teleport(9050, -25, 2530)
 	end)
 end
-coroutine.wrap(DORAZ_fake_script)()
-local function YSRKGP_fake_script() -- TextButton.quitbutton 
+coroutine.wrap(AVNS_fake_script)()
+local function UJCT_fake_script() -- TextButton.quitbutton 
 	local script = Instance.new('Script', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(YSRKGP_fake_script)()
-local function GKPLUEY_fake_script() -- MilkupScript.Milkup Script 
+coroutine.wrap(UJCT_fake_script)()
+local function YBMOGPM_fake_script() -- MilkupScript.Milkup Script 
 	local script = Instance.new('Script', MilkupScript)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -481,8 +470,8 @@ local function GKPLUEY_fake_script() -- MilkupScript.Milkup Script
 	
 	end)
 end
-coroutine.wrap(GKPLUEY_fake_script)()
-local function QTKAR_fake_script() -- SilvaScript.Milkup Script 
+coroutine.wrap(YBMOGPM_fake_script)()
+local function YCDAX_fake_script() -- SilvaScript.Milkup Script 
 	local script = Instance.new('Script', SilvaScript)
 
 	serverhopscript.Parent.MouseButton1Click:Connect(function()
@@ -533,101 +522,97 @@ local function QTKAR_fake_script() -- SilvaScript.Milkup Script
 		loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/21b86b12222bd279cbf3d0aa61d8c701.lua"))()
 	end)
 end
-coroutine.wrap(QTKAR_fake_script)()
-local function LQALEOU_fake_script() -- Frame_5.Drag 
+coroutine.wrap(YCDAX_fake_script)()
+local function GNKZSJ_fake_script() -- Frame_5.Drag 
 	local script = Instance.new('LocalScript', Frame_5)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(LQALEOU_fake_script)()
-local function RWMIK_fake_script() -- TextButton_2.quitbutton 
-	local script = Instance.new('Script', TextButton_2)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Visible = false
-	end)
-end
-coroutine.wrap(RWMIK_fake_script)()
-local function BNBSG_fake_script() -- extra.serverhop 
+coroutine.wrap(GNKZSJ_fake_script)()
+local function AUFXSLA_fake_script() -- extra.serverhop 
 	local script = Instance.new('Script', extra)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		local PlaceID = game.PlaceId
-		local AllIDs = {}
-		local foundAnything = ""
-		local actualHour = os.date("!*t").hour
-		local Deleted = false
-		local File = pcall(function()
-			AllIDs = game:GetService('HttpService'):JSONDecode(readfile("NotSameServers.json"))
+		--[[
+		WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+	]]
+		local decalsyeeted = true -- Leaving this on makes games look shitty but the fps goes up by at least 20.
+		local g = game
+		local w = g.Workspace
+		local l = g.Lighting
+		local t = w.Terrain
+		sethiddenproperty(l,"Technology",2)
+		sethiddenproperty(t,"Decoration",false)
+		t.WaterWaveSize = 0
+		t.WaterWaveSpeed = 0
+		t.WaterReflectance = 0
+		t.WaterTransparency = 0
+		l.GlobalShadows = 0
+		l.FogEnd = 9e9
+		l.Brightness = 0
+		settings().Rendering.QualityLevel = "Level01"
+		for i, v in pairs(w:GetDescendants()) do
+			if v:IsA("BasePart") and not v:IsA("MeshPart") then
+				v.Material = "Plastic"
+				v.Reflectance = 0
+			elseif (v:IsA("Decal") or v:IsA("Texture")) and decalsyeeted then
+				v.Transparency = 1
+			elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
+				v.Lifetime = NumberRange.new(0)
+			elseif v:IsA("Explosion") then
+				v.BlastPressure = 1
+				v.BlastRadius = 1
+			elseif v:IsA("Fire") or v:IsA("SpotLight") or v:IsA("Smoke") or v:IsA("Sparkles") then
+				v.Enabled = false
+			elseif v:IsA("MeshPart") and decalsyeeted then
+				v.Material = "Plastic"
+				v.Reflectance = 0
+				v.TextureID = 10385902758728957
+			elseif v:IsA("SpecialMesh") and decalsyeeted  then
+				v.TextureId=0
+			elseif v:IsA("ShirtGraphic") and decalsyeeted then
+				v.Graphic=0
+			elseif (v:IsA("Shirt") or v:IsA("Pants")) and decalsyeeted then
+				v[v.ClassName.."Template"]=0
+			end
+		end
+		for i = 1,#l:GetChildren() do
+			e=l:GetChildren()[i]
+			if e:IsA("BlurEffect") or e:IsA("SunRaysEffect") or e:IsA("ColorCorrectionEffect") or e:IsA("BloomEffect") or e:IsA("DepthOfFieldEffect") then
+				e.Enabled = false
+			end
+		end
+		w.DescendantAdded:Connect(function(v)
+			wait()--prevent errors and shit
+			if v:IsA("BasePart") and not v:IsA("MeshPart") then
+				v.Material = "Plastic"
+				v.Reflectance = 0
+			elseif v:IsA("Decal") or v:IsA("Texture") and decalsyeeted then
+				v.Transparency = 1
+			elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
+				v.Lifetime = NumberRange.new(0)
+			elseif v:IsA("Explosion") then
+				v.BlastPressure = 1
+				v.BlastRadius = 1
+			elseif v:IsA("Fire") or v:IsA("SpotLight") or v:IsA("Smoke") or v:IsA("Sparkles") then
+				v.Enabled = false
+			elseif v:IsA("MeshPart") and decalsyeeted then
+				v.Material = "Plastic"
+				v.Reflectance = 0
+				v.TextureID = 10385902758728957
+			elseif v:IsA("SpecialMesh") and decalsyeeted then
+				v.TextureId=0
+			elseif v:IsA("ShirtGraphic") and decalsyeeted then
+				v.ShirtGraphic=0
+			elseif (v:IsA("Shirt") or v:IsA("Pants")) and decalsyeeted then
+				v[v.ClassName.."Template"]=0
+			end
 		end)
-		if not File then
-			table.insert(AllIDs, actualHour)
-			writefile("NotSameServers.json", game:GetService('HttpService'):JSONEncode(AllIDs))
-		end
-		function TPReturner()
-			local Site;
-			if foundAnything == "" then
-				Site = game.HttpService:JSONDecode(game:HttpGet('https://games.roblox.com/v1/games/' .. PlaceID .. '/servers/Public?sortOrder=Asc&limit=100'))
-			else
-				Site = game.HttpService:JSONDecode(game:HttpGet('https://games.roblox.com/v1/games/' .. PlaceID .. '/servers/Public?sortOrder=Asc&limit=100&cursor=' .. foundAnything))
-			end
-			local ID = ""
-			if Site.nextPageCursor and Site.nextPageCursor ~= "null" and Site.nextPageCursor ~= nil then
-				foundAnything = Site.nextPageCursor
-			end
-			local num = 0;
-			for i,v in pairs(Site.data) do
-				local Possible = true
-				ID = tostring(v.id)
-				if tonumber(v.maxPlayers) > tonumber(v.playing) then
-					for _,Existing in pairs(AllIDs) do
-						if num ~= 0 then
-							if ID == tostring(Existing) then
-								Possible = false
-							end
-						else
-							if tonumber(actualHour) ~= tonumber(Existing) then
-								local delFile = pcall(function()
-									delfile("NotSameServers.json")
-									AllIDs = {}
-									table.insert(AllIDs, actualHour)
-								end)
-							end
-						end
-						num = num + 1
-					end
-					if Possible == true then
-						table.insert(AllIDs, ID)
-						wait()
-						pcall(function()
-							writefile("NotSameServers.json", game:GetService('HttpService'):JSONEncode(AllIDs))
-							wait()
-							game:GetService("TeleportService"):TeleportToPlaceInstance(PlaceID, ID, game.Players.LocalPlayer)
-						end)
-						wait(4)
-					end
-				end
-			end
-		end
-	
-		function Teleport()
-			while wait() do
-				pcall(function()
-					TPReturner()
-					if foundAnything ~= "" then
-						TPReturner()
-					end
-				end)
-			end
-		end
-	
-		-- If you'd like to use a script before server hopping (Like a Automatic Chest collector you can put the Teleport() after it collected everything.
-		Teleport()
 	end)
 end
-coroutine.wrap(BNBSG_fake_script)()
-local function EZFRZY_fake_script() -- whiteoff.whiteoff 
+coroutine.wrap(AUFXSLA_fake_script)()
+local function PMJYL_fake_script() -- whiteoff.whiteoff 
 	local script = Instance.new('Script', whiteoff)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -635,16 +620,16 @@ local function EZFRZY_fake_script() -- whiteoff.whiteoff
 		game:GetService("RunService"):Set3dRenderingEnabled(true)
 	end)
 end
-coroutine.wrap(EZFRZY_fake_script)()
-local function PBRAHLX_fake_script() -- whiteon.whiteon 
+coroutine.wrap(PMJYL_fake_script)()
+local function ZUYTRF_fake_script() -- whiteon.whiteon 
 	local script = Instance.new('Script', whiteon)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("RunService"):Set3dRenderingEnabled(false)
 	end)
 end
-coroutine.wrap(PBRAHLX_fake_script)()
-local function TESYA_fake_script() -- collapse.BankSpawn 
+coroutine.wrap(ZUYTRF_fake_script)()
+local function XGPX_fake_script() -- collapse.BankSpawn 
 	local script = Instance.new('Script', collapse)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -652,8 +637,8 @@ local function TESYA_fake_script() -- collapse.BankSpawn
 		a.CFrame = CFrame.new(253, 101, 56)
 	end)
 end
-coroutine.wrap(TESYA_fake_script)()
-local function LADYDF_fake_script() -- serverhop.serverhop 
+coroutine.wrap(XGPX_fake_script)()
+local function OFYP_fake_script() -- serverhop.serverhop 
 	local script = Instance.new('Script', serverhop)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -730,4 +715,4 @@ local function LADYDF_fake_script() -- serverhop.serverhop
 		Teleport()
 	end)
 end
-coroutine.wrap(LADYDF_fake_script)()
+coroutine.wrap(OFYP_fake_script)()
