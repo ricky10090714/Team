@@ -212,7 +212,7 @@ Silva.Name = "Silva"
 Silva.Parent = ScreenGui
 Silva.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
 Silva.BorderColor3 = Color3.fromRGB(72, 72, 72)
-Silva.Position = UDim2.new(0.333825678, 0, 0.905909002, 0)
+Silva.Position = UDim2.new(0.307745814, 0, 0.913390279, 0)
 Silva.Size = UDim2.new(0, 141, 0, 37)
 
 Frame_3.Parent = Silva
@@ -238,7 +238,7 @@ milkup.Name = "milkup"
 milkup.Parent = ScreenGui
 milkup.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
 milkup.BorderColor3 = Color3.fromRGB(72, 72, 72)
-milkup.Position = UDim2.new(0.536759734, 0, 0.904662132, 0)
+milkup.Position = UDim2.new(0.554689646, 0, 0.913390338, 0)
 milkup.Size = UDim2.new(0, 141, 0, 37)
 
 Frame_4.Parent = milkup
@@ -262,14 +262,14 @@ milkup_2.TextWrapped = true
 
 -- Scripts:
 
-local function SVHPW_fake_script() -- Teleport.Drag 
+local function BENYFN_fake_script() -- Teleport.Drag 
 	local script = Instance.new('LocalScript', Teleport)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(SVHPW_fake_script)()
-local function EFTY_fake_script() -- BankSpawn.Bank Spawn 
+coroutine.wrap(BENYFN_fake_script)()
+local function LBEFH_fake_script() -- BankSpawn.Bank Spawn 
 	local script = Instance.new('Script', BankSpawn)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -307,8 +307,8 @@ local function EFTY_fake_script() -- BankSpawn.Bank Spawn
 		a.CFrame = CFrame.new(4471, -16, 2340)
 	end)
 end
-coroutine.wrap(EFTY_fake_script)()
-local function SEHHYII_fake_script() -- PixelVault.PixelVault 
+coroutine.wrap(LBEFH_fake_script)()
+local function STPGYMM_fake_script() -- PixelVault.PixelVault 
 	local script = Instance.new('Script', PixelVault)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -367,8 +367,8 @@ local function SEHHYII_fake_script() -- PixelVault.PixelVault
 		Teleport(3500.14, -35, 2456.29)
 	end)
 end
-coroutine.wrap(SEHHYII_fake_script)()
-local function OFNIPZG_fake_script() -- MailSpawn.MailSpawn 
+coroutine.wrap(STPGYMM_fake_script)()
+local function XXKYBY_fake_script() -- MailSpawn.MailSpawn 
 	local script = Instance.new('Script', MailSpawn)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -406,8 +406,8 @@ local function OFNIPZG_fake_script() -- MailSpawn.MailSpawn
 		a.CFrame = CFrame.new(4434, -16, 2341)
 	end)
 end
-coroutine.wrap(OFNIPZG_fake_script)()
-local function VVYGIZM_fake_script() -- MysticMine.MysticMine 
+coroutine.wrap(XXKYBY_fake_script)()
+local function FXHP_fake_script() -- MysticMine.MysticMine 
 	local script = Instance.new('Script', MysticMine)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -467,31 +467,31 @@ local function VVYGIZM_fake_script() -- MysticMine.MysticMine
 	
 	end)
 end
-coroutine.wrap(VVYGIZM_fake_script)()
-local function YDVLVH_fake_script() -- TextButton.quitbutton 
+coroutine.wrap(FXHP_fake_script)()
+local function HEEXPID_fake_script() -- TextButton.quitbutton 
 	local script = Instance.new('Script', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(YDVLVH_fake_script)()
-local function OWKKGB_fake_script() -- Tools.Drag 
+coroutine.wrap(HEEXPID_fake_script)()
+local function EQRFAP_fake_script() -- Tools.Drag 
 	local script = Instance.new('LocalScript', Tools)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(OWKKGB_fake_script)()
-local function SZGI_fake_script() -- TextButton_2.quitbutton 
+coroutine.wrap(EQRFAP_fake_script)()
+local function LMUUFD_fake_script() -- TextButton_2.quitbutton 
 	local script = Instance.new('Script', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(SZGI_fake_script)()
-local function OZBUHI_fake_script() -- whiteoff.x 
+coroutine.wrap(LMUUFD_fake_script)()
+local function SBEDWVJ_fake_script() -- whiteoff.x 
 	local script = Instance.new('Script', whiteoff)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -499,16 +499,16 @@ local function OZBUHI_fake_script() -- whiteoff.x
 		game:GetService("RunService"):Set3dRenderingEnabled(true)
 	end)
 end
-coroutine.wrap(OZBUHI_fake_script)()
-local function CKAZ_fake_script() -- whiteon.x 
+coroutine.wrap(SBEDWVJ_fake_script)()
+local function HGCV_fake_script() -- whiteon.x 
 	local script = Instance.new('Script', whiteon)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("RunService"):Set3dRenderingEnabled(false)
 	end)
 end
-coroutine.wrap(CKAZ_fake_script)()
-local function RIQEOKP_fake_script() -- collapse.x 
+coroutine.wrap(HGCV_fake_script)()
+local function LIVF_fake_script() -- collapse.x 
 	local script = Instance.new('Script', collapse)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -516,8 +516,8 @@ local function RIQEOKP_fake_script() -- collapse.x
 		a.CFrame = CFrame.new(262, 101, 55)
 	end)
 end
-coroutine.wrap(RIQEOKP_fake_script)()
-local function KHSL_fake_script() -- serverhop.x 
+coroutine.wrap(LIVF_fake_script)()
+local function KYCC_fake_script() -- serverhop.x 
 	local script = Instance.new('Script', serverhop)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -594,15 +594,15 @@ local function KHSL_fake_script() -- serverhop.x
 		Teleport()
 	end)
 end
-coroutine.wrap(KHSL_fake_script)()
-local function TRRD_fake_script() -- Silva.Drag 
+coroutine.wrap(KYCC_fake_script)()
+local function FTEQ_fake_script() -- Silva.Drag 
 	local script = Instance.new('LocalScript', Silva)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(TRRD_fake_script)()
-local function PTBO_fake_script() -- silva.x 
+coroutine.wrap(FTEQ_fake_script)()
+local function GELJRDA_fake_script() -- silva.x 
 	local script = Instance.new('Script', silva)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -653,15 +653,15 @@ local function PTBO_fake_script() -- silva.x
 		loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/21b86b12222bd279cbf3d0aa61d8c701.lua"))()
 	end)
 end
-coroutine.wrap(PTBO_fake_script)()
-local function OKQTQ_fake_script() -- milkup.Drag 
+coroutine.wrap(GELJRDA_fake_script)()
+local function SUXWD_fake_script() -- milkup.Drag 
 	local script = Instance.new('LocalScript', milkup)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(OKQTQ_fake_script)()
-local function TNKJYY_fake_script() -- milkup_2.x 
+coroutine.wrap(SUXWD_fake_script)()
+local function YKIG_fake_script() -- milkup_2.x 
 	local script = Instance.new('Script', milkup_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -670,4 +670,4 @@ local function TNKJYY_fake_script() -- milkup_2.x
 	
 	end)
 end
-coroutine.wrap(TNKJYY_fake_script)()
+coroutine.wrap(YKIG_fake_script)()
