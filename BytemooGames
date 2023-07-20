@@ -118,7 +118,7 @@ TitleRed.TextSize = 18.000
 Frame_3.Parent = Frame
 Frame_3.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
 Frame_3.BorderColor3 = Color3.fromRGB(153, 153, 153)
-Frame_3.Position = UDim2.new(-1.41262352, 0, 1.08267081, 0)
+Frame_3.Position = UDim2.new(-1.83815551, 0, 1.08267081, 0)
 Frame_3.Size = UDim2.new(0, 143, 0, 35)
 
 MilkupScript.Name = "Milkup Script"
@@ -248,14 +248,14 @@ serverhop.TextYAlignment = Enum.TextYAlignment.Bottom
 
 -- Scripts:
 
-local function ICGWRKS_fake_script() -- Frame.Drag 
+local function VRFK_fake_script() -- Frame.Drag 
 	local script = Instance.new('LocalScript', Frame)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(ICGWRKS_fake_script)()
-local function JYLLN_fake_script() -- _4BankSpawn.Bank Spawn 
+coroutine.wrap(VRFK_fake_script)()
+local function UTGU_fake_script() -- _4BankSpawn.Bank Spawn 
 	local script = Instance.new('Script', _4BankSpawn)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -293,8 +293,8 @@ local function JYLLN_fake_script() -- _4BankSpawn.Bank Spawn
 		a.CFrame = CFrame.new(4471, -16, 2340)
 	end)
 end
-coroutine.wrap(JYLLN_fake_script)()
-local function MSLOH_fake_script() -- _2PixelVault.PixelVault 
+coroutine.wrap(UTGU_fake_script)()
+local function HXOYBI_fake_script() -- _2PixelVault.PixelVault 
 	local script = Instance.new('Script', _2PixelVault)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -353,8 +353,8 @@ local function MSLOH_fake_script() -- _2PixelVault.PixelVault
 		Teleport(3500.14, -35, 2456.29)
 	end)
 end
-coroutine.wrap(MSLOH_fake_script)()
-local function UYBIUAD_fake_script() -- _3MailSpawn.Mail Spawn 
+coroutine.wrap(HXOYBI_fake_script)()
+local function OJLO_fake_script() -- _3MailSpawn.Mail Spawn 
 	local script = Instance.new('Script', _3MailSpawn)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -392,8 +392,8 @@ local function UYBIUAD_fake_script() -- _3MailSpawn.Mail Spawn
 		a.CFrame = CFrame.new(4434, -16, 2341)
 	end)
 end
-coroutine.wrap(UYBIUAD_fake_script)()
-local function AVNS_fake_script() -- _1MysticMine.PixelVault 
+coroutine.wrap(OJLO_fake_script)()
+local function IFZKJR_fake_script() -- _1MysticMine.PixelVault 
 	local script = Instance.new('Script', _1MysticMine)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -452,16 +452,16 @@ local function AVNS_fake_script() -- _1MysticMine.PixelVault
 		Teleport(9050, -25, 2530)
 	end)
 end
-coroutine.wrap(AVNS_fake_script)()
-local function UJCT_fake_script() -- TextButton.quitbutton 
+coroutine.wrap(IFZKJR_fake_script)()
+local function FPHN_fake_script() -- TextButton.quitbutton 
 	local script = Instance.new('Script', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(UJCT_fake_script)()
-local function YBMOGPM_fake_script() -- MilkupScript.Milkup Script 
+coroutine.wrap(FPHN_fake_script)()
+local function HPJVEJ_fake_script() -- MilkupScript.Milkup Script 
 	local script = Instance.new('Script', MilkupScript)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -470,8 +470,8 @@ local function YBMOGPM_fake_script() -- MilkupScript.Milkup Script
 	
 	end)
 end
-coroutine.wrap(YBMOGPM_fake_script)()
-local function YCDAX_fake_script() -- SilvaScript.Milkup Script 
+coroutine.wrap(HPJVEJ_fake_script)()
+local function KOTYFZ_fake_script() -- SilvaScript.Milkup Script 
 	local script = Instance.new('Script', SilvaScript)
 
 	serverhopscript.Parent.MouseButton1Click:Connect(function()
@@ -522,15 +522,15 @@ local function YCDAX_fake_script() -- SilvaScript.Milkup Script
 		loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/21b86b12222bd279cbf3d0aa61d8c701.lua"))()
 	end)
 end
-coroutine.wrap(YCDAX_fake_script)()
-local function GNKZSJ_fake_script() -- Frame_5.Drag 
+coroutine.wrap(KOTYFZ_fake_script)()
+local function PBLJO_fake_script() -- Frame_5.Drag 
 	local script = Instance.new('LocalScript', Frame_5)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(GNKZSJ_fake_script)()
-local function AUFXSLA_fake_script() -- extra.serverhop 
+coroutine.wrap(PBLJO_fake_script)()
+local function RWRIMF_fake_script() -- extra.serverhop 
 	local script = Instance.new('Script', extra)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -611,8 +611,8 @@ local function AUFXSLA_fake_script() -- extra.serverhop
 		end)
 	end)
 end
-coroutine.wrap(AUFXSLA_fake_script)()
-local function PMJYL_fake_script() -- whiteoff.whiteoff 
+coroutine.wrap(RWRIMF_fake_script)()
+local function CJMFQG_fake_script() -- whiteoff.whiteoff 
 	local script = Instance.new('Script', whiteoff)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -620,16 +620,16 @@ local function PMJYL_fake_script() -- whiteoff.whiteoff
 		game:GetService("RunService"):Set3dRenderingEnabled(true)
 	end)
 end
-coroutine.wrap(PMJYL_fake_script)()
-local function ZUYTRF_fake_script() -- whiteon.whiteon 
+coroutine.wrap(CJMFQG_fake_script)()
+local function ADOPES_fake_script() -- whiteon.whiteon 
 	local script = Instance.new('Script', whiteon)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("RunService"):Set3dRenderingEnabled(false)
 	end)
 end
-coroutine.wrap(ZUYTRF_fake_script)()
-local function XGPX_fake_script() -- collapse.BankSpawn 
+coroutine.wrap(ADOPES_fake_script)()
+local function OORJKMR_fake_script() -- collapse.BankSpawn 
 	local script = Instance.new('Script', collapse)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -637,8 +637,8 @@ local function XGPX_fake_script() -- collapse.BankSpawn
 		a.CFrame = CFrame.new(253, 101, 56)
 	end)
 end
-coroutine.wrap(XGPX_fake_script)()
-local function OFYP_fake_script() -- serverhop.serverhop 
+coroutine.wrap(OORJKMR_fake_script)()
+local function WTCH_fake_script() -- serverhop.serverhop 
 	local script = Instance.new('Script', serverhop)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -715,4 +715,4 @@ local function OFYP_fake_script() -- serverhop.serverhop
 		Teleport()
 	end)
 end
-coroutine.wrap(OFYP_fake_script)()
+coroutine.wrap(WTCH_fake_script)()
