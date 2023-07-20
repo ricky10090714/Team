@@ -24,6 +24,7 @@ local whiteoff = Instance.new("TextButton")
 local whiteon = Instance.new("TextButton")
 local collapse = Instance.new("TextButton")
 local serverhop = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
 
 --Properties:
 
@@ -118,7 +119,7 @@ TitleRed.TextSize = 18.000
 Frame_3.Parent = Frame
 Frame_3.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
 Frame_3.BorderColor3 = Color3.fromRGB(153, 153, 153)
-Frame_3.Position = UDim2.new(-1.83815551, 0, 1.08267081, 0)
+Frame_3.Position = UDim2.new(-1.41262352, 0, 1.08267081, 0)
 Frame_3.Size = UDim2.new(0, 143, 0, 35)
 
 MilkupScript.Name = "Milkup Script"
@@ -153,10 +154,10 @@ SilvaScript.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 SilvaScript.TextStrokeTransparency = 0.000
 SilvaScript.TextWrapped = true
 
-Frame_5.Parent = Frame
+Frame_5.Parent = ScreenGui
 Frame_5.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
 Frame_5.BorderColor3 = Color3.fromRGB(72, 72, 72)
-Frame_5.Position = UDim2.new(-6.44058943, 0, -1.6458354, 0)
+Frame_5.Position = UDim2.new(0.0771411657, 0, 0.332425475, 0)
 Frame_5.Size = UDim2.new(0, 122, 0, 190)
 
 TitleRed_2.Name = "TitleRed"
@@ -246,16 +247,26 @@ serverhop.TextStrokeTransparency = 0.000
 serverhop.TextWrapped = true
 serverhop.TextYAlignment = Enum.TextYAlignment.Bottom
 
+TextButton_2.Parent = Frame_5
+TextButton_2.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+TextButton_2.BorderColor3 = Color3.fromRGB(27, 27, 27)
+TextButton_2.Position = UDim2.new(0.867426813, 0, 0.0326560177, 0)
+TextButton_2.Size = UDim2.new(0, 11, 0, 13)
+TextButton_2.Font = Enum.Font.LuckiestGuy
+TextButton_2.Text = "X"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_2.TextSize = 14.000
+
 -- Scripts:
 
-local function VRFK_fake_script() -- Frame.Drag 
+local function RVNBIA_fake_script() -- Frame.Drag 
 	local script = Instance.new('LocalScript', Frame)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(VRFK_fake_script)()
-local function UTGU_fake_script() -- _4BankSpawn.Bank Spawn 
+coroutine.wrap(RVNBIA_fake_script)()
+local function NXAN_fake_script() -- _4BankSpawn.Bank Spawn 
 	local script = Instance.new('Script', _4BankSpawn)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -293,8 +304,8 @@ local function UTGU_fake_script() -- _4BankSpawn.Bank Spawn
 		a.CFrame = CFrame.new(4471, -16, 2340)
 	end)
 end
-coroutine.wrap(UTGU_fake_script)()
-local function HXOYBI_fake_script() -- _2PixelVault.PixelVault 
+coroutine.wrap(NXAN_fake_script)()
+local function CMNYHIW_fake_script() -- _2PixelVault.PixelVault 
 	local script = Instance.new('Script', _2PixelVault)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -353,8 +364,8 @@ local function HXOYBI_fake_script() -- _2PixelVault.PixelVault
 		Teleport(3500.14, -35, 2456.29)
 	end)
 end
-coroutine.wrap(HXOYBI_fake_script)()
-local function OJLO_fake_script() -- _3MailSpawn.Mail Spawn 
+coroutine.wrap(CMNYHIW_fake_script)()
+local function RWLROJT_fake_script() -- _3MailSpawn.Mail Spawn 
 	local script = Instance.new('Script', _3MailSpawn)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -392,8 +403,8 @@ local function OJLO_fake_script() -- _3MailSpawn.Mail Spawn
 		a.CFrame = CFrame.new(4434, -16, 2341)
 	end)
 end
-coroutine.wrap(OJLO_fake_script)()
-local function IFZKJR_fake_script() -- _1MysticMine.PixelVault 
+coroutine.wrap(RWLROJT_fake_script)()
+local function LVEC_fake_script() -- _1MysticMine.PixelVault 
 	local script = Instance.new('Script', _1MysticMine)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -452,16 +463,16 @@ local function IFZKJR_fake_script() -- _1MysticMine.PixelVault
 		Teleport(9050, -25, 2530)
 	end)
 end
-coroutine.wrap(IFZKJR_fake_script)()
-local function FPHN_fake_script() -- TextButton.quitbutton 
+coroutine.wrap(LVEC_fake_script)()
+local function SSAS_fake_script() -- TextButton.quitbutton 
 	local script = Instance.new('Script', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(FPHN_fake_script)()
-local function HPJVEJ_fake_script() -- MilkupScript.Milkup Script 
+coroutine.wrap(SSAS_fake_script)()
+local function HEXXDQZ_fake_script() -- MilkupScript.Milkup Script 
 	local script = Instance.new('Script', MilkupScript)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -470,8 +481,8 @@ local function HPJVEJ_fake_script() -- MilkupScript.Milkup Script
 	
 	end)
 end
-coroutine.wrap(HPJVEJ_fake_script)()
-local function KOTYFZ_fake_script() -- SilvaScript.Milkup Script 
+coroutine.wrap(HEXXDQZ_fake_script)()
+local function GFDPYX_fake_script() -- SilvaScript.Milkup Script 
 	local script = Instance.new('Script', SilvaScript)
 
 	serverhopscript.Parent.MouseButton1Click:Connect(function()
@@ -522,15 +533,15 @@ local function KOTYFZ_fake_script() -- SilvaScript.Milkup Script
 		loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/21b86b12222bd279cbf3d0aa61d8c701.lua"))()
 	end)
 end
-coroutine.wrap(KOTYFZ_fake_script)()
-local function PBLJO_fake_script() -- Frame_5.Drag 
+coroutine.wrap(GFDPYX_fake_script)()
+local function BYZP_fake_script() -- Frame_5.Drag 
 	local script = Instance.new('LocalScript', Frame_5)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(PBLJO_fake_script)()
-local function RWRIMF_fake_script() -- extra.serverhop 
+coroutine.wrap(BYZP_fake_script)()
+local function VIBDOH_fake_script() -- extra.serverhop 
 	local script = Instance.new('Script', extra)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -611,8 +622,8 @@ local function RWRIMF_fake_script() -- extra.serverhop
 		end)
 	end)
 end
-coroutine.wrap(RWRIMF_fake_script)()
-local function CJMFQG_fake_script() -- whiteoff.whiteoff 
+coroutine.wrap(VIBDOH_fake_script)()
+local function LDJZW_fake_script() -- whiteoff.whiteoff 
 	local script = Instance.new('Script', whiteoff)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -620,16 +631,16 @@ local function CJMFQG_fake_script() -- whiteoff.whiteoff
 		game:GetService("RunService"):Set3dRenderingEnabled(true)
 	end)
 end
-coroutine.wrap(CJMFQG_fake_script)()
-local function ADOPES_fake_script() -- whiteon.whiteon 
+coroutine.wrap(LDJZW_fake_script)()
+local function QZBGEV_fake_script() -- whiteon.whiteon 
 	local script = Instance.new('Script', whiteon)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("RunService"):Set3dRenderingEnabled(false)
 	end)
 end
-coroutine.wrap(ADOPES_fake_script)()
-local function OORJKMR_fake_script() -- collapse.BankSpawn 
+coroutine.wrap(QZBGEV_fake_script)()
+local function PLVQYV_fake_script() -- collapse.BankSpawn 
 	local script = Instance.new('Script', collapse)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -637,8 +648,8 @@ local function OORJKMR_fake_script() -- collapse.BankSpawn
 		a.CFrame = CFrame.new(253, 101, 56)
 	end)
 end
-coroutine.wrap(OORJKMR_fake_script)()
-local function WTCH_fake_script() -- serverhop.serverhop 
+coroutine.wrap(PLVQYV_fake_script)()
+local function THTWXG_fake_script() -- serverhop.serverhop 
 	local script = Instance.new('Script', serverhop)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -715,4 +726,12 @@ local function WTCH_fake_script() -- serverhop.serverhop
 		Teleport()
 	end)
 end
-coroutine.wrap(WTCH_fake_script)()
+coroutine.wrap(THTWXG_fake_script)()
+local function ZGKAL_fake_script() -- TextButton_2.quitbutton 
+	local script = Instance.new('Script', TextButton_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(ZGKAL_fake_script)()
