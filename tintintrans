@@ -529,7 +529,28 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 or game.PlaceId == 
 	   OldTabLayout = true
 	})
 	
+	coroutine.wrap(function() 
+		wait(0.5)
+		if not isfile("Rafa/AcceptedTerms.txt") then 
+			Window:Prompt({
+				Title = 'Disclaimer',
+				SubTitle = 'Misuse of this script may result in penalties!',
+				Content = "I am not responsible for any harm caused by this tool, use at your own risk.",
+				Actions = {
+					
+					Accept = {
+						Name = "Ok",
+						Callback = function()
+							if not isfolder("Rafa") then makefolder("Rafa") end
+							writefile("Rafa/AcceptedTerms.txt", "true")
+						end,
+						
+					}
+				}
+			})
+		end 
 	
+	end)()
 	
 	
 	function AddCustomFlag(flagName, defaultValue, callback)
