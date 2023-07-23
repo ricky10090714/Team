@@ -518,9 +518,9 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 or game.PlaceId == 
 	
 
 	local Window = Rayfield:CreateWindow({
-	   Name = "Pet Simulator GUI | by Rayson ",
+	   Name = "Pet Simulator GUI | by Rayson",
 	   LoadingTitle = SCRIPT_NAME .. " " .. SCRIPT_VERSION,
-	   LoadingSubtitle = "by Rafa",
+	   LoadingSubtitle = "by Rayson",
 	   ConfigurationSaving = {
 		  Enabled = true,
 		  FolderName = "Rafa",
@@ -529,6 +529,8 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 or game.PlaceId == 
 	   OldTabLayout = true
 	})
 	
+	coroutine.wrap(function() 
+		wait(0.5)
 	
 	
 	end)()
