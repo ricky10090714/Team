@@ -233,14 +233,14 @@ whiteoff_2.TextYAlignment = Enum.TextYAlignment.Bottom
 
 -- Scripts:
 
-local function QNNNJEL_fake_script() -- Teleport.Drag 
+local function JQAL_fake_script() -- Teleport.Drag 
 	local script = Instance.new('LocalScript', Teleport)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(QNNNJEL_fake_script)()
-local function TIXSAG_fake_script() -- Bank.Bank 
+coroutine.wrap(JQAL_fake_script)()
+local function ZOCW_fake_script() -- Bank.Bank 
 	local script = Instance.new('Script', Bank)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -278,8 +278,8 @@ local function TIXSAG_fake_script() -- Bank.Bank
 		a.CFrame = CFrame.new(4471, -16, 2340)
 	end)
 end
-coroutine.wrap(TIXSAG_fake_script)()
-local function IENRVZQ_fake_script() -- Sylva.sylva 
+coroutine.wrap(ZOCW_fake_script)()
+local function DEJNPOF_fake_script() -- Sylva.sylva 
 	local script = Instance.new('Script', Sylva)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -330,8 +330,8 @@ local function IENRVZQ_fake_script() -- Sylva.sylva
 		loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/21b86b12222bd279cbf3d0aa61d8c701.lua"))()
 	end)
 end
-coroutine.wrap(IENRVZQ_fake_script)()
-local function FYKSHYL_fake_script() -- DayCare.Daycare 
+coroutine.wrap(DEJNPOF_fake_script)()
+local function QQHHH_fake_script() -- DayCare.Daycare 
 	local script = Instance.new('Script', DayCare)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -2885,8 +2885,8 @@ local function FYKSHYL_fake_script() -- DayCare.Daycare
 	
 	end)
 end
-coroutine.wrap(FYKSHYL_fake_script)()
-local function LHJHI_fake_script() -- Mail.Mail 
+coroutine.wrap(QQHHH_fake_script)()
+local function RAVTYM_fake_script() -- Mail.Mail 
 	local script = Instance.new('Script', Mail)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -2924,8 +2924,8 @@ local function LHJHI_fake_script() -- Mail.Mail
 		a.CFrame = CFrame.new(4434, -16, 2341)
 	end)
 end
-coroutine.wrap(LHJHI_fake_script)()
-local function POGC_fake_script() -- Fruits.Fruits 
+coroutine.wrap(RAVTYM_fake_script)()
+local function CSJCLH_fake_script() -- Fruits.Fruits 
 	local script = Instance.new('Script', Fruits)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -2933,31 +2933,31 @@ local function POGC_fake_script() -- Fruits.Fruits
 		loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/fc715fb43902af268c335a5c7269be5e.lua"))()
 	end)
 end
-coroutine.wrap(POGC_fake_script)()
-local function CLJCKU_fake_script() -- TextButton.quitbutton 
+coroutine.wrap(CSJCLH_fake_script)()
+local function BGIKTTP_fake_script() -- TextButton.quitbutton 
 	local script = Instance.new('Script', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(CLJCKU_fake_script)()
-local function MYIB_fake_script() -- Tools.Drag 
+coroutine.wrap(BGIKTTP_fake_script)()
+local function JJWZOV_fake_script() -- Tools.Drag 
 	local script = Instance.new('LocalScript', Tools)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(MYIB_fake_script)()
-local function WJVREF_fake_script() -- TextButton_2.quitbutton 
+coroutine.wrap(JJWZOV_fake_script)()
+local function NGVUJ_fake_script() -- TextButton_2.quitbutton 
 	local script = Instance.new('Script', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(WJVREF_fake_script)()
-local function PJXDLGP_fake_script() -- whiteoff.x 
+coroutine.wrap(NGVUJ_fake_script)()
+local function RKOHAL_fake_script() -- whiteoff.x 
 	local script = Instance.new('Script', whiteoff)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -2965,16 +2965,16 @@ local function PJXDLGP_fake_script() -- whiteoff.x
 		game:GetService("RunService"):Set3dRenderingEnabled(true)
 	end)
 end
-coroutine.wrap(PJXDLGP_fake_script)()
-local function TSMC_fake_script() -- whiteon.x 
+coroutine.wrap(RKOHAL_fake_script)()
+local function KORIGOH_fake_script() -- whiteon.x 
 	local script = Instance.new('Script', whiteon)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("RunService"):Set3dRenderingEnabled(false)
 	end)
 end
-coroutine.wrap(TSMC_fake_script)()
-local function RDXFG_fake_script() -- collapse.x 
+coroutine.wrap(KORIGOH_fake_script)()
+local function KXMS_fake_script() -- collapse.x 
 	local script = Instance.new('Script', collapse)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -2982,8 +2982,8 @@ local function RDXFG_fake_script() -- collapse.x
 		a.CFrame = CFrame.new(262, 101, 55)
 	end)
 end
-coroutine.wrap(RDXFG_fake_script)()
-local function HRTM_fake_script() -- serverhop.x 
+coroutine.wrap(KXMS_fake_script)()
+local function DXUKC_fake_script() -- serverhop.x 
 	local script = Instance.new('Script', serverhop)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -3060,8 +3060,8 @@ local function HRTM_fake_script() -- serverhop.x
 		Teleport()
 	end)
 end
-coroutine.wrap(HRTM_fake_script)()
-local function ERCYMNN_fake_script() -- whiteoff_2.x 
+coroutine.wrap(DXUKC_fake_script)()
+local function GKRZPEY_fake_script() -- whiteoff_2.x 
 	local script = Instance.new('Script', whiteoff_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -3069,4 +3069,4 @@ local function ERCYMNN_fake_script() -- whiteoff_2.x
 		game:GetService("RunService"):Set3dRenderingEnabled(true)
 	end)
 end
-coroutine.wrap(ERCYMNN_fake_script)()
+coroutine.wrap(GKRZPEY_fake_script)()
