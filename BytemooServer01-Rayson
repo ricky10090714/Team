@@ -1,4 +1,11 @@
-script_key="TvFnXUnYUFoBGJhBmBcPJwyicsFBOfGj";
+script_key="vOwThXUrdytWYVEOBafxIzDDSoZEqSQo";
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/fc715fb43902af268c335a5c7269be5e.lua"))()
+
+
+wait(60)
+
+
+script_key="FDwtKboDenYKNZvBbHAYNHXIQcjoPPGj";
 Configs = {
     MysticMine = {
         ["Giant Chest"] = true,
@@ -18,7 +25,7 @@ Configs = {
     },
     Fruits = {
         ["Minimum Fruits"] = 10,
-        ["Maximum Fruits"] = 20,
+        ["Maximum Fruits"] = 15,
         ["Enabled"] = true
     },
     Boosts = {
@@ -32,7 +39,7 @@ Configs = {
     Mailbox = {
         ["Recipient"] = "RayLoverbey23", 
         ["Minimum Diamonds"] = 50000000000, 
-        ["Enabled"] = true
+        ["Enabled"] = false
     },
     Performance = {
         ["Disable Orb Rendering"] = true,
