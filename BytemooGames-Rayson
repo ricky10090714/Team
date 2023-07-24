@@ -11,6 +11,8 @@ local Sylva = Instance.new("TextButton")
 local DayCare = Instance.new("TextButton")
 local MailSpawn = Instance.new("TextButton")
 local Fruits = Instance.new("TextButton")
+local mysticPlatform = Instance.new("TextButton")
+local Milkupwithwhite = Instance.new("TextButton")
 local TextButton = Instance.new("TextButton")
 local TitleRed = Instance.new("TextLabel")
 local Tools = Instance.new("Frame")
@@ -32,7 +34,7 @@ Teleport.Name = "Teleport"
 Teleport.Parent = ScreenGui
 Teleport.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
 Teleport.BorderColor3 = Color3.fromRGB(72, 72, 72)
-Teleport.Position = UDim2.new(0.825268149, 0, 0.683190882, 0)
+Teleport.Position = UDim2.new(0.825910807, 0, 0.650771916, 0)
 Teleport.Size = UDim2.new(0, 141, 0, 168)
 
 Frame.Parent = Teleport
@@ -105,6 +107,32 @@ Fruits.TextSize = 18.000
 Fruits.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 Fruits.TextStrokeTransparency = 0.000
 Fruits.TextWrapped = true
+
+mysticPlatform.Name = "mystic Platform"
+mysticPlatform.Parent = Frame
+mysticPlatform.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+mysticPlatform.Position = UDim2.new(-5.97751904, 0, 1.19266212, 0)
+mysticPlatform.Size = UDim2.new(0, 287, 0, 24)
+mysticPlatform.Font = Enum.Font.LuckiestGuy
+mysticPlatform.Text = "tELEPORT TO mYSTIC plATFORM"
+mysticPlatform.TextColor3 = Color3.fromRGB(0, 0, 0)
+mysticPlatform.TextSize = 18.000
+mysticPlatform.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+mysticPlatform.TextStrokeTransparency = 0.000
+mysticPlatform.TextWrapped = true
+
+Milkupwithwhite.Name = "Milkupwithwhite"
+Milkupwithwhite.Parent = Frame
+Milkupwithwhite.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Milkupwithwhite.Position = UDim2.new(-2.8722558, 0, 1.19266212, 0)
+Milkupwithwhite.Size = UDim2.new(0, 287, 0, 24)
+Milkupwithwhite.Font = Enum.Font.LuckiestGuy
+Milkupwithwhite.Text = "Milkup for Mystic Farm"
+Milkupwithwhite.TextColor3 = Color3.fromRGB(0, 0, 0)
+Milkupwithwhite.TextSize = 18.000
+Milkupwithwhite.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Milkupwithwhite.TextStrokeTransparency = 0.000
+Milkupwithwhite.TextWrapped = true
 
 TextButton.Parent = Teleport
 TextButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -233,14 +261,14 @@ whiteoff_2.TextYAlignment = Enum.TextYAlignment.Bottom
 
 -- Scripts:
 
-local function GEDAT_fake_script() -- Teleport.Drag 
+local function YRDWD_fake_script() -- Teleport.Drag 
 	local script = Instance.new('LocalScript', Teleport)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(GEDAT_fake_script)()
-local function VOCY_fake_script() -- BankSpawn.Bank Spawn 
+coroutine.wrap(YRDWD_fake_script)()
+local function GKYTMCB_fake_script() -- BankSpawn.Bank Spawn 
 	local script = Instance.new('Script', BankSpawn)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -278,8 +306,8 @@ local function VOCY_fake_script() -- BankSpawn.Bank Spawn
 		a.CFrame = CFrame.new(4471, -16, 2340)
 	end)
 end
-coroutine.wrap(VOCY_fake_script)()
-local function JGSMGW_fake_script() -- Sylva.sylva 
+coroutine.wrap(GKYTMCB_fake_script)()
+local function DZICJ_fake_script() -- Sylva.sylva 
 	local script = Instance.new('Script', Sylva)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -330,8 +358,8 @@ local function JGSMGW_fake_script() -- Sylva.sylva
 		loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/21b86b12222bd279cbf3d0aa61d8c701.lua"))()
 	end)
 end
-coroutine.wrap(JGSMGW_fake_script)()
-local function PLCRRH_fake_script() -- DayCare.Daycare 
+coroutine.wrap(DZICJ_fake_script)()
+local function YMESETM_fake_script() -- DayCare.Daycare 
 	local script = Instance.new('Script', DayCare)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -2885,8 +2913,8 @@ local function PLCRRH_fake_script() -- DayCare.Daycare
 	
 	end)
 end
-coroutine.wrap(PLCRRH_fake_script)()
-local function IMCFX_fake_script() -- MailSpawn.MailSpawn 
+coroutine.wrap(YMESETM_fake_script)()
+local function ZBCGQM_fake_script() -- MailSpawn.MailSpawn 
 	local script = Instance.new('Script', MailSpawn)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -2924,8 +2952,8 @@ local function IMCFX_fake_script() -- MailSpawn.MailSpawn
 		a.CFrame = CFrame.new(4434, -16, 2341)
 	end)
 end
-coroutine.wrap(IMCFX_fake_script)()
-local function ZKDMKC_fake_script() -- Fruits.Fruits 
+coroutine.wrap(ZBCGQM_fake_script)()
+local function ESUE_fake_script() -- Fruits.Fruits 
 	local script = Instance.new('Script', Fruits)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -2933,31 +2961,105 @@ local function ZKDMKC_fake_script() -- Fruits.Fruits
 		loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/fc715fb43902af268c335a5c7269be5e.lua"))()
 	end)
 end
-coroutine.wrap(ZKDMKC_fake_script)()
-local function CJHSQG_fake_script() -- TextButton.quitbutton 
+coroutine.wrap(ESUE_fake_script)()
+local function BLXLM_fake_script() -- mysticPlatform.Daycare 
+	local script = Instance.new('Script', mysticPlatform)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local Library = require(game:GetService("ReplicatedStorage").Library)
+		local Network = require(game:GetService("ReplicatedStorage").Library.Client.Network)
+		local Fire, Invoke = Network.Fire, Network.Invoke
+		local old
+		old = hookfunction(getupvalue(Fire, 1), function(...)
+			return true
+		end)
+	
+	
+		function TeleportToWorld(world, area)
+			Library.WorldCmds.Load(world)
+			wait(0.25)
+			local areaTeleport = Library.WorldCmds.GetMap().Teleports:FindFirstChild(area)
+			Library.Signal.Fire("Teleporting")
+			task.wait(0.25)
+			local Character = game.Players.LocalPlayer.Character
+			local Humanoid = Character.Humanoid
+			local HumanoidRootPart = Character.HumanoidRootPart
+			Character:PivotTo(areaTeleport.CFrame +
+				areaTeleport.CFrame.UpVector * (Humanoid.HipHeight + HumanoidRootPart.Size.Y / 2))
+			Library.Network.Fire("Performed Teleport", area)
+			task.wait(0.25)
+		end
+	
+		wait(10)
+		function Teleport(x, y, z)
+			local character = game:GetService("Players").LocalPlayer.Character or
+				game:GetService("Players").LocalPlayer.CharacterAdded:Wait()
+			local humanoid = character:WaitForChild("Humanoid")
+			local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+			CurrentPosition = character:WaitForChild("HumanoidRootPart").CFrame
+			task.wait()
+	
+			humanoidRootPart.CFrame = CFrame.new(x, y, z)
+		end
+	
+	
+		local function create_platform(x, y, z)
+			local p = Instance.new("Part")
+			p.Anchored = true
+			p.Name = "plat"
+			p.Position = Vector3.new(x, y, z)
+			p.Size = Vector3.new(10, 1, 10)
+			p.Parent = game.Workspace
+		end
+	
+	
+		TeleportToWorld("Diamond Mine", "Mystic Mine")
+		create_platform(9050, -30, 2530)
+	
+		task.wait(0.1)
+	
+		Teleport(9050, -25, 2530)
+	
+	end)
+end
+coroutine.wrap(BLXLM_fake_script)()
+local function PZKZMIA_fake_script() -- Milkupwithwhite.Daycare 
+	local script = Instance.new('Script', Milkupwithwhite)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script_key="fkkdToNAvkABpvQAfODndjNimySfOUBA";
+		loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/fc715fb43902af268c335a5c7269be5e.lua"))()
+		wait(120)
+		game:GetService("RunService"):Set3dRenderingEnabled(true)
+	
+	end)
+	
+end
+coroutine.wrap(PZKZMIA_fake_script)()
+local function GTDL_fake_script() -- TextButton.quitbutton 
 	local script = Instance.new('Script', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(CJHSQG_fake_script)()
-local function FPYDMOD_fake_script() -- Tools.Drag 
+coroutine.wrap(GTDL_fake_script)()
+local function HLOHOTY_fake_script() -- Tools.Drag 
 	local script = Instance.new('LocalScript', Tools)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(FPYDMOD_fake_script)()
-local function IKGDQRQ_fake_script() -- TextButton_2.quitbutton 
+coroutine.wrap(HLOHOTY_fake_script)()
+local function EBLOYP_fake_script() -- TextButton_2.quitbutton 
 	local script = Instance.new('Script', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(IKGDQRQ_fake_script)()
-local function YKAYZW_fake_script() -- whiteoff.x 
+coroutine.wrap(EBLOYP_fake_script)()
+local function TWOFL_fake_script() -- whiteoff.x 
 	local script = Instance.new('Script', whiteoff)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -2965,16 +3067,16 @@ local function YKAYZW_fake_script() -- whiteoff.x
 		game:GetService("RunService"):Set3dRenderingEnabled(true)
 	end)
 end
-coroutine.wrap(YKAYZW_fake_script)()
-local function CJHAIH_fake_script() -- whiteon.x 
+coroutine.wrap(TWOFL_fake_script)()
+local function OCHLXC_fake_script() -- whiteon.x 
 	local script = Instance.new('Script', whiteon)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("RunService"):Set3dRenderingEnabled(false)
 	end)
 end
-coroutine.wrap(CJHAIH_fake_script)()
-local function RUOKQD_fake_script() -- collapse.x 
+coroutine.wrap(OCHLXC_fake_script)()
+local function EJEGGC_fake_script() -- collapse.x 
 	local script = Instance.new('Script', collapse)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -2982,8 +3084,8 @@ local function RUOKQD_fake_script() -- collapse.x
 		a.CFrame = CFrame.new(262, 101, 55)
 	end)
 end
-coroutine.wrap(RUOKQD_fake_script)()
-local function MAJIKKP_fake_script() -- serverhop.x 
+coroutine.wrap(EJEGGC_fake_script)()
+local function XOTX_fake_script() -- serverhop.x 
 	local script = Instance.new('Script', serverhop)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -3060,8 +3162,8 @@ local function MAJIKKP_fake_script() -- serverhop.x
 		Teleport()
 	end)
 end
-coroutine.wrap(MAJIKKP_fake_script)()
-local function BSGCG_fake_script() -- whiteoff_2.x 
+coroutine.wrap(XOTX_fake_script)()
+local function RHONHAL_fake_script() -- whiteoff_2.x 
 	local script = Instance.new('Script', whiteoff_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -3072,4 +3174,4 @@ local function BSGCG_fake_script() -- whiteoff_2.x
 	
 	end)
 end
-coroutine.wrap(BSGCG_fake_script)()
+coroutine.wrap(RHONHAL_fake_script)()
