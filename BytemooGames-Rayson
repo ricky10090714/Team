@@ -11,7 +11,6 @@ local Sylva = Instance.new("TextButton")
 local DayCare = Instance.new("TextButton")
 local MailSpawn = Instance.new("TextButton")
 local Fruits = Instance.new("TextButton")
-local Milkupmine = Instance.new("TextButton")
 local TextButton = Instance.new("TextButton")
 local TitleRed = Instance.new("TextLabel")
 local Tools = Instance.new("Frame")
@@ -23,6 +22,9 @@ local whiteon = Instance.new("TextButton")
 local collapse = Instance.new("TextButton")
 local serverhop = Instance.new("TextButton")
 local whiteoff_2 = Instance.new("TextButton")
+local Teleport_2 = Instance.new("Frame")
+local TextButton_3 = Instance.new("TextButton")
+local Milkupmine = Instance.new("TextButton")
 
 --Properties:
 
@@ -33,7 +35,7 @@ Teleport.Name = "Teleport"
 Teleport.Parent = ScreenGui
 Teleport.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
 Teleport.BorderColor3 = Color3.fromRGB(72, 72, 72)
-Teleport.Position = UDim2.new(0.825910807, 0, 0.650771916, 0)
+Teleport.Position = UDim2.new(0.825268149, 0, 0.594662189, 0)
 Teleport.Size = UDim2.new(0, 141, 0, 168)
 
 Frame.Parent = Teleport
@@ -106,19 +108,6 @@ Fruits.TextSize = 18.000
 Fruits.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 Fruits.TextStrokeTransparency = 0.000
 Fruits.TextWrapped = true
-
-Milkupmine.Name = "Milkupmine"
-Milkupmine.Parent = Frame
-Milkupmine.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-Milkupmine.Position = UDim2.new(-7.51893967e-05, 0, -0.420287758, 0)
-Milkupmine.Size = UDim2.new(0, 125, 0, 24)
-Milkupmine.Font = Enum.Font.LuckiestGuy
-Milkupmine.Text = "Milkup Mine"
-Milkupmine.TextColor3 = Color3.fromRGB(0, 0, 0)
-Milkupmine.TextSize = 18.000
-Milkupmine.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-Milkupmine.TextStrokeTransparency = 0.000
-Milkupmine.TextWrapped = true
 
 TextButton.Parent = Teleport
 TextButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -245,16 +234,46 @@ whiteoff_2.TextStrokeTransparency = 0.000
 whiteoff_2.TextWrapped = true
 whiteoff_2.TextYAlignment = Enum.TextYAlignment.Bottom
 
+Teleport_2.Name = "Teleport"
+Teleport_2.Parent = ScreenGui
+Teleport_2.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Teleport_2.BorderColor3 = Color3.fromRGB(72, 72, 72)
+Teleport_2.Position = UDim2.new(0.654959679, 0, 0.819101095, 0)
+Teleport_2.Size = UDim2.new(0, 136, 0, 35)
+
+TextButton_3.Parent = Teleport_2
+TextButton_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.Position = UDim2.new(0.917239547, 0, -0.201956004, 0)
+TextButton_3.Size = UDim2.new(0, 11, 0, 13)
+TextButton_3.Font = Enum.Font.LuckiestGuy
+TextButton_3.Text = "X"
+TextButton_3.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_3.TextSize = 14.000
+
+Milkupmine.Name = "Milkupmine"
+Milkupmine.Parent = Teleport_2
+Milkupmine.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Milkupmine.Position = UDim2.new(0.0514365435, 0, 0.16363661, 0)
+Milkupmine.Size = UDim2.new(0, 125, 0, 24)
+Milkupmine.Font = Enum.Font.LuckiestGuy
+Milkupmine.Text = "Milkup Mine"
+Milkupmine.TextColor3 = Color3.fromRGB(0, 0, 0)
+Milkupmine.TextSize = 18.000
+Milkupmine.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Milkupmine.TextStrokeTransparency = 0.000
+Milkupmine.TextWrapped = true
+
 -- Scripts:
 
-local function TTDAAXB_fake_script() -- Teleport.Drag 
+local function SJJZETQ_fake_script() -- Teleport.Drag 
 	local script = Instance.new('LocalScript', Teleport)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(TTDAAXB_fake_script)()
-local function RNVZ_fake_script() -- BankSpawn.Bank Spawn 
+coroutine.wrap(SJJZETQ_fake_script)()
+local function XPQLRB_fake_script() -- BankSpawn.Bank Spawn 
 	local script = Instance.new('Script', BankSpawn)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -292,8 +311,8 @@ local function RNVZ_fake_script() -- BankSpawn.Bank Spawn
 		a.CFrame = CFrame.new(4471, -16, 2340)
 	end)
 end
-coroutine.wrap(RNVZ_fake_script)()
-local function NUAFX_fake_script() -- Sylva.sylva 
+coroutine.wrap(XPQLRB_fake_script)()
+local function WVJNJK_fake_script() -- Sylva.sylva 
 	local script = Instance.new('Script', Sylva)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -344,8 +363,8 @@ local function NUAFX_fake_script() -- Sylva.sylva
 		loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/21b86b12222bd279cbf3d0aa61d8c701.lua"))()
 	end)
 end
-coroutine.wrap(NUAFX_fake_script)()
-local function QGVZ_fake_script() -- DayCare.Daycare 
+coroutine.wrap(WVJNJK_fake_script)()
+local function ORQBABO_fake_script() -- DayCare.Daycare 
 	local script = Instance.new('Script', DayCare)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -2899,8 +2918,8 @@ local function QGVZ_fake_script() -- DayCare.Daycare
 	
 	end)
 end
-coroutine.wrap(QGVZ_fake_script)()
-local function TZKWMAF_fake_script() -- MailSpawn.MailSpawn 
+coroutine.wrap(ORQBABO_fake_script)()
+local function KTAUI_fake_script() -- MailSpawn.MailSpawn 
 	local script = Instance.new('Script', MailSpawn)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -2938,8 +2957,8 @@ local function TZKWMAF_fake_script() -- MailSpawn.MailSpawn
 		a.CFrame = CFrame.new(4434, -16, 2341)
 	end)
 end
-coroutine.wrap(TZKWMAF_fake_script)()
-local function OAGSKFX_fake_script() -- Fruits.Fruits 
+coroutine.wrap(KTAUI_fake_script)()
+local function VTPVKGR_fake_script() -- Fruits.Fruits 
 	local script = Instance.new('Script', Fruits)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -2947,97 +2966,31 @@ local function OAGSKFX_fake_script() -- Fruits.Fruits
 		loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/fc715fb43902af268c335a5c7269be5e.lua"))()
 	end)
 end
-coroutine.wrap(OAGSKFX_fake_script)()
-local function PXAUYWH_fake_script() -- Milkupmine.Fruits 
-	local script = Instance.new('Script', Milkupmine)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		local Library = require(game:GetService("ReplicatedStorage").Library)
-		local Network = require(game:GetService("ReplicatedStorage").Library.Client.Network)
-		local Fire, Invoke = Network.Fire, Network.Invoke
-		local old
-		old = hookfunction(getupvalue(Fire, 1), function(...)
-			return true
-		end)
-	
-	
-		function TeleportToWorld(world, area)
-			Library.WorldCmds.Load(world)
-			wait(0.25)
-			local areaTeleport = Library.WorldCmds.GetMap().Teleports:FindFirstChild(area)
-			Library.Signal.Fire("Teleporting")
-			task.wait(0.25)
-			local Character = game.Players.LocalPlayer.Character
-			local Humanoid = Character.Humanoid
-			local HumanoidRootPart = Character.HumanoidRootPart
-			Character:PivotTo(areaTeleport.CFrame +
-				areaTeleport.CFrame.UpVector * (Humanoid.HipHeight + HumanoidRootPart.Size.Y / 2))
-			Library.Network.Fire("Performed Teleport", area)
-			task.wait(0.25)
-		end
-	
-		wait(10)
-		function Teleport(x, y, z)
-			local character = game:GetService("Players").LocalPlayer.Character or
-				game:GetService("Players").LocalPlayer.CharacterAdded:Wait()
-			local humanoid = character:WaitForChild("Humanoid")
-			local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
-			CurrentPosition = character:WaitForChild("HumanoidRootPart").CFrame
-			task.wait()
-	
-			humanoidRootPart.CFrame = CFrame.new(x, y, z)
-		end
-	
-	
-		local function create_platform(x, y, z)
-			local p = Instance.new("Part")
-			p.Anchored = true
-			p.Name = "plat"
-			p.Position = Vector3.new(x, y, z)
-			p.Size = Vector3.new(10, 1, 10)
-			p.Parent = game.Workspace
-		end
-	
-	
-		TeleportToWorld("Diamond Mine", "Mystic Mine")
-		create_platform(9050, -30, 2530)
-	
-		task.wait(0.1)
-	
-		Teleport(9050, -25, 2530)
-	
-		wait(30)
-		script_key="fkkdToNAvkABpvQAfODndjNimySfOUBA";
-		loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/fc715fb43902af268c335a5c7269be5e.lua"))()
-		wait(180)
-		game:GetService("RunService"):Set3dRenderingEnabled(true)
-	end)
-end
-coroutine.wrap(PXAUYWH_fake_script)()
-local function ZAWFHU_fake_script() -- TextButton.quitbutton 
+coroutine.wrap(VTPVKGR_fake_script)()
+local function PNSPVS_fake_script() -- TextButton.quitbutton 
 	local script = Instance.new('Script', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(ZAWFHU_fake_script)()
-local function XROM_fake_script() -- Tools.Drag 
+coroutine.wrap(PNSPVS_fake_script)()
+local function CYBHYGT_fake_script() -- Tools.Drag 
 	local script = Instance.new('LocalScript', Tools)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(XROM_fake_script)()
-local function LITF_fake_script() -- TextButton_2.quitbutton 
+coroutine.wrap(CYBHYGT_fake_script)()
+local function AYJOFTP_fake_script() -- TextButton_2.quitbutton 
 	local script = Instance.new('Script', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(LITF_fake_script)()
-local function WVOJ_fake_script() -- whiteoff.x 
+coroutine.wrap(AYJOFTP_fake_script)()
+local function FWWMR_fake_script() -- whiteoff.x 
 	local script = Instance.new('Script', whiteoff)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -3045,16 +2998,16 @@ local function WVOJ_fake_script() -- whiteoff.x
 		game:GetService("RunService"):Set3dRenderingEnabled(true)
 	end)
 end
-coroutine.wrap(WVOJ_fake_script)()
-local function PBOHZEY_fake_script() -- whiteon.x 
+coroutine.wrap(FWWMR_fake_script)()
+local function DEUF_fake_script() -- whiteon.x 
 	local script = Instance.new('Script', whiteon)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("RunService"):Set3dRenderingEnabled(false)
 	end)
 end
-coroutine.wrap(PBOHZEY_fake_script)()
-local function DCFAH_fake_script() -- collapse.x 
+coroutine.wrap(DEUF_fake_script)()
+local function OHDD_fake_script() -- collapse.x 
 	local script = Instance.new('Script', collapse)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -3062,8 +3015,8 @@ local function DCFAH_fake_script() -- collapse.x
 		a.CFrame = CFrame.new(262, 101, 55)
 	end)
 end
-coroutine.wrap(DCFAH_fake_script)()
-local function VCHT_fake_script() -- serverhop.x 
+coroutine.wrap(OHDD_fake_script)()
+local function FJVWNSD_fake_script() -- serverhop.x 
 	local script = Instance.new('Script', serverhop)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -3140,8 +3093,8 @@ local function VCHT_fake_script() -- serverhop.x
 		Teleport()
 	end)
 end
-coroutine.wrap(VCHT_fake_script)()
-local function BMICCCT_fake_script() -- whiteoff_2.x 
+coroutine.wrap(FJVWNSD_fake_script)()
+local function TLOKGJR_fake_script() -- whiteoff_2.x 
 	local script = Instance.new('Script', whiteoff_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -3152,4 +3105,85 @@ local function BMICCCT_fake_script() -- whiteoff_2.x
 	
 	end)
 end
-coroutine.wrap(BMICCCT_fake_script)()
+coroutine.wrap(TLOKGJR_fake_script)()
+local function LFAYP_fake_script() -- Teleport_2.Drag 
+	local script = Instance.new('LocalScript', Teleport_2)
+
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(LFAYP_fake_script)()
+local function NPRQMJB_fake_script() -- TextButton_3.quitbutton 
+	local script = Instance.new('Script', TextButton_3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(NPRQMJB_fake_script)()
+local function YJBMB_fake_script() -- Milkupmine.Fruits 
+	local script = Instance.new('Script', Milkupmine)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local Library = require(game:GetService("ReplicatedStorage").Library)
+		local Network = require(game:GetService("ReplicatedStorage").Library.Client.Network)
+		local Fire, Invoke = Network.Fire, Network.Invoke
+		local old
+		old = hookfunction(getupvalue(Fire, 1), function(...)
+			return true
+		end)
+	
+	
+		function TeleportToWorld(world, area)
+			Library.WorldCmds.Load(world)
+			wait(0.25)
+			local areaTeleport = Library.WorldCmds.GetMap().Teleports:FindFirstChild(area)
+			Library.Signal.Fire("Teleporting")
+			task.wait(0.25)
+			local Character = game.Players.LocalPlayer.Character
+			local Humanoid = Character.Humanoid
+			local HumanoidRootPart = Character.HumanoidRootPart
+			Character:PivotTo(areaTeleport.CFrame +
+				areaTeleport.CFrame.UpVector * (Humanoid.HipHeight + HumanoidRootPart.Size.Y / 2))
+			Library.Network.Fire("Performed Teleport", area)
+			task.wait(0.25)
+		end
+	
+		wait(10)
+		function Teleport(x, y, z)
+			local character = game:GetService("Players").LocalPlayer.Character or
+				game:GetService("Players").LocalPlayer.CharacterAdded:Wait()
+			local humanoid = character:WaitForChild("Humanoid")
+			local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+			CurrentPosition = character:WaitForChild("HumanoidRootPart").CFrame
+			task.wait()
+	
+			humanoidRootPart.CFrame = CFrame.new(x, y, z)
+		end
+	
+	
+		local function create_platform(x, y, z)
+			local p = Instance.new("Part")
+			p.Anchored = true
+			p.Name = "plat"
+			p.Position = Vector3.new(x, y, z)
+			p.Size = Vector3.new(10, 1, 10)
+			p.Parent = game.Workspace
+		end
+	
+	
+		TeleportToWorld("Diamond Mine", "Mystic Mine")
+		create_platform(9050, -30, 2530)
+	
+		task.wait(0.1)
+	
+		Teleport(9050, -25, 2530)
+	
+		task.wait(30)
+		script_key="vOwThXUrdytWYVEOBafxIzDDSoZEqSQo";
+		loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/fc715fb43902af268c335a5c7269be5e.lua"))()
+		task.wait(180)
+		game:GetService("RunService"):Set3dRenderingEnabled(true)
+	end)
+end
+coroutine.wrap(YJBMB_fake_script)()
