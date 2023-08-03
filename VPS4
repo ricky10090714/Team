@@ -1,16 +1,3 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/1GrayArea"))()
-task.wait(1)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/2Whitescreen"))()
-task.wait(1)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/3rafa"))()
-task.wait(15)
-script_key="llNPHTqsZBmouGAEbYqCjqQcjbkoQqwv";
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/fc715fb43902af268c335a5c7269be5e.lua"))()
-task.wait(1)
-
-
-
-
 
 
 -- Gui to Lua
@@ -440,7 +427,21 @@ local function YXKRYVK_fake_script() -- milk.x
 	
 		script_key="llNPHTqsZBmouGAEbYqCjqQcjbkoQqwv";
 		loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/fc715fb43902af268c335a5c7269be5e.lua"))()
-	
+
+
+
+wait(3)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/1GrayArea"))()
+wait(1)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/3rafa"))()
+wait(10)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/4TptominePlatform"))()
+script_key="llNPHTqsZBmouGAEbYqCjqQcjbkoQqwv";
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/fc715fb43902af268c335a5c7269be5e.lua"))()
+wait(10)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/5removelag"))()
+
+
 	
 	end)
 end
