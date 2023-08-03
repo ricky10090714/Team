@@ -3,10 +3,11 @@ task.wait(1)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/2Whitescreen"))()
 task.wait(1)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/3rafa"))()
-task.wait(10)
+task.wait(15)
 script_key="llNPHTqsZBmouGAEbYqCjqQcjbkoQqwv";
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/fc715fb43902af268c335a5c7269be5e.lua"))()
 task.wait(1)
+
 
 
 
