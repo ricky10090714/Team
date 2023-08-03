@@ -457,4 +457,5 @@ wait(10)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/4TptominePlatform"))()
 script_key="llNPHTqsZBmouGAEbYqCjqQcjbkoQqwv";
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/fc715fb43902af268c335a5c7269be5e.lua"))()
-task.wait(1)
+wait(10)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/5removelag"))()
