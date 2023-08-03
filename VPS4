@@ -169,22 +169,22 @@ milk.TextYAlignment = Enum.TextYAlignment.Bottom
 
 -- Scripts:
 
-local function VNZJLVN_fake_script() -- Tools.Drag 
+local function HTNYO_fake_script() -- Tools.Drag 
 	local script = Instance.new('LocalScript', Tools)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(VNZJLVN_fake_script)()
-local function EDLG_fake_script() -- TextButton.quitbutton 
+coroutine.wrap(HTNYO_fake_script)()
+local function QKWGJ_fake_script() -- TextButton.quitbutton 
 	local script = Instance.new('Script', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(EDLG_fake_script)()
-local function ZQWMKXN_fake_script() -- whiteoff.x 
+coroutine.wrap(QKWGJ_fake_script)()
+local function NLKW_fake_script() -- whiteoff.x 
 	local script = Instance.new('Script', whiteoff)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -192,16 +192,16 @@ local function ZQWMKXN_fake_script() -- whiteoff.x
 		game:GetService("RunService"):Set3dRenderingEnabled(true)
 	end)
 end
-coroutine.wrap(ZQWMKXN_fake_script)()
-local function CTTHPY_fake_script() -- whiteon.x 
+coroutine.wrap(NLKW_fake_script)()
+local function DUNAX_fake_script() -- whiteon.x 
 	local script = Instance.new('Script', whiteon)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("RunService"):Set3dRenderingEnabled(false)
 	end)
 end
-coroutine.wrap(CTTHPY_fake_script)()
-local function AMQHRDK_fake_script() -- collapse.x 
+coroutine.wrap(DUNAX_fake_script)()
+local function ZHOU_fake_script() -- collapse.x 
 	local script = Instance.new('Script', collapse)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -209,8 +209,8 @@ local function AMQHRDK_fake_script() -- collapse.x
 		a.CFrame = CFrame.new(262, 101, 55)
 	end)
 end
-coroutine.wrap(AMQHRDK_fake_script)()
-local function REEQCM_fake_script() -- serverhop.x 
+coroutine.wrap(ZHOU_fake_script)()
+local function KIPA_fake_script() -- serverhop.x 
 	local script = Instance.new('Script', serverhop)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -287,8 +287,8 @@ local function REEQCM_fake_script() -- serverhop.x
 		Teleport()
 	end)
 end
-coroutine.wrap(REEQCM_fake_script)()
-local function XMGG_fake_script() -- platform.x 
+coroutine.wrap(KIPA_fake_script)()
+local function BHQWSBJ_fake_script() -- platform.x 
 	local script = Instance.new('Script', platform)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -350,8 +350,8 @@ local function XMGG_fake_script() -- platform.x
 	
 	end)
 end
-coroutine.wrap(XMGG_fake_script)()
-local function NNGNAPA_fake_script() -- BankTele.x 
+coroutine.wrap(BHQWSBJ_fake_script)()
+local function LTLGC_fake_script() -- BankTele.x 
 	local script = Instance.new('Script', BankTele)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -389,8 +389,8 @@ local function NNGNAPA_fake_script() -- BankTele.x
 		a.CFrame = CFrame.new(4471, -16, 2340)
 	end)
 end
-coroutine.wrap(NNGNAPA_fake_script)()
-local function TYUOPNG_fake_script() -- Mailbox.x 
+coroutine.wrap(LTLGC_fake_script)()
+local function HBAABE_fake_script() -- Mailbox.x 
 	local script = Instance.new('Script', Mailbox)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -428,8 +428,8 @@ local function TYUOPNG_fake_script() -- Mailbox.x
 		a.CFrame = CFrame.new(4434, -16, 2341)
 	end)
 end
-coroutine.wrap(TYUOPNG_fake_script)()
-local function IYQLF_fake_script() -- milk.x 
+coroutine.wrap(HBAABE_fake_script)()
+local function CRIQDT_fake_script() -- milk.x 
 	local script = Instance.new('Script', milk)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -440,9 +440,5 @@ local function IYQLF_fake_script() -- milk.x
 	
 	end)
 end
-coroutine.wrap(IYQLF_fake_script)()
+coroutine.wrap(CRIQDT_fake_script)()
 
-	
-	end)
-end
-coroutine.wrap(ILOYV_fake_script)()
