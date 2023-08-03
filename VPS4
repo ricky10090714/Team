@@ -1,5 +1,3 @@
-
-
 -- Gui to Lua
 -- Version: 3.2
 
@@ -10,9 +8,9 @@ local Tools = Instance.new("Frame")
 local TextButton = Instance.new("TextButton")
 local Frame = Instance.new("Frame")
 local whiteoff = Instance.new("TextButton")
-local whiteon = Instance.new("TextButton")
+local woff = Instance.new("TextButton")
 local collapse = Instance.new("TextButton")
-local serverhop = Instance.new("TextButton")
+local won = Instance.new("TextButton")
 local platform = Instance.new("TextButton")
 local BankTele = Instance.new("TextButton")
 local Mailbox = Instance.new("TextButton")
@@ -49,10 +47,10 @@ Frame.Size = UDim2.new(0, 132, 0, 251)
 whiteoff.Name = "whiteoff"
 whiteoff.Parent = Frame
 whiteoff.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-whiteoff.Position = UDim2.new(0.0299999993, 0, 0.370000005, 0)
+whiteoff.Position = UDim2.new(0.0299999993, 0, 0.395000011, 0)
 whiteoff.Size = UDim2.new(0, 125, 0, 27)
 whiteoff.Font = Enum.Font.LuckiestGuy
-whiteoff.Text = "White Off"
+whiteoff.Text = "Refresh"
 whiteoff.TextColor3 = Color3.fromRGB(0, 0, 0)
 whiteoff.TextSize = 18.000
 whiteoff.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
@@ -60,19 +58,19 @@ whiteoff.TextStrokeTransparency = 0.000
 whiteoff.TextWrapped = true
 whiteoff.TextYAlignment = Enum.TextYAlignment.Bottom
 
-whiteon.Name = "whiteon"
-whiteon.Parent = Frame
-whiteon.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-whiteon.Position = UDim2.new(0.0299999993, 0, 0.25, 0)
-whiteon.Size = UDim2.new(0, 125, 0, 27)
-whiteon.Font = Enum.Font.LuckiestGuy
-whiteon.Text = "White On"
-whiteon.TextColor3 = Color3.fromRGB(0, 0, 0)
-whiteon.TextSize = 18.000
-whiteon.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-whiteon.TextStrokeTransparency = 0.000
-whiteon.TextWrapped = true
-whiteon.TextYAlignment = Enum.TextYAlignment.Bottom
+woff.Name = "woff"
+woff.Parent = Frame
+woff.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+woff.Position = UDim2.new(0.0299999993, 0, 0.25, 0)
+woff.Size = UDim2.new(0, 125, 0, 27)
+woff.Font = Enum.Font.LuckiestGuy
+woff.Text = "White Off"
+woff.TextColor3 = Color3.fromRGB(0, 0, 0)
+woff.TextSize = 18.000
+woff.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+woff.TextStrokeTransparency = 0.000
+woff.TextWrapped = true
+woff.TextYAlignment = Enum.TextYAlignment.Bottom
 
 collapse.Name = "collapse"
 collapse.Parent = Frame
@@ -88,19 +86,19 @@ collapse.TextStrokeTransparency = 0.000
 collapse.TextWrapped = true
 collapse.TextYAlignment = Enum.TextYAlignment.Bottom
 
-serverhop.Name = "serverhop"
-serverhop.Parent = Frame
-serverhop.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-serverhop.Position = UDim2.new(0.0299999993, 0, 0.129999995, 0)
-serverhop.Size = UDim2.new(0, 125, 0, 27)
-serverhop.Font = Enum.Font.LuckiestGuy
-serverhop.Text = "ServerHop"
-serverhop.TextColor3 = Color3.fromRGB(0, 0, 0)
-serverhop.TextSize = 17.000
-serverhop.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-serverhop.TextStrokeTransparency = 0.000
-serverhop.TextWrapped = true
-serverhop.TextYAlignment = Enum.TextYAlignment.Bottom
+won.Name = "won"
+won.Parent = Frame
+won.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+won.Position = UDim2.new(0.0299999993, 0, 0.129999995, 0)
+won.Size = UDim2.new(0, 125, 0, 27)
+won.Font = Enum.Font.LuckiestGuy
+won.Text = "White On"
+won.TextColor3 = Color3.fromRGB(0, 0, 0)
+won.TextSize = 17.000
+won.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+won.TextStrokeTransparency = 0.000
+won.TextWrapped = true
+won.TextYAlignment = Enum.TextYAlignment.Bottom
 
 platform.Name = "platform"
 platform.Parent = Frame
@@ -160,39 +158,121 @@ milk.TextYAlignment = Enum.TextYAlignment.Bottom
 
 -- Scripts:
 
-local function MADJ_fake_script() -- Tools.Drag 
+local function JPMMTSO_fake_script() -- Tools.Drag 
 	local script = Instance.new('LocalScript', Tools)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(MADJ_fake_script)()
-local function TFSHL_fake_script() -- TextButton.quitbutton 
+coroutine.wrap(JPMMTSO_fake_script)()
+local function BEJQ_fake_script() -- TextButton.quitbutton 
 	local script = Instance.new('Script', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(TFSHL_fake_script)()
-local function ESUHP_fake_script() -- whiteoff.x 
+coroutine.wrap(BEJQ_fake_script)()
+local function QOGIH_fake_script() -- whiteoff.x 
 	local script = Instance.new('Script', whiteoff)
 
 	script.Parent.MouseButton1Click:Connect(function()
+		local Library = require(game:GetService("ReplicatedStorage").Library)
+		local Network = require(game:GetService("ReplicatedStorage").Library.Client.Network)
+		local Fire, Invoke = Network.Fire, Network.Invoke
+		local old
+		old = hookfunction(getupvalue(Fire, 1), function(...)
+			return true
+		end)
 	
+	
+	
+		function TeleportToWorld(world, area)
+			Library.WorldCmds.Load(world)
+			wait(0.25)
+			local areaTeleport = Library.WorldCmds.GetMap().Teleports:FindFirstChild(area)
+			Library.Signal.Fire("Teleporting")
+			task.wait(0.25)
+			local Character = game.Players.LocalPlayer.Character
+			local Humanoid = Character.Humanoid
+			local HumanoidRootPart = Character.HumanoidRootPart
+			Character:PivotTo(areaTeleport.CFrame +
+				areaTeleport.CFrame.UpVector * (Humanoid.HipHeight + HumanoidRootPart.Size.Y / 2))
+			Library.Network.Fire("Performed Teleport", area)
+			task.wait(0.25)
+		end
+	
+	
+	
+	
+		TeleportToWorld("Pixel", "Pixel Forest")
+	task.wait(3)
+		local Library = require(game:GetService("ReplicatedStorage").Library)
+		local Network = require(game:GetService("ReplicatedStorage").Library.Client.Network)
+		local Fire, Invoke = Network.Fire, Network.Invoke
+		local old
+		old = hookfunction(getupvalue(Fire, 1), function(...)
+			return true
+		end)
+	
+	
+		function TeleportToWorld(world, area)
+			Library.WorldCmds.Load(world)
+			wait(0.25)
+			local areaTeleport = Library.WorldCmds.GetMap().Teleports:FindFirstChild(area)
+			Library.Signal.Fire("Teleporting")
+			task.wait(0.25)
+			local Character = game.Players.LocalPlayer.Character
+			local Humanoid = Character.Humanoid
+			local HumanoidRootPart = Character.HumanoidRootPart
+			Character:PivotTo(areaTeleport.CFrame +
+				areaTeleport.CFrame.UpVector * (Humanoid.HipHeight + HumanoidRootPart.Size.Y / 2))
+			Library.Network.Fire("Performed Teleport", area)
+			task.wait(0.25)
+		end
+	
+		wait(10)
+		function Teleport(x, y, z)
+			local character = game:GetService("Players").LocalPlayer.Character or
+				game:GetService("Players").LocalPlayer.CharacterAdded:Wait()
+			local humanoid = character:WaitForChild("Humanoid")
+			local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+			CurrentPosition = character:WaitForChild("HumanoidRootPart").CFrame
+			task.wait()
+	
+			humanoidRootPart.CFrame = CFrame.new(x, y, z)
+		end
+	
+	
+		local function create_platform(x, y, z)
+			local p = Instance.new("Part")
+			p.Anchored = true
+			p.Name = "plat"
+			p.Position = Vector3.new(x, y, z)
+			p.Size = Vector3.new(10, 1, 10)
+			p.Parent = game.Workspace
+		end
+	
+	
+		TeleportToWorld("Diamond Mine", "Mystic Mine")
+		create_platform(9050, -30, 2530)
+	
+		task.wait(0.1)
+	
+		Teleport(9050, -25, 2530)
+	
+	end)
+end
+coroutine.wrap(QOGIH_fake_script)()
+local function MIDVFCL_fake_script() -- woff.x 
+	local script = Instance.new('Script', woff)
+
+	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("RunService"):Set3dRenderingEnabled(true)
 	end)
 end
-coroutine.wrap(ESUHP_fake_script)()
-local function PLYAM_fake_script() -- whiteon.x 
-	local script = Instance.new('Script', whiteon)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		game:GetService("RunService"):Set3dRenderingEnabled(false)
-	end)
-end
-coroutine.wrap(PLYAM_fake_script)()
-local function UUDQ_fake_script() -- collapse.x 
+coroutine.wrap(MIDVFCL_fake_script)()
+local function CNNK_fake_script() -- collapse.x 
 	local script = Instance.new('Script', collapse)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -200,86 +280,16 @@ local function UUDQ_fake_script() -- collapse.x
 		a.CFrame = CFrame.new(262, 101, 55)
 	end)
 end
-coroutine.wrap(UUDQ_fake_script)()
-local function KFYFQ_fake_script() -- serverhop.x 
-	local script = Instance.new('Script', serverhop)
+coroutine.wrap(CNNK_fake_script)()
+local function YLDTVGV_fake_script() -- won.x 
+	local script = Instance.new('Script', won)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		local PlaceID = game.PlaceId
-		local AllIDs = {}
-		local foundAnything = ""
-		local actualHour = os.date("!*t").hour
-		local Deleted = false
-		local File = pcall(function()
-			AllIDs = game:GetService('HttpService'):JSONDecode(readfile("NotSameServers.json"))
-		end)
-		if not File then
-			table.insert(AllIDs, actualHour)
-			writefile("NotSameServers.json", game:GetService('HttpService'):JSONEncode(AllIDs))
-		end
-		function TPReturner()
-			local Site;
-			if foundAnything == "" then
-				Site = game.HttpService:JSONDecode(game:HttpGet('https://games.roblox.com/v1/games/' .. PlaceID .. '/servers/Public?sortOrder=Asc&limit=100'))
-			else
-				Site = game.HttpService:JSONDecode(game:HttpGet('https://games.roblox.com/v1/games/' .. PlaceID .. '/servers/Public?sortOrder=Asc&limit=100&cursor=' .. foundAnything))
-			end
-			local ID = ""
-			if Site.nextPageCursor and Site.nextPageCursor ~= "null" and Site.nextPageCursor ~= nil then
-				foundAnything = Site.nextPageCursor
-			end
-			local num = 0;
-			for i,v in pairs(Site.data) do
-				local Possible = true
-				ID = tostring(v.id)
-				if tonumber(v.maxPlayers) > tonumber(v.playing) then
-					for _,Existing in pairs(AllIDs) do
-						if num ~= 0 then
-							if ID == tostring(Existing) then
-								Possible = false
-							end
-						else
-							if tonumber(actualHour) ~= tonumber(Existing) then
-								local delFile = pcall(function()
-									delfile("NotSameServers.json")
-									AllIDs = {}
-									table.insert(AllIDs, actualHour)
-								end)
-							end
-						end
-						num = num + 1
-					end
-					if Possible == true then
-						table.insert(AllIDs, ID)
-						wait()
-						pcall(function()
-							writefile("NotSameServers.json", game:GetService('HttpService'):JSONEncode(AllIDs))
-							wait()
-							game:GetService("TeleportService"):TeleportToPlaceInstance(PlaceID, ID, game.Players.LocalPlayer)
-						end)
-						wait(4)
-					end
-				end
-			end
-		end
-	
-		function Teleport()
-			while wait() do
-				pcall(function()
-					TPReturner()
-					if foundAnything ~= "" then
-						TPReturner()
-					end
-				end)
-			end
-		end
-	
-		-- If you'd like to use a script before server hopping (Like a Automatic Chest collector you can put the Teleport() after it collected everything.
-		Teleport()
+		game:GetService("RunService"):Set3dRenderingEnabled(false)
 	end)
 end
-coroutine.wrap(KFYFQ_fake_script)()
-local function MAYI_fake_script() -- platform.x 
+coroutine.wrap(YLDTVGV_fake_script)()
+local function CXNXA_fake_script() -- platform.x 
 	local script = Instance.new('Script', platform)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -341,8 +351,8 @@ local function MAYI_fake_script() -- platform.x
 	
 	end)
 end
-coroutine.wrap(MAYI_fake_script)()
-local function DVLJP_fake_script() -- BankTele.x 
+coroutine.wrap(CXNXA_fake_script)()
+local function YTYKCK_fake_script() -- BankTele.x 
 	local script = Instance.new('Script', BankTele)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -380,8 +390,8 @@ local function DVLJP_fake_script() -- BankTele.x
 		a.CFrame = CFrame.new(4471, -16, 2340)
 	end)
 end
-coroutine.wrap(DVLJP_fake_script)()
-local function UCGMM_fake_script() -- Mailbox.x 
+coroutine.wrap(YTYKCK_fake_script)()
+local function HBPZQTR_fake_script() -- Mailbox.x 
 	local script = Instance.new('Script', Mailbox)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -419,14 +429,23 @@ local function UCGMM_fake_script() -- Mailbox.x
 		a.CFrame = CFrame.new(4434, -16, 2341)
 	end)
 end
-coroutine.wrap(UCGMM_fake_script)()
-local function YXKRYVK_fake_script() -- milk.x 
+coroutine.wrap(HBPZQTR_fake_script)()
+local function HZWNR_fake_script() -- milk.x 
 	local script = Instance.new('Script', milk)
 
 	script.Parent.MouseButton1Click:Connect(function()
 	
 		script_key="llNPHTqsZBmouGAEbYqCjqQcjbkoQqwv";
 		loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/fc715fb43902af268c335a5c7269be5e.lua"))()
+	
+	
+	end)
+end
+coroutine.wrap(HZWNR_fake_script)()
+
+
+
+
 
 
 
@@ -440,9 +459,3 @@ script_key="llNPHTqsZBmouGAEbYqCjqQcjbkoQqwv";
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/fc715fb43902af268c335a5c7269be5e.lua"))()
 wait(10)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/5removelag"))()
-
-
-	
-	end)
-end
-coroutine.wrap(YXKRYVK_fake_script)()
