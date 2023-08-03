@@ -36,7 +36,7 @@ Tools.Name = "Tools"
 Tools.Parent = ScreenGui
 Tools.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
 Tools.BorderColor3 = Color3.fromRGB(72, 72, 72)
-Tools.Position = UDim2.new(0.072870262, 0, 0.0718269646, 0)
+Tools.Position = UDim2.new(0.0942443162, 0, 0.0419017747, 0)
 Tools.Size = UDim2.new(0, 141, 0, 269)
 
 TextButton.Parent = Tools
@@ -169,22 +169,22 @@ milk.TextYAlignment = Enum.TextYAlignment.Bottom
 
 -- Scripts:
 
-local function SJPVVX_fake_script() -- Tools.Drag 
+local function VNZJLVN_fake_script() -- Tools.Drag 
 	local script = Instance.new('LocalScript', Tools)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(SJPVVX_fake_script)()
-local function MXWDO_fake_script() -- TextButton.quitbutton 
+coroutine.wrap(VNZJLVN_fake_script)()
+local function EDLG_fake_script() -- TextButton.quitbutton 
 	local script = Instance.new('Script', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(MXWDO_fake_script)()
-local function SVDEGHD_fake_script() -- whiteoff.x 
+coroutine.wrap(EDLG_fake_script)()
+local function ZQWMKXN_fake_script() -- whiteoff.x 
 	local script = Instance.new('Script', whiteoff)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -192,16 +192,16 @@ local function SVDEGHD_fake_script() -- whiteoff.x
 		game:GetService("RunService"):Set3dRenderingEnabled(true)
 	end)
 end
-coroutine.wrap(SVDEGHD_fake_script)()
-local function HZVHZ_fake_script() -- whiteon.x 
+coroutine.wrap(ZQWMKXN_fake_script)()
+local function CTTHPY_fake_script() -- whiteon.x 
 	local script = Instance.new('Script', whiteon)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("RunService"):Set3dRenderingEnabled(false)
 	end)
 end
-coroutine.wrap(HZVHZ_fake_script)()
-local function UTKZV_fake_script() -- collapse.x 
+coroutine.wrap(CTTHPY_fake_script)()
+local function AMQHRDK_fake_script() -- collapse.x 
 	local script = Instance.new('Script', collapse)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -209,8 +209,8 @@ local function UTKZV_fake_script() -- collapse.x
 		a.CFrame = CFrame.new(262, 101, 55)
 	end)
 end
-coroutine.wrap(UTKZV_fake_script)()
-local function CEYAHEP_fake_script() -- serverhop.x 
+coroutine.wrap(AMQHRDK_fake_script)()
+local function REEQCM_fake_script() -- serverhop.x 
 	local script = Instance.new('Script', serverhop)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -287,8 +287,8 @@ local function CEYAHEP_fake_script() -- serverhop.x
 		Teleport()
 	end)
 end
-coroutine.wrap(CEYAHEP_fake_script)()
-local function DVXEK_fake_script() -- platform.x 
+coroutine.wrap(REEQCM_fake_script)()
+local function XMGG_fake_script() -- platform.x 
 	local script = Instance.new('Script', platform)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -350,8 +350,8 @@ local function DVXEK_fake_script() -- platform.x
 	
 	end)
 end
-coroutine.wrap(DVXEK_fake_script)()
-local function KOYZ_fake_script() -- BankTele.x 
+coroutine.wrap(XMGG_fake_script)()
+local function NNGNAPA_fake_script() -- BankTele.x 
 	local script = Instance.new('Script', BankTele)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -389,8 +389,8 @@ local function KOYZ_fake_script() -- BankTele.x
 		a.CFrame = CFrame.new(4471, -16, 2340)
 	end)
 end
-coroutine.wrap(KOYZ_fake_script)()
-local function SDGX_fake_script() -- Mailbox.x 
+coroutine.wrap(NNGNAPA_fake_script)()
+local function TYUOPNG_fake_script() -- Mailbox.x 
 	local script = Instance.new('Script', Mailbox)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -428,8 +428,8 @@ local function SDGX_fake_script() -- Mailbox.x
 		a.CFrame = CFrame.new(4434, -16, 2341)
 	end)
 end
-coroutine.wrap(SDGX_fake_script)()
-local function ILOYV_fake_script() -- milk.x 
+coroutine.wrap(TYUOPNG_fake_script)()
+local function IYQLF_fake_script() -- milk.x 
 	local script = Instance.new('Script', milk)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -437,6 +437,11 @@ local function ILOYV_fake_script() -- milk.x
 		script_key="llNPHTqsZBmouGAEbYqCjqQcjbkoQqwv";
 		loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/fc715fb43902af268c335a5c7269be5e.lua"))()
 	
+	
+	end)
+end
+coroutine.wrap(IYQLF_fake_script)()
+
 	
 	end)
 end
