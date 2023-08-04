@@ -1,0 +1,2 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/00VPSManualScripts"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/00VPSEdits"))()
