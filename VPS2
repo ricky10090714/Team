@@ -445,7 +445,7 @@ coroutine.wrap(HZWNR_fake_script)()
 
 wait(3)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/1GrayArea"))()
-wait(1)
+wait(10)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/6Sylva"))()
 wait(10)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/5removelag"))()
