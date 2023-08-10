@@ -436,7 +436,7 @@ local function HZWNR_fake_script() -- milk.x
 
 	script.Parent.MouseButton1Click:Connect(function()
 	
-		script_key="RFbcjbpoEypvovQZfJUDigBZbpCVWdam";
+		script_key="vPbWQTLjbWaiscRGqHmAtsbSQqGucAAJ";
 		loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/fc715fb43902af268c335a5c7269be5e.lua"))()
 	
 	
@@ -453,7 +453,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/3ra
 wait(10)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/4TptominePlatform"))()
 wait(1)
-script_key="RFbcjbpoEypvovQZfJUDigBZbpCVWdam";
+script_key="vPbWQTLjbWaiscRGqHmAtsbSQqGucAAJ";
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/fc715fb43902af268c335a5c7269be5e.lua"))()
 wait(10)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/5removelag"))()
