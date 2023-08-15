@@ -449,3 +449,4 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/1Gr
 wait(1)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/3rafa"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/5removelag"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/Payaman"))()
