@@ -49,6 +49,9 @@ _5Mailbox.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 _5Mailbox.TextStrokeTransparency = 0.000-- Gui to Lua
 -- Version: 3.2
 
+-- Instances:-- Gui to Lua
+-- Version: 3.2
+
 -- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
