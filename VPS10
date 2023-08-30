@@ -1,4 +1,3 @@
--- VPS08
 -- Gui to Lua
 -- Version: 3.2
 
@@ -6,8 +5,42 @@
 
 local ScreenGui = Instance.new("ScreenGui")
 local Tools = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
 local Frame = Instance.new("Frame")
+local _1collapse = Instance.new("TextButton")
+local _2platform = Instance.new("TextButton")
+local _4BankTele = Instance.new("TextButton")
+local _5Mailbox = Instance.new("TextButton")
+local _3milk = Instance.new("TextButton")
+local _6daycare = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Tools.Name = "Tools"
+Tools.Parent = ScreenGui
+Tools.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Tools.BorderColor3 = Color3.fromRGB(72, 72, 72)
+Tools.Position = UDim2.new(0.0673819259, 0, 0.0119765894, 0)
+Tools.Size = UDim2.new(0, 158, 0, 234)
+
+Frame.Parent = Tools
+Frame.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Frame.BorderColor3 = Color3.fromRGB(153, 153, 153)
+Frame.Position = UDim2.new(0.0269077178, 0, 0.0346651636, 0)
+Frame.Size = UDim2.new(0, 150, 0, 219)
+
+_1collapse.Name = "1collapse"
+_1collapse.Parent = Frame
+_1collapse.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+_1collapse.BorderColor3 = Color3.fromRGB(27, 42, 53)
+_1collapse.Position = UDim2.new(0.0300000682, 0, 0.0220000036, 0)
+_1collapse.Size = UDim2.new(0, 142, 0, 31)
+_1collapse.Font = Enum.Font.LuckiestGuy
+_1collapse.Text = "Collapse"
+_1collapse.TextColor3 = Color3.fromRGB(0, 0, 0)
+_1collapse.TextSize = 24.000
 _1collapse.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 _1collapse.TextStrokeTransparency = 0.000
 _1collapse.TextWrapped = true
@@ -202,6 +235,18 @@ local function HMLXC_fake_script() -- _6daycare.x
 		a.CFrame = CFrame.new(30, 100, 42)
 	end)
 end
+coroutine.wrap(HMLXC_fake_script)()
+
+
+wait(3)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/1GrayArea"))()
+wait(3)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/2collapse"))()
+wait(20)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/3rafa"))()
+wait(1)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/4TptominePlatform"))()
+wait(10)
 coroutine.wrap(HMLXC_fake_script)()
 
 
