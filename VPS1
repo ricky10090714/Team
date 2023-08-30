@@ -6,6 +6,14 @@
 local ScreenGui = Instance.new("ScreenGui")
 local Tools = Instance.new("Frame")
 local Frame = Instance.new("Frame")
+local _1collapse = Instance.new("TextButton")-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Tools = Instance.new("Frame")
+local Frame = Instance.new("Frame")
 local _1collapse = Instance.new("TextButton")
 local _2platform = Instance.new("TextButton")
 local _4BankTele = Instance.new("TextButton")
@@ -117,14 +125,14 @@ _6daycare.TextYAlignment = Enum.TextYAlignment.Bottom
 
 -- Scripts:
 
-local function TLQGNE_fake_script() -- Tools.Drag 
+local function VWENKVP_fake_script() -- Tools.Drag 
 	local script = Instance.new('LocalScript', Tools)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(TLQGNE_fake_script)()
-local function GOCTTGV_fake_script() -- _1collapse.x 
+coroutine.wrap(VWENKVP_fake_script)()
+local function BLTYMM_fake_script() -- _1collapse.x 
 	local script = Instance.new('Script', _1collapse)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -132,8 +140,8 @@ local function GOCTTGV_fake_script() -- _1collapse.x
 		a.CFrame = CFrame.new(262, 101, 55)
 	end)
 end
-coroutine.wrap(GOCTTGV_fake_script)()
-local function VIBB_fake_script() -- _2platform.x 
+coroutine.wrap(BLTYMM_fake_script)()
+local function HNWKTF_fake_script() -- _2platform.x 
 	local script = Instance.new('Script', _2platform)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -195,8 +203,8 @@ local function VIBB_fake_script() -- _2platform.x
 	
 	end)
 end
-coroutine.wrap(VIBB_fake_script)()
-local function RPED_fake_script() -- _4BankTele.x 
+coroutine.wrap(HNWKTF_fake_script)()
+local function PXSU_fake_script() -- _4BankTele.x 
 	local script = Instance.new('Script', _4BankTele)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -234,8 +242,8 @@ local function RPED_fake_script() -- _4BankTele.x
 		a.CFrame = CFrame.new(4471, -16, 2340)
 	end)
 end
-coroutine.wrap(RPED_fake_script)()
-local function ITNX_fake_script() -- _5Mailbox.x 
+coroutine.wrap(PXSU_fake_script)()
+local function YRGGAMZ_fake_script() -- _5Mailbox.x 
 	local script = Instance.new('Script', _5Mailbox)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -273,8 +281,8 @@ local function ITNX_fake_script() -- _5Mailbox.x
 		a.CFrame = CFrame.new(4434, -16, 2341)
 	end)
 end
-coroutine.wrap(ITNX_fake_script)()
-local function QAAQUL_fake_script() -- _3milk.x 
+coroutine.wrap(YRGGAMZ_fake_script)()
+local function PHDR_fake_script() -- _3milk.x 
 	local script = Instance.new('Script', _3milk)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -285,8 +293,8 @@ local function QAAQUL_fake_script() -- _3milk.x
 	
 	end)
 end
-coroutine.wrap(QAAQUL_fake_script)()
-local function DEIPR_fake_script() -- _6daycare.x 
+coroutine.wrap(PHDR_fake_script)()
+local function QMZAY_fake_script() -- _6daycare.x 
 	local script = Instance.new('Script', _6daycare)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -346,15 +354,7 @@ local function DEIPR_fake_script() -- _6daycare.x
 	
 	end)
 end
-coroutine.wrap(DEIPR_fake_script)()
-
-	
-		Teleport(35, 102, 36)
-	
-	
-	end)
-end
-coroutine.wrap(QLQCCNP_fake_script)()
+coroutine.wrap(QMZAY_fake_script)()
 
 wait(3)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/1GrayArea"))()
