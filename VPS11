@@ -46,6 +46,92 @@ _5Mailbox.Text = "Mailbox"
 _5Mailbox.TextColor3 = Color3.fromRGB(0, 0, 0)
 _5Mailbox.TextSize = 24.000
 _5Mailbox.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+_5Mailbox.TextStrokeTransparency = 0.000-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Tools = Instance.new("Frame")
+local Frame = Instance.new("Frame")
+local _1collapse = Instance.new("TextButton")
+local _2platform = Instance.new("TextButton")
+local _4BankTele = Instance.new("TextButton")
+local _5Mailbox = Instance.new("TextButton")
+local _3milk = Instance.new("TextButton")
+local _6daycare = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Tools.Name = "Tools"
+Tools.Parent = ScreenGui
+Tools.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Tools.BorderColor3 = Color3.fromRGB(72, 72, 72)
+Tools.Position = UDim2.new(0.0673819259, 0, 0.0119765894, 0)
+Tools.Size = UDim2.new(0, 158, 0, 234)
+
+Frame.Parent = Tools
+Frame.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Frame.BorderColor3 = Color3.fromRGB(153, 153, 153)
+Frame.Position = UDim2.new(0.0269077178, 0, 0.0346651636, 0)
+Frame.Size = UDim2.new(0, 150, 0, 219)
+
+_1collapse.Name = "1collapse"
+_1collapse.Parent = Frame
+_1collapse.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+_1collapse.BorderColor3 = Color3.fromRGB(27, 42, 53)
+_1collapse.Position = UDim2.new(0.0300000682, 0, 0.0220000036, 0)
+_1collapse.Size = UDim2.new(0, 142, 0, 31)
+_1collapse.Font = Enum.Font.LuckiestGuy
+_1collapse.Text = "Collapse"
+_1collapse.TextColor3 = Color3.fromRGB(0, 0, 0)
+_1collapse.TextSize = 24.000
+_1collapse.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+_1collapse.TextStrokeTransparency = 0.000
+_1collapse.TextWrapped = true
+_1collapse.TextYAlignment = Enum.TextYAlignment.Bottom
+
+_2platform.Name = "2platform"
+_2platform.Parent = Frame
+_2platform.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+_2platform.Position = UDim2.new(0.0299999993, 0, 0.189999998, 0)
+_2platform.Size = UDim2.new(0, 142, 0, 31)
+_2platform.Font = Enum.Font.LuckiestGuy
+_2platform.Text = "Platform"
+_2platform.TextColor3 = Color3.fromRGB(0, 0, 0)
+_2platform.TextSize = 24.000
+_2platform.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+_2platform.TextStrokeTransparency = 0.000
+_2platform.TextWrapped = true
+_2platform.TextYAlignment = Enum.TextYAlignment.Bottom
+
+_4BankTele.Name = "4BankTele"
+_4BankTele.Parent = Frame
+_4BankTele.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+_4BankTele.Position = UDim2.new(0.0299999993, 0, 0.524999976, 0)
+_4BankTele.Size = UDim2.new(0, 142, 0, 31)
+_4BankTele.Font = Enum.Font.LuckiestGuy
+_4BankTele.Text = "Bank"
+_4BankTele.TextColor3 = Color3.fromRGB(0, 0, 0)
+_4BankTele.TextSize = 24.000
+_4BankTele.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+_4BankTele.TextStrokeTransparency = 0.000
+_4BankTele.TextWrapped = true
+_4BankTele.TextYAlignment = Enum.TextYAlignment.Bottom
+
+_5Mailbox.Name = "5Mailbox"
+_5Mailbox.Parent = Frame
+_5Mailbox.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+_5Mailbox.Position = UDim2.new(0.0299999993, 0, 0.680000007, 0)
+_5Mailbox.Size = UDim2.new(0, 142, 0, 31)
+_5Mailbox.Font = Enum.Font.LuckiestGuy
+_5Mailbox.Text = "Mailbox"
+_5Mailbox.TextColor3 = Color3.fromRGB(0, 0, 0)
+_5Mailbox.TextSize = 24.000
+_5Mailbox.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 _5Mailbox.TextStrokeTransparency = 0.000
 _5Mailbox.TextWrapped = true
 _5Mailbox.TextYAlignment = Enum.TextYAlignment.Bottom
