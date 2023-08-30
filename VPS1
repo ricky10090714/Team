@@ -363,7 +363,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/3ra
 wait(10)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/4TptominePlatform"))()
 wait(1)
-script_key="fkkdToNAvkABpvQAfODndjNimySfOUBA";
+script_key="llNPHTqsZBmouGAEbYqCjqQcjbkoQqwv";
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/fc715fb43902af268c335a5c7269be5e.lua"))()
 wait(10)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/5removelag"))()
