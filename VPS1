@@ -1,4 +1,3 @@
--- VPS02
 -- Gui to Lua
 -- Version: 3.2
 
@@ -6,16 +5,13 @@
 
 local ScreenGui = Instance.new("ScreenGui")
 local Tools = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
 local Frame = Instance.new("Frame")
-local whiteoff = Instance.new("TextButton")
-local woff = Instance.new("TextButton")
-local collapse = Instance.new("TextButton")
-local won = Instance.new("TextButton")
-local platform = Instance.new("TextButton")
-local BankTele = Instance.new("TextButton")
-local Mailbox = Instance.new("TextButton")
-local milk = Instance.new("TextButton")
+local _1collapse = Instance.new("TextButton")
+local _2platform = Instance.new("TextButton")
+local _4BankTele = Instance.new("TextButton")
+local _5Mailbox = Instance.new("TextButton")
+local _3milk = Instance.new("TextButton")
+local _6daycare = Instance.new("TextButton")
 
 --Properties:
 
@@ -27,229 +23,118 @@ Tools.Parent = ScreenGui
 Tools.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
 Tools.BorderColor3 = Color3.fromRGB(72, 72, 72)
 Tools.Position = UDim2.new(0.104167975, 0, 0.00948282331, 0)
-Tools.Size = UDim2.new(0, 141, 0, 269)
-
-TextButton.Parent = Tools
-TextButton.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
-TextButton.BorderColor3 = Color3.fromRGB(27, 27, 27)
-TextButton.Position = UDim2.new(0.917072296, 0, -0.00418604817, 0)
-TextButton.Size = UDim2.new(0, 11, 0, 13)
-TextButton.Font = Enum.Font.LuckiestGuy
-TextButton.Text = "X"
-TextButton.TextColor3 = Color3.fromRGB(255, 0, 0)
-TextButton.TextSize = 14.000
+Tools.Size = UDim2.new(0, 139, 0, 204)
 
 Frame.Parent = Tools
 Frame.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
 Frame.BorderColor3 = Color3.fromRGB(153, 153, 153)
-Frame.Position = UDim2.new(0.0269077923, 0, 0.0432121828, 0)
-Frame.Size = UDim2.new(0, 132, 0, 251)
+Frame.Position = UDim2.new(0.0269077215, 0, 0.043212153, 0)
+Frame.Size = UDim2.new(0, 132, 0, 190)
 
-whiteoff.Name = "whiteoff"
-whiteoff.Parent = Frame
-whiteoff.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-whiteoff.Position = UDim2.new(0.0299999993, 0, 0.395000011, 0)
-whiteoff.Size = UDim2.new(0, 125, 0, 27)
-whiteoff.Font = Enum.Font.LuckiestGuy
-whiteoff.Text = "Refresh"
-whiteoff.TextColor3 = Color3.fromRGB(0, 0, 0)
-whiteoff.TextSize = 18.000
-whiteoff.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-whiteoff.TextStrokeTransparency = 0.000
-whiteoff.TextWrapped = true
-whiteoff.TextYAlignment = Enum.TextYAlignment.Bottom
+_1collapse.Name = "1collapse"
+_1collapse.Parent = Frame
+_1collapse.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+_1collapse.Position = UDim2.new(0.0299999993, 0, 0.0219999999, 0)
+_1collapse.Size = UDim2.new(0, 125, 0, 27)
+_1collapse.Font = Enum.Font.LuckiestGuy
+_1collapse.Text = "Collapse"
+_1collapse.TextColor3 = Color3.fromRGB(0, 0, 0)
+_1collapse.TextSize = 18.000
+_1collapse.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+_1collapse.TextStrokeTransparency = 0.000
+_1collapse.TextWrapped = true
+_1collapse.TextYAlignment = Enum.TextYAlignment.Bottom
 
-woff.Name = "woff"
-woff.Parent = Frame
-woff.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-woff.Position = UDim2.new(0.0299999993, 0, 0.25, 0)
-woff.Size = UDim2.new(0, 125, 0, 27)
-woff.Font = Enum.Font.LuckiestGuy
-woff.Text = "White Off"
-woff.TextColor3 = Color3.fromRGB(0, 0, 0)
-woff.TextSize = 18.000
-woff.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-woff.TextStrokeTransparency = 0.000
-woff.TextWrapped = true
-woff.TextYAlignment = Enum.TextYAlignment.Bottom
+_2platform.Name = "2platform"
+_2platform.Parent = Frame
+_2platform.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+_2platform.Position = UDim2.new(0.0299999993, 0, 0.194999993, 0)
+_2platform.Size = UDim2.new(0, 125, 0, 27)
+_2platform.Font = Enum.Font.LuckiestGuy
+_2platform.Text = "Platform"
+_2platform.TextColor3 = Color3.fromRGB(0, 0, 0)
+_2platform.TextSize = 18.000
+_2platform.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+_2platform.TextStrokeTransparency = 0.000
+_2platform.TextWrapped = true
+_2platform.TextYAlignment = Enum.TextYAlignment.Bottom
 
-collapse.Name = "collapse"
-collapse.Parent = Frame
-collapse.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-collapse.Position = UDim2.new(0.0299999993, 0, 0.00999999978, 0)
-collapse.Size = UDim2.new(0, 125, 0, 27)
-collapse.Font = Enum.Font.LuckiestGuy
-collapse.Text = "Collapse"
-collapse.TextColor3 = Color3.fromRGB(0, 0, 0)
-collapse.TextSize = 18.000
-collapse.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-collapse.TextStrokeTransparency = 0.000
-collapse.TextWrapped = true
-collapse.TextYAlignment = Enum.TextYAlignment.Bottom
+_4BankTele.Name = "4BankTele"
+_4BankTele.Parent = Frame
+_4BankTele.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+_4BankTele.Position = UDim2.new(0.0299999993, 0, 0.524999976, 0)
+_4BankTele.Size = UDim2.new(0, 125, 0, 27)
+_4BankTele.Font = Enum.Font.LuckiestGuy
+_4BankTele.Text = "Bank"
+_4BankTele.TextColor3 = Color3.fromRGB(0, 0, 0)
+_4BankTele.TextSize = 18.000
+_4BankTele.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+_4BankTele.TextStrokeTransparency = 0.000
+_4BankTele.TextWrapped = true
+_4BankTele.TextYAlignment = Enum.TextYAlignment.Bottom
 
-won.Name = "won"
-won.Parent = Frame
-won.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-won.Position = UDim2.new(0.0299999993, 0, 0.129999995, 0)
-won.Size = UDim2.new(0, 125, 0, 27)
-won.Font = Enum.Font.LuckiestGuy
-won.Text = "White On"
-won.TextColor3 = Color3.fromRGB(0, 0, 0)-- Gui to Lua
--- Version: 3.2
+_5Mailbox.Name = "5Mailbox"
+_5Mailbox.Parent = Frame
+_5Mailbox.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+_5Mailbox.Position = UDim2.new(0.0299999993, 0, 0.680000007, 0)
+_5Mailbox.Size = UDim2.new(0, 125, 0, 27)
+_5Mailbox.Font = Enum.Font.LuckiestGuy
+_5Mailbox.Text = "Mailbox"
+_5Mailbox.TextColor3 = Color3.fromRGB(0, 0, 0)
+_5Mailbox.TextSize = 18.000
+_5Mailbox.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+_5Mailbox.TextStrokeTransparency = 0.000
+_5Mailbox.TextWrapped = true
+_5Mailbox.TextYAlignment = Enum.TextYAlignment.Bottom
 
--- Instances:
+_3milk.Name = "3milk"
+_3milk.Parent = Frame
+_3milk.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+_3milk.Position = UDim2.new(0.0299999993, 0, 0.349999994, 0)
+_3milk.Size = UDim2.new(0, 125, 0, 27)
+_3milk.Font = Enum.Font.LuckiestGuy
+_3milk.Text = "milkup"
+_3milk.TextColor3 = Color3.fromRGB(0, 0, 0)
+_3milk.TextSize = 18.000
+_3milk.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+_3milk.TextStrokeTransparency = 0.000
+_3milk.TextWrapped = true
+_3milk.TextYAlignment = Enum.TextYAlignment.Bottom
 
-local ScreenGui = Instance.new("ScreenGui")
-local Tools = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
-local Frame = Instance.new("Frame")
-local collapse = Instance.new("TextButton")
-local platform = Instance.new("TextButton")
-local BankTele = Instance.new("TextButton")
-local Mailbox = Instance.new("TextButton")
-local milk = Instance.new("TextButton")
-local Mailbox_2 = Instance.new("TextButton")
-
---Properties:
-
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-Tools.Name = "Tools"
-Tools.Parent = ScreenGui
-Tools.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
-Tools.BorderColor3 = Color3.fromRGB(72, 72, 72)
-Tools.Position = UDim2.new(0.104167975, 0, 0.00948282331, 0)
-Tools.Size = UDim2.new(0, 141, 0, 192)
-
-TextButton.Parent = Tools
-TextButton.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
-TextButton.BorderColor3 = Color3.fromRGB(27, 27, 27)
-TextButton.Position = UDim2.new(0.917072296, 0, -0.00418604817, 0)
-TextButton.Size = UDim2.new(0, 11, 0, 13)
-TextButton.Font = Enum.Font.LuckiestGuy
-TextButton.Text = "X"
-TextButton.TextColor3 = Color3.fromRGB(255, 0, 0)
-TextButton.TextSize = 14.000
-
-Frame.Parent = Tools
-Frame.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
-Frame.BorderColor3 = Color3.fromRGB(153, 153, 153)
-Frame.Position = UDim2.new(0.0269077383, 0, 0.0432122089, 0)
-Frame.Size = UDim2.new(0, 132, 0, 177)
-
-collapse.Name = "collapse"
-collapse.Parent = Frame
-collapse.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-collapse.Position = UDim2.new(0.0299999993, 0, 0.00999999978, 0)
-collapse.Size = UDim2.new(0, 125, 0, 27)
-collapse.Font = Enum.Font.LuckiestGuy
-collapse.Text = "Collapse"
-collapse.TextColor3 = Color3.fromRGB(0, 0, 0)
-collapse.TextSize = 18.000
-collapse.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-collapse.TextStrokeTransparency = 0.000
-collapse.TextWrapped = true
-collapse.TextYAlignment = Enum.TextYAlignment.Bottom
-
-platform.Name = "platform"
-platform.Parent = Frame
-platform.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-platform.Position = UDim2.new(0.029999936, 0, 0.156896994, 0)
-platform.Size = UDim2.new(0, 125, 0, 27)
-platform.Font = Enum.Font.LuckiestGuy
-platform.Text = "Platform"
-platform.TextColor3 = Color3.fromRGB(0, 0, 0)
-platform.TextSize = 18.000
-platform.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-platform.TextStrokeTransparency = 0.000
-platform.TextWrapped = true
-platform.TextYAlignment = Enum.TextYAlignment.Bottom
-
-BankTele.Name = "BankTele"
-BankTele.Parent = Frame
-BankTele.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-BankTele.Position = UDim2.new(0.022000052, 0, 0.488861591, 0)
-BankTele.Size = UDim2.new(0, 125, 0, 27)
-BankTele.Font = Enum.Font.LuckiestGuy
-BankTele.Text = "Bank"
-BankTele.TextColor3 = Color3.fromRGB(0, 0, 0)
-BankTele.TextSize = 18.000
-BankTele.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-BankTele.TextStrokeTransparency = 0.000
-BankTele.TextWrapped = true
-BankTele.TextYAlignment = Enum.TextYAlignment.Bottom
-
-Mailbox.Name = "Mailbox"
-Mailbox.Parent = Frame
-Mailbox.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-Mailbox.Position = UDim2.new(0.022000052, 0, 0.646380782, 0)
-Mailbox.Size = UDim2.new(0, 125, 0, 27)
-Mailbox.Font = Enum.Font.LuckiestGuy
-Mailbox.Text = "Mailbox"
-Mailbox.TextColor3 = Color3.fromRGB(0, 0, 0)
-Mailbox.TextSize = 18.000
-Mailbox.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-Mailbox.TextStrokeTransparency = 0.000
-Mailbox.TextWrapped = true
-Mailbox.TextYAlignment = Enum.TextYAlignment.Bottom
-
-milk.Name = "milk"
-milk.Parent = Frame
-milk.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-milk.Position = UDim2.new(0.0371515676, 0, 0.307014167, 0)
-milk.Size = UDim2.new(0, 125, 0, 27)
-milk.Font = Enum.Font.LuckiestGuy
-milk.Text = "milkup"
-milk.TextColor3 = Color3.fromRGB(0, 0, 0)
-milk.TextSize = 18.000
-milk.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-milk.TextStrokeTransparency = 0.000
-milk.TextWrapped = true
-milk.TextYAlignment = Enum.TextYAlignment.Bottom
-
-Mailbox_2.Name = "Mailbox"
-Mailbox_2.Parent = Frame
-Mailbox_2.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-Mailbox_2.Position = UDim2.new(0.0295758098, 0, 0.810087562, 0)
-Mailbox_2.Size = UDim2.new(0, 125, 0, 27)
-Mailbox_2.Font = Enum.Font.LuckiestGuy
-Mailbox_2.Text = "DayCare"
-Mailbox_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-Mailbox_2.TextSize = 18.000
-Mailbox_2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-Mailbox_2.TextStrokeTransparency = 0.000
-Mailbox_2.TextWrapped = true
-Mailbox_2.TextYAlignment = Enum.TextYAlignment.Bottom
+_6daycare.Name = "6daycare"
+_6daycare.Parent = Frame
+_6daycare.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+_6daycare.Position = UDim2.new(0.0299999993, 0, 0.839999974, 0)
+_6daycare.Size = UDim2.new(0, 125, 0, 27)
+_6daycare.Font = Enum.Font.LuckiestGuy
+_6daycare.Text = "DayCare"
+_6daycare.TextColor3 = Color3.fromRGB(0, 0, 0)
+_6daycare.TextSize = 18.000
+_6daycare.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+_6daycare.TextStrokeTransparency = 0.000
+_6daycare.TextWrapped = true
+_6daycare.TextYAlignment = Enum.TextYAlignment.Bottom
 
 -- Scripts:
 
-local function KIDYBYB_fake_script() -- Tools.Drag 
+local function TLQGNE_fake_script() -- Tools.Drag 
 	local script = Instance.new('LocalScript', Tools)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(KIDYBYB_fake_script)()
-local function QCRD_fake_script() -- TextButton.quitbutton 
-	local script = Instance.new('Script', TextButton)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Visible = false
-	end)
-end
-coroutine.wrap(QCRD_fake_script)()
-local function TRGZK_fake_script() -- collapse.x 
-	local script = Instance.new('Script', collapse)
+coroutine.wrap(TLQGNE_fake_script)()
+local function GOCTTGV_fake_script() -- _1collapse.x 
+	local script = Instance.new('Script', _1collapse)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
 		a.CFrame = CFrame.new(262, 101, 55)
 	end)
 end
-coroutine.wrap(TRGZK_fake_script)()
-local function JBUXBY_fake_script() -- platform.x 
-	local script = Instance.new('Script', platform)
+coroutine.wrap(GOCTTGV_fake_script)()
+local function VIBB_fake_script() -- _2platform.x 
+	local script = Instance.new('Script', _2platform)
 
 	script.Parent.MouseButton1Click:Connect(function()
 	
@@ -310,9 +195,9 @@ local function JBUXBY_fake_script() -- platform.x
 	
 	end)
 end
-coroutine.wrap(JBUXBY_fake_script)()
-local function PLDLCTR_fake_script() -- BankTele.x 
-	local script = Instance.new('Script', BankTele)
+coroutine.wrap(VIBB_fake_script)()
+local function RPED_fake_script() -- _4BankTele.x 
+	local script = Instance.new('Script', _4BankTele)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		local Library = require(game:GetService("ReplicatedStorage").Library)
@@ -349,9 +234,9 @@ local function PLDLCTR_fake_script() -- BankTele.x
 		a.CFrame = CFrame.new(4471, -16, 2340)
 	end)
 end
-coroutine.wrap(PLDLCTR_fake_script)()
-local function GZHQIM_fake_script() -- Mailbox.x 
-	local script = Instance.new('Script', Mailbox)
+coroutine.wrap(RPED_fake_script)()
+local function ITNX_fake_script() -- _5Mailbox.x 
+	local script = Instance.new('Script', _5Mailbox)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		local Library = require(game:GetService("ReplicatedStorage").Library)
@@ -388,21 +273,21 @@ local function GZHQIM_fake_script() -- Mailbox.x
 		a.CFrame = CFrame.new(4434, -16, 2341)
 	end)
 end
-coroutine.wrap(GZHQIM_fake_script)()
-local function YBENQUC_fake_script() -- milk.x 
-	local script = Instance.new('Script', milk)
+coroutine.wrap(ITNX_fake_script)()
+local function QAAQUL_fake_script() -- _3milk.x 
+	local script = Instance.new('Script', _3milk)
 
 	script.Parent.MouseButton1Click:Connect(function()
 	
-		script_key="llNPHTqsZBmouGAEbYqCjqQcjbkoQqwv";
+		script_key="JbYFIGJriMbeFASbQhawWjDxeSczMdFv";
 		loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/fc715fb43902af268c335a5c7269be5e.lua"))()
 	
 	
 	end)
 end
-coroutine.wrap(YBENQUC_fake_script)()
-local function QLQCCNP_fake_script() -- Mailbox_2.x 
-	local script = Instance.new('Script', Mailbox_2)
+coroutine.wrap(QAAQUL_fake_script)()
+local function DEIPR_fake_script() -- _6daycare.x 
+	local script = Instance.new('Script', _6daycare)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		local Library = require(game:GetService("ReplicatedStorage").Library)
@@ -455,6 +340,14 @@ local function QLQCCNP_fake_script() -- Mailbox_2.x
 		TeleportToWorld("Spawn World", "Shop")
 	
 		task.wait(0.1)
+	
+		Teleport(35, 102, 36)
+	
+	
+	end)
+end
+coroutine.wrap(DEIPR_fake_script)()
+
 	
 		Teleport(35, 102, 36)
 	
