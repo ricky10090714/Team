@@ -446,8 +446,6 @@ coroutine.wrap(HZWNR_fake_script)()
 
 wait(3)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/1GrayArea"))()
-wait(3)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/5removelag"))()
 wait(5)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/2collapse"))()
 wait(3)
@@ -457,3 +455,5 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/3ra
 wait(10)
 script_key="JbYFIGJriMbeFASbQhawWjDxeSczMdFv";
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/fc715fb43902af268c335a5c7269be5e.lua"))()
+wait(10)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/5removelag"))()
