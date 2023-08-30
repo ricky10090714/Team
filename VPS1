@@ -22,21 +22,21 @@ Tools.Name = "Tools"
 Tools.Parent = ScreenGui
 Tools.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
 Tools.BorderColor3 = Color3.fromRGB(72, 72, 72)
-Tools.Position = UDim2.new(0.0422125161, 0, 0.0119765894, 0)
-Tools.Size = UDim2.new(0, 191, 0, 234)
+Tools.Position = UDim2.new(0.0673819259, 0, 0.0119765894, 0)
+Tools.Size = UDim2.new(0, 165, 0, 234)
 
 Frame.Parent = Tools
 Frame.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
 Frame.BorderColor3 = Color3.fromRGB(153, 153, 153)
-Frame.Position = UDim2.new(-0.00450589648, 0, 0.0303916596, 0)
-Frame.Size = UDim2.new(0, 191, 0, 219)
+Frame.Position = UDim2.new(0.0269077178, 0, 0.0346651636, 0)
+Frame.Size = UDim2.new(0, 154, 0, 219)
 
 _1collapse.Name = "1collapse"
 _1collapse.Parent = Frame
 _1collapse.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 _1collapse.BorderColor3 = Color3.fromRGB(27, 42, 53)
-_1collapse.Position = UDim2.new(0.0350000001, 0, 0.0219999999, 0)
-_1collapse.Size = UDim2.new(0, 179, 0, 31)
+_1collapse.Position = UDim2.new(0.0300000682, 0, 0.0220000036, 0)
+_1collapse.Size = UDim2.new(0, 142, 0, 31)
 _1collapse.Font = Enum.Font.LuckiestGuy
 _1collapse.Text = "Collapse"
 _1collapse.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -50,7 +50,7 @@ _2platform.Name = "2platform"
 _2platform.Parent = Frame
 _2platform.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 _2platform.Position = UDim2.new(0.0299999993, 0, 0.189999998, 0)
-_2platform.Size = UDim2.new(0, 179, 0, 31)
+_2platform.Size = UDim2.new(0, 142, 0, 31)
 _2platform.Font = Enum.Font.LuckiestGuy
 _2platform.Text = "Platform"
 _2platform.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -64,7 +64,7 @@ _4BankTele.Name = "4BankTele"
 _4BankTele.Parent = Frame
 _4BankTele.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 _4BankTele.Position = UDim2.new(0.0299999993, 0, 0.524999976, 0)
-_4BankTele.Size = UDim2.new(0, 179, 0, 31)
+_4BankTele.Size = UDim2.new(0, 142, 0, 31)
 _4BankTele.Font = Enum.Font.LuckiestGuy
 _4BankTele.Text = "Bank"
 _4BankTele.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -78,7 +78,7 @@ _5Mailbox.Name = "5Mailbox"
 _5Mailbox.Parent = Frame
 _5Mailbox.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 _5Mailbox.Position = UDim2.new(0.0299999993, 0, 0.680000007, 0)
-_5Mailbox.Size = UDim2.new(0, 179, 0, 31)
+_5Mailbox.Size = UDim2.new(0, 142, 0, 31)
 _5Mailbox.Font = Enum.Font.LuckiestGuy
 _5Mailbox.Text = "Mailbox"
 _5Mailbox.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -92,7 +92,7 @@ _3milk.Name = "3milk"
 _3milk.Parent = Frame
 _3milk.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 _3milk.Position = UDim2.new(0.0299999993, 0, 0.349999994, 0)
-_3milk.Size = UDim2.new(0, 179, 0, 31)
+_3milk.Size = UDim2.new(0, 142, 0, 31)
 _3milk.Font = Enum.Font.LuckiestGuy
 _3milk.Text = "milkup"
 _3milk.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -106,7 +106,7 @@ _6daycare.Name = "6daycare"
 _6daycare.Parent = Frame
 _6daycare.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 _6daycare.Position = UDim2.new(0.0299999993, 0, 0.839999974, 0)
-_6daycare.Size = UDim2.new(0, 179, 0, 31)
+_6daycare.Size = UDim2.new(0, 142, 0, 31)
 _6daycare.Font = Enum.Font.LuckiestGuy
 _6daycare.Text = "DayCare"
 _6daycare.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -118,14 +118,14 @@ _6daycare.TextYAlignment = Enum.TextYAlignment.Bottom
 
 -- Scripts:
 
-local function BQQIT_fake_script() -- Tools.Drag 
+local function TAYLUCG_fake_script() -- Tools.Drag 
 	local script = Instance.new('LocalScript', Tools)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(BQQIT_fake_script)()
-local function VGIK_fake_script() -- _1collapse.x 
+coroutine.wrap(TAYLUCG_fake_script)()
+local function RXVZ_fake_script() -- _1collapse.x 
 	local script = Instance.new('Script', _1collapse)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -133,8 +133,8 @@ local function VGIK_fake_script() -- _1collapse.x
 		a.CFrame = CFrame.new(262, 101, 55)
 	end)
 end
-coroutine.wrap(VGIK_fake_script)()
-local function TDIK_fake_script() -- _2platform.x 
+coroutine.wrap(RXVZ_fake_script)()
+local function ASWR_fake_script() -- _2platform.x 
 	local script = Instance.new('Script', _2platform)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -196,8 +196,8 @@ local function TDIK_fake_script() -- _2platform.x
 	
 	end)
 end
-coroutine.wrap(TDIK_fake_script)()
-local function DXNKSWZ_fake_script() -- _4BankTele.x 
+coroutine.wrap(ASWR_fake_script)()
+local function FQSZLR_fake_script() -- _4BankTele.x 
 	local script = Instance.new('Script', _4BankTele)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -235,8 +235,8 @@ local function DXNKSWZ_fake_script() -- _4BankTele.x
 		a.CFrame = CFrame.new(4471, -16, 2340)
 	end)
 end
-coroutine.wrap(DXNKSWZ_fake_script)()
-local function MKJKVEJ_fake_script() -- _5Mailbox.x 
+coroutine.wrap(FQSZLR_fake_script)()
+local function PDXXSBQ_fake_script() -- _5Mailbox.x 
 	local script = Instance.new('Script', _5Mailbox)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -274,8 +274,8 @@ local function MKJKVEJ_fake_script() -- _5Mailbox.x
 		a.CFrame = CFrame.new(4434, -16, 2341)
 	end)
 end
-coroutine.wrap(MKJKVEJ_fake_script)()
-local function EFLTD_fake_script() -- _3milk.x 
+coroutine.wrap(PDXXSBQ_fake_script)()
+local function MYRIKH_fake_script() -- _3milk.x 
 	local script = Instance.new('Script', _3milk)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -286,8 +286,8 @@ local function EFLTD_fake_script() -- _3milk.x
 	
 	end)
 end
-coroutine.wrap(EFLTD_fake_script)()
-local function LZTEU_fake_script() -- _6daycare.x 
+coroutine.wrap(MYRIKH_fake_script)()
+local function NMCAS_fake_script() -- _6daycare.x 
 	local script = Instance.new('Script', _6daycare)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -347,7 +347,7 @@ local function LZTEU_fake_script() -- _6daycare.x
 	
 	end)
 end
-coroutine.wrap(LZTEU_fake_script)()
+coroutine.wrap(NMCAS_fake_script)()
 
 wait(3)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/1GrayArea"))()
