@@ -512,12 +512,13 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 or game.PlaceId == 
 	if isfile("UI/ArrayField.lua") then
 		Rayfield = loadstring(readfile("UI/ArrayField.lua"))()
 	else
-		Rayfield = loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/rafagui"))()
+		Rayfield = loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafacasari/ArrayField/main/v2.lua"))()
 	end
 	
-	-- local Rayfield = (isfile("UI/ArrayField.lua") and loadstring(readfile("UI/ArrayField.lua"))()) or loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/rafagui"))()
+	-- local Rayfield = (isfile("UI/ArrayField.lua") and loadstring(readfile("UI/ArrayField.lua"))()) or loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafacasari/ArrayField/main/v2.lua"))()
 	assert(Rayfield, "Oopps! Rayfield has not been loaded. Maybe try re-joining?") 
 	
+
 
 	local Window = Rayfield:CreateWindow({
 	   Name = "All in one Script | by Bytemoo Games ",
