@@ -1,6 +1,3 @@
-
-
-
 local Library = require(game:GetService("ReplicatedStorage").Library)
 	local Network = require(game:GetService("ReplicatedStorage").Library.Client.Network)
 	local Fire, Invoke = Network.Fire, Network.Invoke
