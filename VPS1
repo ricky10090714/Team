@@ -1,5 +1,7 @@
 -- Gui to Lua
 -- Version: 3.2
+-- Gui to Lua
+-- Version: 3.2
 
 -- Instances:
 
@@ -34,12 +36,13 @@ Frame.Size = UDim2.new(0, 154, 0, 219)
 _1collapse.Name = "1collapse"
 _1collapse.Parent = Frame
 _1collapse.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+_1collapse.BorderColor3 = Color3.fromRGB(27, 42, 53)
 _1collapse.Position = UDim2.new(0.0300000682, 0, 0.0220000036, 0)
 _1collapse.Size = UDim2.new(0, 142, 0, 31)
 _1collapse.Font = Enum.Font.LuckiestGuy
 _1collapse.Text = "Collapse"
 _1collapse.TextColor3 = Color3.fromRGB(0, 0, 0)
-_1collapse.TextSize = 18.000
+_1collapse.TextSize = 24.000
 _1collapse.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 _1collapse.TextStrokeTransparency = 0.000
 _1collapse.TextWrapped = true
@@ -53,7 +56,7 @@ _2platform.Size = UDim2.new(0, 142, 0, 31)
 _2platform.Font = Enum.Font.LuckiestGuy
 _2platform.Text = "Platform"
 _2platform.TextColor3 = Color3.fromRGB(0, 0, 0)
-_2platform.TextSize = 18.000
+_2platform.TextSize = 24.000
 _2platform.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 _2platform.TextStrokeTransparency = 0.000
 _2platform.TextWrapped = true
@@ -67,7 +70,7 @@ _4BankTele.Size = UDim2.new(0, 142, 0, 31)
 _4BankTele.Font = Enum.Font.LuckiestGuy
 _4BankTele.Text = "Bank"
 _4BankTele.TextColor3 = Color3.fromRGB(0, 0, 0)
-_4BankTele.TextSize = 18.000
+_4BankTele.TextSize = 24.000
 _4BankTele.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 _4BankTele.TextStrokeTransparency = 0.000
 _4BankTele.TextWrapped = true
@@ -81,7 +84,7 @@ _5Mailbox.Size = UDim2.new(0, 142, 0, 31)
 _5Mailbox.Font = Enum.Font.LuckiestGuy
 _5Mailbox.Text = "Mailbox"
 _5Mailbox.TextColor3 = Color3.fromRGB(0, 0, 0)
-_5Mailbox.TextSize = 18.000
+_5Mailbox.TextSize = 24.000
 _5Mailbox.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 _5Mailbox.TextStrokeTransparency = 0.000
 _5Mailbox.TextWrapped = true
@@ -95,7 +98,7 @@ _3milk.Size = UDim2.new(0, 142, 0, 31)
 _3milk.Font = Enum.Font.LuckiestGuy
 _3milk.Text = "milkup"
 _3milk.TextColor3 = Color3.fromRGB(0, 0, 0)
-_3milk.TextSize = 18.000
+_3milk.TextSize = 24.000
 _3milk.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 _3milk.TextStrokeTransparency = 0.000
 _3milk.TextWrapped = true
@@ -109,7 +112,7 @@ _6daycare.Size = UDim2.new(0, 142, 0, 31)
 _6daycare.Font = Enum.Font.LuckiestGuy
 _6daycare.Text = "DayCare"
 _6daycare.TextColor3 = Color3.fromRGB(0, 0, 0)
-_6daycare.TextSize = 18.000
+_6daycare.TextSize = 24.000
 _6daycare.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 _6daycare.TextStrokeTransparency = 0.000
 _6daycare.TextWrapped = true
@@ -117,14 +120,14 @@ _6daycare.TextYAlignment = Enum.TextYAlignment.Bottom
 
 -- Scripts:
 
-local function HTTAAA_fake_script() -- Tools.Drag 
+local function SUSC_fake_script() -- Tools.Drag 
 	local script = Instance.new('LocalScript', Tools)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(HTTAAA_fake_script)()
-local function XGLPMSW_fake_script() -- _1collapse.x 
+coroutine.wrap(SUSC_fake_script)()
+local function CJQSQV_fake_script() -- _1collapse.x 
 	local script = Instance.new('Script', _1collapse)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -132,8 +135,8 @@ local function XGLPMSW_fake_script() -- _1collapse.x
 		a.CFrame = CFrame.new(262, 101, 55)
 	end)
 end
-coroutine.wrap(XGLPMSW_fake_script)()
-local function DELXZXI_fake_script() -- _2platform.x 
+coroutine.wrap(CJQSQV_fake_script)()
+local function XDJTKEX_fake_script() -- _2platform.x 
 	local script = Instance.new('Script', _2platform)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -195,8 +198,8 @@ local function DELXZXI_fake_script() -- _2platform.x
 	
 	end)
 end
-coroutine.wrap(DELXZXI_fake_script)()
-local function ENEUC_fake_script() -- _4BankTele.x 
+coroutine.wrap(XDJTKEX_fake_script)()
+local function OGPXUW_fake_script() -- _4BankTele.x 
 	local script = Instance.new('Script', _4BankTele)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -234,8 +237,8 @@ local function ENEUC_fake_script() -- _4BankTele.x
 		a.CFrame = CFrame.new(4471, -16, 2340)
 	end)
 end
-coroutine.wrap(ENEUC_fake_script)()
-local function WKIK_fake_script() -- _5Mailbox.x 
+coroutine.wrap(OGPXUW_fake_script)()
+local function ZBPGAD_fake_script() -- _5Mailbox.x 
 	local script = Instance.new('Script', _5Mailbox)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -273,8 +276,8 @@ local function WKIK_fake_script() -- _5Mailbox.x
 		a.CFrame = CFrame.new(4434, -16, 2341)
 	end)
 end
-coroutine.wrap(WKIK_fake_script)()
-local function FKIUS_fake_script() -- _3milk.x 
+coroutine.wrap(ZBPGAD_fake_script)()
+local function HCXJS_fake_script() -- _3milk.x 
 	local script = Instance.new('Script', _3milk)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -285,8 +288,8 @@ local function FKIUS_fake_script() -- _3milk.x
 	
 	end)
 end
-coroutine.wrap(FKIUS_fake_script)()
-local function CMRIM_fake_script() -- _6daycare.x 
+coroutine.wrap(HCXJS_fake_script)()
+local function QKWG_fake_script() -- _6daycare.x 
 	local script = Instance.new('Script', _6daycare)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -346,7 +349,7 @@ local function CMRIM_fake_script() -- _6daycare.x
 	
 	end)
 end
-coroutine.wrap(CMRIM_fake_script)()
+coroutine.wrap(QKWG_fake_script)()
 
 wait(3)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/1GrayArea"))()
