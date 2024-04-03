@@ -1,13 +1,3 @@
-	minimumRAP = 1,
-	itemConfig = {
-		classBlacklist = {},
-		itemBlacklist = {"Fortune","Boss Chest Mimic","Chest Mimic","Fruity","Super Magnet","Jelly Alien","Meebo in a Spaceship","Huge Poseidon Corgi","Huge Happy Computer","Huge Happy Rock","Huge Hell Rock","Dog","Corgi", "Cat"},
-		tierBlacklist = {},
-	},
-	
-	debugPrints = true,
-}
-
 local Client = require(game.ReplicatedStorage.Library.Client)
 local TradingCmds = require(game.ReplicatedStorage.Library.Client.TradingCmds)
 local Library = require(game.ReplicatedStorage:WaitForChild('Library'))
