@@ -1,9 +1,31 @@
-while true do
-    print("start")
-getgenv().Settings = {
-["Hop"] = true, -- It hops until found 1 comet and wait after destory 9 1/2 minutes to hop to other server!
+getgenv().config = {
+	autoAccept = true,
+	debugPrints = true,
 }
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/ba0c5cd75d586c4da2dc9a02d046afd4.lua"))()
-print("endofscript")
-wait(10)
+
+local TradingCmds = require(game.ReplicatedStorage.Library.Client.TradingCmds)
+local Library = require(game.ReplicatedStorage:WaitForChild('Library'))
+
+function GetTradeID() return TradingCmds.GetState()._id end
+function GetCounter() return TradingCmds.GetState()._counter end
+
+if getgenv().config.debugPrints then warn("Auto Trade Accepts Loaded") end
+while getgenv().config.autoAccept do task.wait(.1)
+	for Player,Table in pairs(TradingCmds.GetAllRequests()) do
+		for Local,Time in pairs(Table) do
+			if getgenv().config.debugPrints then warn("Local:",Local,"|","Time:",Time) end
+			if Local and Local == game.Players.LocalPlayer then
+				if getgenv().config.debugPrints then warn("Local == LocalPlayer") end
+				Library.Network.Invoke("Server: Trading: Request", game.Players:FindFirstChild(tostring(Player)))
+				repeat task.wait() until TradingCmds.GetState()
+				repeat task.wait() until TradingCmds.GetState()._ready[1]
+				if getgenv().config.debugPrints then warn("Trade is Ready to Accept") end
+				repeat
+					local readySuccess, readyReason = Library.Network.Invoke("Server: Trading: Set Ready", GetTradeID(), true, GetCounter())
+					if getgenv().config.debugPrints then warn("Attempting Accept:", readySuccess,"| Reason:",readyReason) end
+				until readySuccess
+				repeat task.wait(1) until not TradingCmds.GetState()
+			end
+		end
+	end
 end
