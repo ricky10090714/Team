@@ -19,7 +19,7 @@ getgenv().Config = {
             ["Map4"] = ""
         }
     },
-    ["blackScreen"] = true,
+    ["blackScreen"] = false,
     ["Auto Claim Quests"] = true,
     ["Auto Hide Name"] = true,
     ["Auto Raid (Lobby)"] = false,
