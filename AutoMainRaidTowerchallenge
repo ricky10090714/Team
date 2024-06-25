@@ -196,7 +196,7 @@ getgenv().Config = {
 		["Cursed Academy"] = 3.25,
 		["Underwater Temple"] = 3.25
 	},
-	["AutoJoinChallenge"] = false,
+	["AutoJoinChallenge"] = true,
 	["Black Screen"] = false,
 	["Friends Only"] = false,
 	["LimitedSummonUnit"] = {
@@ -322,7 +322,7 @@ getgenv().Config = {
 	["Auto Try Reconnect"] = true,
 	["IgnoreMacroTiming"] = false,
 	["AutoSummonLimited"] = false,
-	["AutoJoinRaid"] = true,
+	["AutoJoinRaid"] = false,
 	["difficultySelect"] = "Normal",
 	["Auto Replay"] = false,
 	["AutoSellFarmsWave"] = 30,
