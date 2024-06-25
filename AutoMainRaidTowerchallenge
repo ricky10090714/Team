@@ -118,7 +118,7 @@ getgenv().Config = {
 
 	},
 	["TP Lobby Time"] = 10,
-	["AutoReturnLobby"] = false,
+	["AutoReturnLobby"] = true,
 	["OFARecord"] = false,
 	["HardMode"] = false,
 	["UpgradeAndPlace"] = true,
