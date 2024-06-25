@@ -47,7 +47,7 @@ getgenv().Config = {
 		["Brawler 3"] = false,
 		["Swiftness 1"] = false
 	},
-	["AutoJoinTower"] = true,
+	["AutoJoinTower"] = false,
 	["Auto Lobby TP on Time"] = false,
 	["SelectRaidWorld"] = {
 		["Cursed Train"] = false,
@@ -260,7 +260,7 @@ getgenv().Config = {
 	["Raid2 Buy List"] = {
 
 	},
-	["AutoJoinWorld"] = false,
+	["AutoJoinWorld"] = true,
 	["TP Lobby when RAID OPEN"] = false,
 	["AutoUseAbility"] = true,
 	["JoinerList"] = {
