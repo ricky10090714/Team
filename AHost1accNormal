@@ -119,7 +119,7 @@ getgenv().Config = {
 	["OFARecord"] = false,
 	["HardMode"] = false,
 	["UpgradeAndPlace"] = false,
-	["JoinHighest"] = true,
+	["JoinHighest"] = false,
 	["WebhookPingSelected"] = {
 
 	},
@@ -259,7 +259,7 @@ getgenv().Config = {
 	["SelectReward"] = {
 		["Gems"] = true,
 		["Trait Crystal"] = true,
-		["Gold"] = true,
+		["Gold"] = false,
 		["Star Rift"] = true,
 		["Star Rift (Rainbow)"] = true,
 		["Star Rift (Dark)"] = true,
