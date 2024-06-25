@@ -4,17 +4,23 @@ getgenv().Config = {
 	["blackScreen"] = false,
 	["AutoPlay"] = true,
 	["Enable Auto Join Player"] = false,
-	["Webhook"] = {
-		["ID"] = 0,
-		["Ping"] = false,
-		["Result"] = true,
-		["URL"] = "https://discord.com/api/webhooks/1202487837962936320/1jqGaLrcVD_Hr64IFnv8_AHKWVrLExyk1xH_XHlwLu0Y2J2Tt_ocp4SUitrdrrAlQQGD"
+	["JoinerList"] = {
+		["1"] = "freckmanss2",
+		["3"] = "Lizzosflute60",
+		["2"] = "lysithea_raine2020"
 	},
 	["AutoSummonStandard"] = false,
 	["UpgradeMethod"] = "Nearest from Middle Position (until Max)",
 	["Auto Summon"] = false,
-	["Large Window"] = false,
-	["Summon Gems"] = 0,
+	["Auto Leave Wave"] = true,
+	["SelectDifficulty"] = {
+		["All units lowered range"] = true,
+		["All enemies regen health"] = true,
+		["All enemies +1 shield"] = true,
+		["All units increased cost"] = true,
+		["All enemies 2x health"] = true,
+		["All enemies 2x speed"] = true
+	},
 	["Record Options"] = "Money",
 	["LSImplosion"] = 100000,
 	["BlackScreen"] = false,
@@ -33,12 +39,12 @@ getgenv().Config = {
 		["Hunter 2"] = false,
 		["Prodigy 1"] = false,
 		["Hunter 1"] = false,
-		["Swiftness 1"] = false,
+		["Hunter 3"] = false,
 		["Precision 1"] = false,
-		["Swiftness 3"] = false,
 		["Midas Touch 1"] = false,
+		["Swiftness 3"] = false,
 		["Brawler 3"] = false,
-		["Hunter 3"] = false
+		["Swiftness 1"] = false
 	},
 	["AutoJoinTower"] = false,
 	["Auto Lobby TP on Time"] = false,
@@ -54,29 +60,29 @@ getgenv().Config = {
 		["Carp"] = false,
 		["Chance Taker"] = false,
 		["Admiral Of Lava"] = false,
-		["Strongest Swordsman"] = false,
-		["Vengeful Shinobi"] = false,
-		["Pink Rockstar"] = false,
-		["Skull Warrior"] = false,
+		["Dragon Slayer"] = false,
+		["Admiral Of Light"] = false,
+		["The Beast"] = false,
+		["Clay"] = false,
 		["Cursed Fighter"] = false,
-		["Elf Wizardess"] = false,
-		["Ant King"] = false,
 		["Esper"] = false,
-		["Flame Dragon King"] = false,
+		["Fire Leg Master"] = false,
+		["Bloomer"] = false,
 		["Thunder Shinobi"] = false,
 		["Curse Prince"] = false,
 		["Ascended Qi Master"] = false,
+		["Flame Dragon King"] = false,
 		["Spirit Hybrid"] = false,
 		["Soulforce Reaper"] = false,
 		["Admiral Of Ice"] = false,
 		["Inferno Commander"] = false,
-		["Bloomer"] = false,
-		["Fire Leg Master"] = false,
+		["Pink Rockstar"] = false,
+		["Ant King"] = false,
 		["Sharpshooter"] = false,
-		["Clay"] = false,
-		["The Beast"] = false,
-		["Admiral Of Light"] = false,
-		["Dragon Slayer"] = false,
+		["Skull Warrior"] = false,
+		["Elf Wizardess"] = false,
+		["Vengeful Shinobi"] = false,
+		["Strongest Swordsman"] = false,
 		["Master Swordsman"] = false
 	},
 	["Auto Tower"] = false,
@@ -90,7 +96,7 @@ getgenv().Config = {
 	["AutoClaimQuest"] = true,
 	["Macro Mode Select"] = "Story",
 	["AutoJoinHoster"] = false,
-	["IgnoreMacroTiming"] = true,
+	["Delete Map"] = true,
 	["SelectRaidMacro"] = {
 
 	},
@@ -110,7 +116,7 @@ getgenv().Config = {
 	["AutoReturnLobby"] = true,
 	["OFARecord"] = false,
 	["HardMode"] = false,
-	["UpgradeAndPlace"] = true,
+	["UpgradeAndPlace"] = false,
 	["JoinHighest"] = false,
 	["WebhookPingSelected"] = {
 
@@ -121,7 +127,7 @@ getgenv().Config = {
 		["Rare"] = false
 	},
 	["AutoJoinMap"] = true,
-	["Result Webhook"] = false,
+	["Hide Key"] = "U",
 	["Macros Selected"] = {
 		["Story"] = {
 			["FooshaVillage"] = "rayinfi"
@@ -149,17 +155,27 @@ getgenv().Config = {
 	["WH_MatchComplete"] = true,
 	["Auto Raid (Lobby)"] = false,
 	["WaitForJoiner"] = false,
-	["AutoUseAbility"] = true,
+	["Ping On Secret Drop"] = false,
 	["AutoPlayNext"] = true,
-	["TP Lobby when RAID OPEN"] = false,
-	["Auto TP Raid Open"] = false,
+	["SelectReward"] = {
+		["Risky Dice"] = true,
+		["Trait Crystal"] = true,
+		["Gold"] = false,
+		["Star Rift (Rainbow)"] = true,
+		["Gems"] = true,
+		["Star Rift (Dark)"] = true,
+		["Star Rift"] = true
+	},
+	["Auto Buy Raid"] = false,
 	["AutoLeave"] = false,
 	["Auto Leave when No Enemy Spawn"] = false,
 	["AutoSell"] = true,
 	["AutoReplay"] = false,
 	["Auto Raid"] = false,
-	["LSDelay"] = 0.4,
-	["WH_BannerSummoned"] = true,
+	["Selected Raids"] = {
+
+	},
+	["Auto Leave on Wave"] = false,
 	["Join Priority"] = {
 		["1"] = "Auto Join Player",
 		["3"] = "Auto Raid",
@@ -176,100 +192,97 @@ getgenv().Config = {
 		["Cursed Dungeon"] = 3.25,
 		["Blue Planet"] = 3.25,
 		["Tower of Eternity"] = 3.6,
-		["Underwater Temple"] = 3.25,
+		["Windmill Village"] = 3.25,
 		["Cursed Academy"] = 3.25,
-		["Windmill Village"] = 3.25
+		["Underwater Temple"] = 3.25
 	},
-	["Enable Auto Story"] = false,
+	["AutoJoinChallenge"] = false,
 	["Black Screen"] = false,
-	["Enable Delete Rarity"] = false,
+	["Friends Only"] = false,
 	["LimitedSummonUnit"] = {
 		["The Rift Sorcerer"] = false,
 		["Blood Demon"] = false,
 		["Warrior Princess"] = false,
 		["Electric Cyborg"] = false,
 		["Muscular Sorcerer"] = false,
-		["Beast Sorcerer"] = false,
+		["Donut Warrior"] = false,
 		["The Cursed Knight"] = false,
 		["Ocean Guardian"] = false,
 		["Cursed Archer"] = false,
-		["Donut Warrior"] = false
+		["Beast Sorcerer"] = false
 	},
 	["Selected Macro"] = "rayinfi",
+	["Enable Auto Delete Rarity"] = false,
 	["LeaveSellWave"] = 30,
-	["Auto Sell Farms"] = true,
-	["Auto Leave"] = true,
 	["IgnoreChallengeRewards"] = {
 
 	},
-	["Auto Joiner Player"] = false,
 	["Auto Execute"] = false,
+	["Enable Auto Challenge"] = false,
+	["Play Macro"] = true,
 	["Ping User"] = false,
 	["Hide Additional Frame"] = false,
-	["modeSelect"] = "Infinite",
+	["Auto Start Time Delay"] = 5,
 	["Auto Start Delay"] = 1,
-	["AutoStart"] = true,
-	["SelectChapter"] = "Infinite",
+	["Auto Sell Farms"] = true,
+	["LSBomb"] = 1,
 	["IgnoreChallengeMap"] = {
 
 	},
 	["Auto Story"] = false,
 	["Step Delay"] = 1,
 	["Ping On Selected Item"] = false,
-	["SelectDifficulty"] = {
-		["All units lowered range"] = true,
-		["All enemies regen health"] = true,
-		["All units increased cost"] = true,
-		["All enemies +1 shield"] = true,
-		["All enemies 2x health"] = true,
-		["All enemies 2x speed"] = true
-	},
+	["Enable Auto Sell Rarity"] = false,
+	["Summon Gems"] = 0,
 	["SelectTowerMacro"] = {
 
 	},
-	["Auto Leave Wave"] = true,
 	["FPS Boost"] = true,
 	["MiddlePos"] = {
-		["Cursed Academy"] = "-1254.17333984375, 532.3055419921875, -328.3988952636719",
-		["Windmill Village"] = "-1670.120361328125, 24.114013671875, -535.9500732421875",
-		["Blue Planet"] = "-15.371294975280762, 830.3976440429688, 446.58453369140625",
-		["Tower of Eternity"] = "-2501.46923828125, 2042.509765625, -1236.4776611328125",
 		["Snowy Woods"] = "-120.21700286865234, 37.58041000366211, -182.37545776367188",
 		["Swordsman Dojo"] = "-145.65504455566406, -2.809420108795166, 188.0568389892578",
 		["Mob City"] = "108.64379119873047, 297.7572326660156, 172.10745239257812",
-		["Underwater Temple"] = "540.7630615234375, 339.3208923339844, -1301.0408935546875"
+		["Cursed Dungeon"] = "157.50265502929688, 103.11605072021484, 487.4448547363281",
+		["Blue Planet"] = "-15.371294975280762, 830.3976440429688, 446.58453369140625",
+		["Tower of Eternity"] = "-2501.46923828125, 2042.509765625, -1236.4776611328125",
+		["Cursed Academy"] = "-1254.17333984375, 532.3055419921875, -328.3988952636719",
+		["Underwater Temple"] = "540.7630615234375, 339.3208923339844, -1301.0408935546875",
+		["Windmill Village"] = "-1670.120361328125, 24.114013671875, -535.9500732421875"
 	},
-	["AutoSummonLimited"] = false,
+	["FirstTime"] = true,
 	["SelectWorld"] = "Windmill Village",
-	["Enable Auto Challenge"] = false,
-	["Enable Auto Sell Rarity"] = false,
-	["Auto Skip Wave"] = true,
-	["Auto Join Map"] = false,
-	["Auto Buy Raid"] = false,
-	["SelectChallengeMacro"] = {
-
+	["TPLobbyIfPlayer"] = false,
+	["SelectChallengeWorld"] = {
+		["Cursed Academy"] = true,
+		["Blue Planet"] = true,
+		["Windmill Village"] = true,
+		["Mob City"] = true,
+		["Swordsman Dojo"] = false,
+		["Snowy Woods"] = false,
+		["Underwater Temple"] = true
 	},
+	["Large Window"] = false,
+	["Auto Join Map"] = false,
+	["Auto TP Raid Open"] = false,
+	["Import Mode"] = "Link",
 	["Auto Story Mode"] = "Automatic",
 	["TP Delay"] = 3,
-	["Auto Hide UI on Execute"] = true,
-	["AutoJoinWorld"] = true,
-	["SelectReward"] = {
-		["Gems"] = true,
-		["Trait Crystal"] = true,
-		["Gold"] = false,
-		["Star Rift"] = true,
-		["Star Rift (Rainbow)"] = true,
-		["Star Rift (Dark)"] = true,
-		["Risky Dice"] = true
-	},
-	["Ping On Secret Drop"] = false,
-	["Play Macro"] = true,
-	["AutoUpgrade"] = true,
-	["Selected Story"] = "FooshaVillage_Chapter1",
-	["Raid Buy List"] = {
+	["Raid2 Buy List"] = {
 
 	},
-	["Hide Key"] = "U",
+	["AutoLeaveOnWave"] = 31,
+	["TP Lobby when RAID OPEN"] = false,
+	["AutoUseAbility"] = true,
+	["Webhook"] = {
+		["ID"] = 0,
+		["Ping"] = false,
+		["Result"] = true,
+		["URL"] = "https://discord.com/api/webhooks/1202487837962936320/1jqGaLrcVD_Hr64IFnv8_AHKWVrLExyk1xH_XHlwLu0Y2J2Tt_ocp4SUitrdrrAlQQGD"
+	},
+	["AutoStart"] = true,
+	["Selected Story"] = "FooshaVillage_Chapter1",
+	["AutoChallenge"] = false,
+	["Result Webhook"] = false,
 	["HillHeight"] = {
 		["Snowy Woods"] = 7.6,
 		["Swordsman Dojo"] = 2,
@@ -278,60 +291,48 @@ getgenv().Config = {
 		["Cursed Dungeon"] = 2,
 		["Blue Planet"] = 4,
 		["Tower of Eternity"] = 2,
-		["Underwater Temple"] = 4,
+		["Windmill Village"] = 4,
 		["Cursed Academy"] = 4,
-		["Windmill Village"] = 4
+		["Underwater Temple"] = 4
 	},
 	["Summon Mode"] = "All Gems",
 	["actSelect"] = 1,
-	["JoinerList"] = {
-		["1"] = "freckmanss2",
-		["3"] = "Lizzosflute60",
-		["2"] = "lysithea_raine2020"
-	},
+	["SelectChapter"] = "Infinite",
 	["UnselectIfSummoned"] = false,
-	["LSBomb"] = 1,
+	["Raid Buy List"] = {
+
+	},
 	["Auto Start"] = false,
-	["Enable Auto Delete Rarity"] = false,
-	["Auto Buy Raid2"] = false,
 	["LSLoop"] = 2,
-	["Auto Replay"] = false,
+	["Auto Buy Raid2"] = false,
+	["Auto Joiner Player"] = false,
+	["Auto Skip Wave"] = true,
 	["Auto Sell Units"] = true,
 	["Summon Banner"] = "Standard",
-	["Auto Start Time Delay"] = 5,
+	["Auto Leave"] = true,
 	["Auto Delete Rarity"] = {
 
 	},
 	["PingSelected"] = false,
-	["AutoLeaveOnWave"] = 31,
-	["Raid2 Buy List"] = {
+	["AutoJoinWorld"] = true,
+	["Auto Hide UI on Execute"] = true,
+	["SelectChallengeMacro"] = {
 
 	},
-	["Import Mode"] = "Link",
 	["Auto Try Reconnect"] = true,
-	["TPLobbyIfPlayer"] = false,
-	["FirstTime"] = true,
-	["AutoChallenge"] = false,
+	["IgnoreMacroTiming"] = false,
+	["AutoSummonLimited"] = false,
+	["AutoJoinRaid"] = true,
 	["difficultySelect"] = "Normal",
-	["Delete Map"] = true,
+	["Auto Replay"] = false,
 	["AutoSellFarmsWave"] = 30,
 	["Auto Start Game/Skip"] = false,
 	["DeleteMap"] = true,
-	["AutoJoinRaid"] = true,
+	["modeSelect"] = "Infinite",
 	["Record Macro"] = false,
-	["SelectChallengeWorld"] = {
-		["Cursed Academy"] = true,
-		["Blue Planet"] = true,
-		["Underwater Temple"] = true,
-		["Snowy Woods"] = false,
-		["Swordsman Dojo"] = false,
-		["Mob City"] = true,
-		["Windmill Village"] = true
-	},
-	["Friends Only"] = false,
-	["AutoJoinChallenge"] = true,
-	["Auto Leave on Wave"] = false,
-	["Selected Raids"] = {
-
-	}
+	["AutoUpgrade"] = true,
+	["Enable Delete Rarity"] = false,
+	["Enable Auto Story"] = false,
+	["WH_BannerSummoned"] = true,
+	["LSDelay"] = 0.4
 }
