@@ -1,7 +1,7 @@
 getgenv().Config = {
 	["Ignore Shiny Sell Rarity"] = false,
 	["AutoSave"] = true,
-	["blackScreen"] = true,
+	["blackScreen"] = false,
 	["AutoPlay"] = true,
 	["Enable Auto Join Player"] = false,
 	["JoinerList"] = {
@@ -23,7 +23,7 @@ getgenv().Config = {
 	},
 	["Record Options"] = "Money",
 	["LSImplosion"] = 100000,
-	["BlackScreen"] = true,
+	["BlackScreen"] = false,
 	["Ignore Shiny Auto Sell Rarity"] = true,
 	["SelectTrait"] = {
 		["Almighty 1"] = false,
