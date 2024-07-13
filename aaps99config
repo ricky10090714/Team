@@ -1,4 +1,4 @@
-local Normal = True
+local Normal = false
 
 function Teleport()
     if Normal == true then
@@ -18,9 +18,12 @@ end
 wait(3)
 if game.PlaceId == 8737899170 then
     Teleport()
+end
 
 if game.PlaceId == 15502339080 then
     ClaimBooth()
+end
 
 if game.PlaceId == 15588442388 then
     ClaimBooth()
+end
