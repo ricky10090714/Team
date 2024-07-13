@@ -1,4 +1,3 @@
-wait(10)
 local Normal = True
 
 function Teleport()
