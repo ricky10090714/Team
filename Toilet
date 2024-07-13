@@ -1,3 +1,7 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/1GrayArea"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/5removelag"))()
+
+
 getgenv().Config = {
 	["AutoVoteDifficulty"] = true,
 	["RequiredGem"] = 1000,
