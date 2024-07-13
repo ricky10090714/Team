@@ -1,29 +1,51 @@
 local Normal = false
 
+function AntiKick()
+    local Players = game:GetService("Players")
+    local LocalPlayer = Players.LocalPlayer
+    
+    local oldhmmi
+    local oldhmmnc
+    
+    oldhmmi = hookmetamethod(game, "__index", function(self, method)
+        if self == LocalPlayer and method:lower() == "kick" then
+            return error("Expected ':' not '.' calling member function Kick", 2)
+        end
+        return oldhmmi(self, method)
+    end)
+    
+    oldhmmnc = hookmetamethod(game, "__namecall", function(self, ...)
+        if self == LocalPlayer and getnamecallmethod():lower() == "kick" then
+            return
+        end
+        return oldhmmnc(self, ...)
+    end)
+end
+
 function Teleport()
-    if Normal == true then
-        game:GetService("TeleportService"):Teleport(15502339080, game.Players.LocalPlayer)
-    else
-        game:GetService("TeleportService"):Teleport(15588442388, game.Players.LocalPlayer) 
-    end
+    local TeleportService = game:GetService("TeleportService")
+    local PlaceId = Normal and 15502339080 or 15588442388
+    TeleportService:Teleport(PlaceId, game.Players.LocalPlayer)
 end
 
 function ClaimBooth()
+    local ReplicatedStorage = game:GetService("ReplicatedStorage")
+    local Network = ReplicatedStorage:WaitForChild("Network")
+    local Booths_ClaimBooth = Network:WaitForChild("Booths_ClaimBooth")
+
     for i = 1, 50 do
-        game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Booths_ClaimBooth"):InvokeServer(tostring(i))
+        Booths_ClaimBooth:InvokeServer(tostring(i))
         wait(0.2)
     end
 end
 
 wait(3)
+
 if game.PlaceId == 8737899170 then
     Teleport()
 end
 
-if game.PlaceId == 15502339080 then
+if game.PlaceId == 15502339080 or game.PlaceId == 15588442388 then
     ClaimBooth()
-end
-
-if game.PlaceId == 15588442388 then
-    ClaimBooth()
+    AntiKick()
 end
