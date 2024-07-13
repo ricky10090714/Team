@@ -1,4 +1,5 @@
-local Normal = false -- if True "Normal Plaza" if False "Pro Plaza"
+wait(10)
+local Normal = True
 
 function Teleport()
     if Normal == true then
