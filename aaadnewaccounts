@@ -1,8 +1,3 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/1GrayArea"))()
-
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/bytemoo/Team/main/1removelag"))()
-
 getgenv().Config = {
 	["Ignore Shiny Sell Rarity"] = false,
 	["AutoSave"] = true,
