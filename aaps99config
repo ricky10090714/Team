@@ -32,9 +32,11 @@ function ClaimBooth()
     local ReplicatedStorage = game:GetService("ReplicatedStorage")
     local Network = ReplicatedStorage:WaitForChild("Network")
     local Booths_ClaimBooth = Network:WaitForChild("Booths_ClaimBooth")
+    local Booths_Restore = Network:WaitForChild("Booths_Restore")
 
-    for i = 1, 50 do
+    for i = 8, 26 do
         Booths_ClaimBooth:InvokeServer(tostring(i))
+        Booths_Restore:InvokeServer()
         wait(0.2)
     end
 end
