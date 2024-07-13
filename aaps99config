@@ -1,1 +1,26 @@
-{"AutoDigsite":false,"AutoMerchant":false,"TapPerTime":3,"MerchantTF":{"RegularMerchant":false,"GardenMerchant":false,"AdvancedMerchant":false},"AutoClaimFreeReward":true,"TNTRebirth":false,"TapTime":1,"ReEnableIfHardstuck":300,"AutoFruit":false,"AutoRebirth":false,"FarmingMode":"All","AutoClaimMail":true,"AutoPotion":false,"AutoBuyUpdrage":false,"AutoBuyPetSlot":false,"DelayHopIfHardstuck":60,"AutoEquipEnchant":false,"IgnoreUpgrade":{"Magnet":false,"Drops":false,"LessGold":false,"Pet Speed":false,"Pet Damage":false,"LessRainbow":false,"Luck":false,"Ultimates":false,"Walkspeed":false,"Coins":false,"Diamonds":false,"Tap Damage":false},"HopIfGoPopUp":false,"MinZoneUseFlag":1,"DigsiteHopp":false,"Atlantis":false,"SpawnObby":false,"EquippedEnchant":[{"tier":1,"slot":1},{"tier":1,"slot":2},{"tier":1,"slot":3},{"tier":1,"slot":4},{"tier":1,"slot":5},{"tier":1,"slot":6}],"AutoCoinFlag":false,"DigsiteLevel":3,"ClaimRankReward":true,"AutoUltimate":false,"DigsiteZone":"Advanced Digsite","MaxMap":205,"CauCa":false,"ListSendMail":[],"HiddenPresent":false,"OpenGiftBag":false,"AutoWorld2":false,"MinTier":3,"Potions":[],"SelectBest":true,"Minefield":false,"Fruits":[],"AutoTap":false,"AutoOpenMap":false,"RebirthTime":1}
+local Normal = false -- if True "Normal Plaza" if False "Pro Plaza"
+
+function Teleport()
+    if Normal == true then
+        game:GetService("TeleportService"):Teleport(15502339080, game.Players.LocalPlayer)
+    else
+        game:GetService("TeleportService"):Teleport(15588442388, game.Players.LocalPlayer) 
+    end
+end
+
+function ClaimBooth()
+    for i = 1, 50 do
+        game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Booths_ClaimBooth"):InvokeServer(tostring(i))
+        wait(0.2)
+    end
+end
+
+wait(3)
+if game.PlaceId == 8737899170 then
+    Teleport()
+
+if game.PlaceId == 15502339080 then
+    ClaimBooth()
+
+if game.PlaceId == 15588442388 then
+    ClaimBooth()
