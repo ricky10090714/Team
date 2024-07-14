@@ -26,7 +26,7 @@ if game.PlaceId == 15502339080 then
     ItemCount.BorderColor3 = Color3.fromRGB(0, 0, 0)
     ItemCount.BorderSizePixel = 0
     ItemCount.AnchorPoint = Vector2.new(0.5, 0.5)
-    ItemCount.Position = UDim2.new(0.5, 0, 0.5, 0)
+    ItemCount.Position = UDim2.new(0.5, 0, 0.1, 0)
     ItemCount.Size = UDim2.new(0, 100, 0, 100)
     UICorner.CornerRadius = UDim.new(0.150000006, 0)
     UICorner.Parent = ItemCount
