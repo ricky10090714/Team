@@ -1,4 +1,4 @@
-if game.PlaceId == 15502339080 then
+if game.PlaceId == 15502339080 or game.PlaceId == 15588442388 then
     repeat wait() until game:IsLoaded()
     local booth_func
     for i, v in getgc() do
@@ -13,34 +13,43 @@ if game.PlaceId == 15502339080 then
         end
     end
     local plr = game.Players.LocalPlayer
-    local ListingCounter = Instance.new("ScreenGui")
+    local ListCounter = Instance.new("ScreenGui")
     local ItemCount = Instance.new("Frame")
     local UICorner = Instance.new("UICorner")
     local value = Instance.new("TextLabel")
-    ListingCounter.Name = "ListingCounter"
-    ListingCounter.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-    ListingCounter.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+    local UIScale = Instance.new("UIScale")
+
+    ListCounter.Name = "ListCounter"
+    ListCounter.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+    ListCounter.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
     ItemCount.Name = "ItemCount"
-    ItemCount.Parent = ListingCounter
+    ItemCount.Parent = ListCounter
     ItemCount.BackgroundColor3 = Color3.fromRGB(49, 183, 255)
     ItemCount.BorderColor3 = Color3.fromRGB(0, 0, 0)
     ItemCount.BorderSizePixel = 0
     ItemCount.AnchorPoint = Vector2.new(0.5, 0.5)
-    ItemCount.Position = UDim2.new(0.5, 0, 0.1, 0)
-    ItemCount.Size = UDim2.new(0, 100, 0, 100)
-    UICorner.CornerRadius = UDim.new(0.150000006, 0)
+    ItemCount.Position = UDim2.new(0.5, 0, 0.5, 0)
+    ItemCount.Size = UDim2.new(0, 388, 0, 361)
+
+    UICorner.CornerRadius = UDim.new(0, 30)
     UICorner.Parent = ItemCount
+
     value.Name = "value"
     value.Parent = ItemCount
     value.BackgroundColor3 = Color3.fromRGB(49, 183, 255)
     value.BorderColor3 = Color3.fromRGB(0, 0, 0)
     value.BorderSizePixel = 0
-    value.Position = UDim2.new(0, 0, 0.150000006, 0)
-    value.Size = UDim2.new(0, 100, 0, 69)
-    value.Font = Enum.Font.SourceSansBold
+    value.Position = UDim2.new(0, 44, 0, 30)
+    value.Size = UDim2.new(0, 100, 0, 100)
+    value.Font = Enum.Font.SourceSans
     value.Text = "0"
     value.TextColor3 = Color3.fromRGB(0, 0, 0)
     value.TextSize = 100.000
+
+    UIScale.Parent = value
+    UIScale.Scale = 3.000
+
     while task.wait(1) do
         booth = booth_func(plr.UserId)
         if booth ~= nil then
