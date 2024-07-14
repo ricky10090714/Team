@@ -1,5 +1,33 @@
 local Normal = false
 
+function AntiIdle()
+    local Players = game:GetService("Players")
+    local LocalPlayer = Players.LocalPlayer
+    local GC = getconnections or get_signal_cons
+
+    if GC then
+        -- Get the connections to the Idled event
+        for _, v in pairs(GC(LocalPlayer.Idled)) do
+            if v["Disable"] then
+                v["Disable"](v)
+            elseif v["Disconnect"] then
+                v["Disconnect"](v)
+            end
+        end
+    else
+        local VirtualUser = Instance.new("VirtualUser")
+        LocalPlayer.Idled:Connect(function()
+            VirtualUser:CaptureController()
+            VirtualUser:ClickButton2(Vector2.new())
+        end)
+    end
+    
+    if not (args and tostring(args[1]) == 'nonotify') then
+        notify('Anti Idle', 'Anti idle is enabled')
+    end
+end
+
+
 function AntiKick()
     local Players = game:GetService("Players")
     local LocalPlayer = Players.LocalPlayer
@@ -34,20 +62,26 @@ function ClaimBooth()
     local Booths_ClaimBooth = Network:WaitForChild("Booths_ClaimBooth")
     local Booths_Restore = Network:WaitForChild("Booths_Restore")
 
-    for i = 8, 26 do
-        Booths_ClaimBooth:InvokeServer(tostring(i))
+    local boothsToClaim = {17, 16, 14, 13, 29, 25, 24, 28, 20, 15, 21}
+    
+    for _, boothNumber in ipairs(boothsToClaim) do
+        Booths_ClaimBooth:InvokeServer(tostring(boothNumber))
         Booths_Restore:InvokeServer()
         wait(0.2)
     end
 end
 
+
 wait(3)
 
 if game.PlaceId == 8737899170 then
     Teleport()
+    AntiKick()
+    AntiIdle()
 end
 
 if game.PlaceId == 15502339080 or game.PlaceId == 15588442388 then
     ClaimBooth()
     AntiKick()
+    AntiIdle()
 end
