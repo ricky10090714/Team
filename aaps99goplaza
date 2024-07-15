@@ -1,31 +1,5 @@
 local Normal = false
 
-function AntiIdle()
-    local Players = game:GetService("Players")
-    local LocalPlayer = Players.LocalPlayer
-    local GC = getconnections or get_signal_cons
-
-    if GC then
-        -- Get the connections to the Idled event
-        for _, v in pairs(GC(LocalPlayer.Idled)) do
-            if v["Disable"] then
-                v["Disable"](v)
-            elseif v["Disconnect"] then
-                v["Disconnect"](v)
-            end
-        end
-    else
-        local VirtualUser = Instance.new("VirtualUser")
-        LocalPlayer.Idled:Connect(function()
-            VirtualUser:CaptureController()
-            VirtualUser:ClickButton2(Vector2.new())
-        end)
-    end
-    
-    if not (args and tostring(args[1]) == 'nonotify') then
-        notify('Anti Idle', 'Anti idle is enabled')
-    end
-end
 
 
 function AntiKick()
@@ -77,7 +51,6 @@ wait(3)
 if game.PlaceId == 8737899170 then
     Teleport()
     AntiKick()
-    AntiIdle()
 end
 
 if game.PlaceId == 15502339080 or game.PlaceId == 15588442388 then
