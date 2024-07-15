@@ -1,0 +1,23 @@
+function AntiIdle()
+    local Players = game:GetService("Players")
+    local LocalPlayer = Players.LocalPlayer
+    local GC = getconnections or getsignal_cons
+
+    if GC then
+        -- Get the connections to the Idled event
+        for , v in pairs(GC(LocalPlayer.Idled)) do
+            if v["Disable"] then
+                v["Disable"](v)
+            elseif v["Disconnect"] then
+                v["Disconnect"](v)
+            end
+        end
+    else
+        local VirtualUser = Instance.new("VirtualUser")
+        LocalPlayer.Idled:Connect(function()
+            VirtualUser:CaptureController()
+            VirtualUser:ClickButton2(Vector2.new())
+        end)
+    end
+end
+AntiIdle()
