@@ -31,7 +31,7 @@ getgenv().Config = {
 	["BoostFPS"] = true,
 	["Summon10"] = false,
 	["UseAll"] = false,
-	["AutoJoinMatch"] = true,
+	["AutoJoinMatch"] = false,
 	["ALFS_HopServer"] = false,
 	["RequireRoll"] = 0,
 	["RequiredGem"] = 100,
@@ -58,9 +58,9 @@ getgenv().Config = {
 		["Weekend_2xEndlessXPBoost"] = false,
 		["2xLuckBoost"] = false,
 		["2xXPBoost"] = false,
-		["2xCoinsBoost"] = false,
+		["2xClocksBoost"] = false,
 		["Weekend_2xCoinsBoost"] = false,
-		["2xClocksBoost"] = false
+		["2xCoinsBoost"] = false
 	},
 	["DelayJoin"] = 10
 }
