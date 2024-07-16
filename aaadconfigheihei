@@ -86,7 +86,7 @@ getgenv().Config = {
 	},
 	["Auto Replay"] = false,
 	["AutoRejoin"] = true,
-	["WebhookURL"] = "https://discord.com/api/webhooks/1202487837962936320/1jqGaLrcVD_Hr64IFnv8_AHKWVrLExyk1xH_XHlwLu0Y2J2Tt_ocp4SUitrdrrAlQQGD",
+	["WebhookURL"] = "https://discord.com/api/webhooks/1262597657176834048/wZgZmI5hFiLAY8Vwfeh8Ta8H1SKVA_20Syy73G0dQTDNqtK2ci-yVYylJw2sK_lLfOVR",
 	["AutoStart"] = true,
 	["HosterName"] = "Rayson_Rodel",
 	["Auto Next"] = false,
