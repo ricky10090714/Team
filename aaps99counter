@@ -1,3 +1,4 @@
+local increment = 7000000
 if game.PlaceId == 15502339080 or game.PlaceId == 15588442388 then
     repeat wait() until game:IsLoaded()
     local booth_func
@@ -12,54 +13,128 @@ if game.PlaceId == 15502339080 or game.PlaceId == 15588442388 then
             end
         end
     end
+
     local plr = game.Players.LocalPlayer
-    local ListCounter = Instance.new("ScreenGui")
-    local ItemCount = Instance.new("Frame")
-    local UICorner = Instance.new("UICorner")
-    local value = Instance.new("TextLabel")
-    local UIScale = Instance.new("UIScale")
+    local petf = require(game.ReplicatedStorage.Library.Directory.Pets)
+    local itemf = require(game.ReplicatedStorage.Library.Items)
+    local library = require(game.ReplicatedStorage:WaitForChild("Library"))
 
-    ListCounter.Name = "ListCounter"
-    ListCounter.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-    ListCounter.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-    ItemCount.Name = "ItemCount"
-    ItemCount.Parent = ListCounter
-    ItemCount.BackgroundColor3 = Color3.fromRGB(49, 183, 255)
-    ItemCount.BorderColor3 = Color3.fromRGB(0, 0, 0)
-    ItemCount.BorderSizePixel = 0
-    ItemCount.AnchorPoint = Vector2.new(0.5, 0.5)
-    ItemCount.Position = UDim2.new(0.5, 0, 0.5, 0)
-    ItemCount.Size = UDim2.new(0, 388, 0, 361)
+    local booth_count = function(a)
+        local booth_count = 0
+        for i,v in pairs(a) do
+            booth_count = booth_count + 1
+        end
+        return booth_count
+    end
 
-    UICorner.CornerRadius = UDim.new(0, 30)
-    UICorner.Parent = ItemCount
-
-    value.Name = "value"
-    value.Parent = ItemCount
-    value.BackgroundColor3 = Color3.fromRGB(49, 183, 255)
-    value.BorderColor3 = Color3.fromRGB(0, 0, 0)
-    value.BorderSizePixel = 0
-    value.Position = UDim2.new(0, 44, 0, 30)
-    value.Size = UDim2.new(0, 100, 0, 100)
-    value.Font = Enum.Font.SourceSans
-    value.Text = "0"
-    value.TextColor3 = Color3.fromRGB(0, 0, 0)
-    value.TextSize = 100.000
-
-    UIScale.Parent = value
-    UIScale.Scale = 3.000
-
-    while task.wait(1) do
-        booth = booth_func(plr.UserId)
-        if booth ~= nil then
-            local count = 0
-            for i,v in pairs(booth.Listings) do
-                count = count+1
-            end
-            if value.Text ~= tostring(count) then
-                value.Text = tostring(count)
+    local check_count = function(a, b)
+        local count = 0
+        for i,v in pairs(a) do
+            if v.Item._data.id == b then
+                count = count + 1
             end
         end
+        return count
     end
+
+    local c_add = function(a)
+        local remainder = a % 100000
+        return a + (100000 - remainder) + 99999
+    end
+
+    task.spawn(function()
+        if not game.Players.LocalPlayer:WaitForChild("PlayerGui"):FindFirstChild("ListCounter") then
+            local ListCounter = Instance.new("ScreenGui")
+            local ItemCount = Instance.new("Frame")
+            local UICorner = Instance.new("UICorner")
+            local value = Instance.new("TextLabel")
+            local UIScale = Instance.new("UIScale")
+
+            ListCounter.Name = "ListCounter"
+            ListCounter.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+            ListCounter.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+            ItemCount.Name = "ItemCount"
+            ItemCount.Parent = ListCounter
+            ItemCount.BackgroundColor3 = Color3.fromRGB(49, 183, 255)
+            ItemCount.BorderColor3 = Color3.fromRGB(0, 0, 0)
+            ItemCount.BorderSizePixel = 0
+            ItemCount.AnchorPoint = Vector2.new(0.5, 0.5)
+            ItemCount.Position = UDim2.new(0.5, 0, 0.5, 0)
+            ItemCount.Size = UDim2.new(0, 388, 0, 361)
+
+            UICorner.CornerRadius = UDim.new(0, 30)
+            UICorner.Parent = ItemCount
+
+            value.Name = "value"
+            value.Parent = ItemCount
+            value.BackgroundColor3 = Color3.fromRGB(49, 183, 255)
+            value.BorderColor3 = Color3.fromRGB(0, 0, 0)
+            value.BorderSizePixel = 0
+            value.Position = UDim2.new(0, 44, 0, 30)
+            value.Size = UDim2.new(0, 100, 0, 100)
+            value.Font = Enum.Font.SourceSans
+            value.Text = "0"
+            value.TextColor3 = Color3.fromRGB(0, 0, 0)
+            value.TextSize = 100.000
+
+            UIScale.Parent = value
+            UIScale.Scale = 3.000
+            wait(.5)
+            while task.wait(1) do
+                booth = booth_func(plr.UserId)
+                if booth ~= nil then
+                    local count = 0
+                    for i,v in pairs(booth.Listings) do
+                        count = count+1
+                    end
+                    if value.Text ~= tostring(count) then
+                        value.Text = tostring(count)
+                    end
+                end
+            end
+        else
+            print("Counter Already Exist :>")
+        end
+    end)
+
+    if not getgenv().booth_sell then
+        getgenv().booth_sell = true
+    else
+        getgenv().booth_sell = false
+    end
+
+    if getgenv().booth_sell == false then
+        if game.Players.LocalPlayer:WaitForChild("PlayerGui"):FindFirstChild("ListCounter") then
+            game.Players.LocalPlayer:WaitForChild("PlayerGui"):FindFirstChild("ListCounter"):Destroy()
+        end
+    end
+    spawn(function()
+        while getgenv().booth_sell and wait() do
+            local booth = booth_func(plr.UserId)
+            if booth ~= nil and booth_count(booth.Listings) < library.Save.Get().BoothSlots then
+                for i,v in pairs(library.Save.Get().Inventory.Pet) do
+                    if v.id:match("Huge") and v._am ~= nil and check_count(booth.Listings, v.id) < v._am or v.id:match("Huge") and v._am == nil and check_count(booth.Listings, v.id) ~= 1 then
+                        local pet = itemf.Pet(petf[v.id])
+                        for i2,v2 in pairs(v) do
+                            pet._data[i2] = v2
+                        end
+                        pet._data["_am"] = 1
+                        if pet:GetDevRAP() >= 1000000 then
+                            print(c_add(pet:GetDevRAP())+increment)
+                            game:GetService("ReplicatedStorage").Network.Booths_CreateListing:InvokeServer(i, c_add(pet:GetDevRAP())+increment, 1)
+                        else
+                            game:GetService("ReplicatedStorage").Network.Booths_CreateListing:InvokeServer(i, pet:GetDevRAP()+increment, 1)
+                        end
+                        wait(.5)
+                    end
+                    if booth_count(booth_func(plr.UserId).Listings) == library.Save.Get().BoothSlots then
+                        break
+                    end
+                end
+            end
+        end
+    end)
+    print(getgenv().booth_sell)
 end
