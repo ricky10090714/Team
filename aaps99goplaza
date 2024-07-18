@@ -1,4 +1,4 @@
-local Normal = true
+local Normal = false
 
 function Teleport()
     local TeleportService = game:GetService("TeleportService")
