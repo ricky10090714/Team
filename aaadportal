@@ -157,7 +157,7 @@ getgenv().Config = {
 	["TP Lobby when RAID OPEN"] = false,
 	["Auto TP Raid Open"] = false,
 	["Enable Auto Story"] = false,
-	["AutoLeave"] = false,
+	["AutoLeave"] = true,
 	["Auto Leave when No Enemy Spawn"] = false,
 	["AutoSell"] = false,
 	["AutoReplay"] = true,
@@ -175,7 +175,7 @@ getgenv().Config = {
 	["IgnoreChallengeRewards"] = {
 
 	},
-	["LeaveSellWave"] = 47,
+	["LeaveSellWave"] = 32,
 	["Join Priority"] = {
 		["1"] = "Auto Join Player",
 		["3"] = "Auto Raid",
