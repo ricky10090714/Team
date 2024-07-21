@@ -350,9 +350,9 @@ getgenv().Config = {
 	["Hide Key"] = "U",
 	["UnselectIfSummoned"] = false,
 	["SelectPortal"] = {
-		["Solar Temple Portal"] = false,
+		["Solar Temple Portal"] = true,
 		["Cursed Kingdom Portal"] = false,
-		["Lunar Temple Portal"] = false,
+		["Lunar Temple Portal"] = true,
 		["Ancient Dragon Portal"] = true,
 		["Demon Portal"] = false
 	},
