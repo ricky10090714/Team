@@ -35,13 +35,11 @@ getgenv().Config = {
 	["Auto Tower"] = false,
 	["AutoRejoin"] = true,
 	["WebhookURL"] = "https://discord.com/api/webhooks/1262597657176834048/wZgZmI5hFiLAY8Vwfeh8Ta8H1SKVA_20Syy73G0dQTDNqtK2ci-yVYylJw2sK_lLfOVR",
-	["ABBHopServer"] = false,
+	["AutoStart"] = true,
 	["HosterName"] = "Rayson_Rodel",
 	["Auto Next"] = false,
 	["AutoClaimBattlePass"] = true,
-	["IgnoreChallengeRewards"] = {
-
-	},
+	["AutoSkip"] = true,
 	["Enable Sell Rarity"] = false,
 	["AutoClaimQuest"] = true,
 	["Macro Mode Select"] = "Story",
@@ -62,14 +60,12 @@ getgenv().Config = {
 
 	},
 	["BoostFPS"] = true,
-	["Raid Buy List"] = {
-
-	},
+	["JoinerCooldown"] = 60,
 	["TP Lobby Time"] = 10,
-	["LSLoop"] = 2,
+	["AutoReturnLobby"] = true,
 	["OFARecord"] = false,
 	["HardMode"] = false,
-	["AutoJoinChallenge"] = false,
+	["UpgradeAndPlace"] = false,
 	["BuyUnit"] = false,
 	["JoinHighest"] = false,
 	["WebhookPingSelected"] = {
@@ -115,24 +111,28 @@ getgenv().Config = {
 	["Selected Raids"] = {
 
 	},
-	["UpgradeAndPlace"] = false,
-	["Auto TP Raid Open"] = false,
-	["AutoLeave"] = true,
-	["Auto Leave when No Enemy Spawn"] = false,
-	["AutoSell"] = false,
-	["Enable Delete Rarity"] = false,
+	["AutoJoinChallenge"] = false,
 	["AutoReplay"] = true,
+	["AutoLeave"] = true,
+	["Auto Leave on Wave"] = false,
+	["AutoSell"] = false,
+	["Friends Only"] = false,
+	["LSDelay"] = 0.4,
 	["Auto Raid"] = false,
-	["AutoReturnLobby"] = true,
-	["Record Macro"] = false,
-	["AutoStart"] = true,
-	["AutoChallenge"] = false,
-	["AutoJoinRaid"] = false,
-	["Delete Map"] = true,
-	["AutoJoinWorld"] = true,
-	["friendSelect"] = false,
+	["Raid Buy List"] = {
+
+	},
+	["BuyItem"] = false,
+	["Auto Leave when No Enemy Spawn"] = false,
 	["modeSelect"] = "Infinite",
 	["AutoUpgrade"] = true,
+	["Delete Map"] = true,
+	["IgnoreChallengeRewards"] = {
+
+	},
+	["Play Macro"] = true,
+	["LSBomb"] = 1,
+	["WH_BannerSummoned"] = false,
 	["PlaceGap"] = {
 		["Snowy Woods"] = 3.25,
 		["Cursed Kingdom Portal"] = 3.25,
@@ -153,31 +153,32 @@ getgenv().Config = {
 		["Crystal Cave"] = 3.25,
 		["Demon Portal"] = 3.25
 	},
-	["FirstTime"] = true,
+	["AutoSummonLimited"] = false,
 	["AutoConvertTicket"] = true,
-	["Black Screen"] = false,
+	["FPS Boost"] = true,
 	["Selected Macro"] = "rayinfi",
 	["AutoBuyBooth"] = false,
 	["LeaveSellWave"] = 47,
-	["Import Mode"] = "Link",
-	["Raid2 Buy List"] = {
+	["SelectChallengeMacro"] = {
 
 	},
+	["Auto Hide UI on Execute"] = true,
+	["AutoLeaveOnWave"] = 31,
 	["Auto Execute"] = false,
 	["Ping User"] = false,
 	["Hide Additional Frame"] = false,
 	["AutoJoinMirror"] = false,
 	["Auto Start Delay"] = 1,
-	["LSBomb"] = 1,
+	["Auto Skip Wave"] = true,
+	["SelectChapter"] = "Infinite",
 	["IgnoreChallengeMap"] = {
 
 	},
 	["Auto Story"] = false,
 	["Step Delay"] = 1,
 	["Ping On Selected Item"] = false,
-	["Large Window"] = false,
-	["Enable Auto Sell Rarity"] = false,
-	["FPS Boost"] = true,
+	["TPLobbyIfPlayer"] = true,
+	["Auto Leave"] = true,
 	["MiddlePos"] = {
 		["Snowy Woods"] = "-120.21700286865234, 37.58041000366211, -182.37545776367188",
 		["Swordsman Dojo"] = "-145.65504455566406, -2.809420108795166, 188.0568389892578",
@@ -191,33 +192,24 @@ getgenv().Config = {
 		["Crystal Cave"] = "105.8184814453125, 89.71688842773438, -205.94253540039062",
 		["Underwater Temple"] = "540.7630615234375, 339.3208923339844, -1301.0408935546875"
 	},
-	["AutoLeaveOnWave"] = 31,
 	["SelectWorld"] = "Windmill Village",
-	["TPLobbyIfPlayer"] = true,
-	["UnitPrice"] = 1,
+	["Enable Auto Challenge"] = false,
+	["Enable Auto Sell Rarity"] = false,
 	["Auto Join Map"] = false,
-	["JoinerList"] = {
-		["1"] = "freckmanss2",
-		["3"] = "Lizzosflute60",
-		["2"] = "lysithea_raine2020"
+	["SelectTowerMacro"] = {
+
 	},
+	["Ping On Secret Drop"] = false,
 	["Auto Joiner Player"] = false,
 	["Auto Story Mode"] = "Automatic",
 	["TP Delay"] = 3,
-	["Enable Auto Delete Rarity"] = false,
+	["Auto Start Game/Skip"] = false,
 	["Auto Replay"] = false,
-	["AutoJoinPortal"] = false,
+	["Auto Sell Farms"] = true,
 	["TP Lobby"] = false,
-	["Join Priority"] = {
-		["1"] = "Auto Join Player",
-		["3"] = "Auto Raid",
-		["2"] = "Auto Tower",
-		["5"] = "Auto Story",
-		["4"] = "Auto Challenge",
-		["6"] = "Auto Join Map"
-	},
-	["Selected Story"] = "FooshaVillage_Chapter1",
+	["actSelect"] = 1,
 	["difficultySelect"] = "Normal",
+	["Selected Story"] = "FooshaVillage_Chapter1",
 	["Hide Key"] = "U",
 	["HillHeight"] = {
 		["Snowy Woods"] = 7.6,
@@ -241,42 +233,50 @@ getgenv().Config = {
 	},
 	["Summon Mode"] = "All Gems",
 	["ABBHopDelay"] = 0,
-	["actSelect"] = 1,
-	["UnselectIfSummoned"] = false,
-	["Auto Sell Farms"] = true,
-	["Auto Start"] = false,
-	["Auto Start Game/Skip"] = false,
-	["Auto Buy Raid2"] = false,
-	["Ping On Secret Drop"] = false,
-	["SelectTowerMacro"] = {
-
+	["Join Priority"] = {
+		["1"] = "Auto Join Player",
+		["3"] = "Auto Raid",
+		["2"] = "Auto Tower",
+		["5"] = "Auto Story",
+		["4"] = "Auto Challenge",
+		["6"] = "Auto Join Map"
 	},
+	["UnselectIfSummoned"] = false,
+	["AutoJoinPortal"] = false,
+	["Auto Start"] = false,
+	["Enable Auto Delete Rarity"] = false,
+	["Auto Buy Raid2"] = false,
+	["JoinerList"] = {
+		["1"] = "freckmanss2",
+		["3"] = "Lizzosflute60",
+		["2"] = "lysithea_raine2020"
+	},
+	["UnitPrice"] = 1,
 	["Auto Sell Units"] = true,
 	["Summon Banner"] = "Standard",
-	["Enable Auto Challenge"] = false,
+	["Large Window"] = false,
 	["Auto Delete Rarity"] = {
 
 	},
 	["PingSelected"] = false,
-	["Auto Skip Wave"] = true,
-	["Auto Hide UI on Execute"] = true,
-	["SelectChallengeMacro"] = {
+	["Raid2 Buy List"] = {
 
 	},
+	["Import Mode"] = "Link",
 	["Auto Try Reconnect"] = true,
-	["Auto Leave"] = true,
-	["AutoSummonLimited"] = false,
-	["SelectChapter"] = "Infinite",
-	["Play Macro"] = true,
-	["AutoSkip"] = true,
+	["AutoJoinRaid"] = false,
+	["FirstTime"] = true,
+	["Black Screen"] = false,
+	["ABBHopServer"] = false,
+	["AutoJoinWorld"] = true,
 	["AutoSellFarmsWave"] = 30,
-	["JoinerCooldown"] = 60,
+	["AutoChallenge"] = false,
 	["DeleteMap"] = true,
-	["Auto Leave on Wave"] = false,
-	["BuyItem"] = false,
-	["WH_BannerSummoned"] = true,
-	["Friends Only"] = false,
-	["LSDelay"] = 0.4,
+	["friendSelect"] = false,
+	["Record Macro"] = false,
+	["LSLoop"] = 2,
+	["Enable Delete Rarity"] = false,
+	["Auto TP Raid Open"] = false,
 	["Enable Auto Story"] = false,
 	["AutoEquipBest"] = false
 }
