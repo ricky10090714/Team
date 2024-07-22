@@ -21,8 +21,8 @@ getgenv().Config = {
 	["SelectDifficulty"] = {
 		["All units lowered range"] = true,
 		["All enemies regen health"] = true,
-		["All enemies +1 shield"] = true,
 		["All units increased cost"] = true,
+		["All enemies +1 shield"] = true,
 		["All enemies 2x health"] = true,
 		["All enemies 2x speed"] = false
 	},
@@ -42,7 +42,7 @@ getgenv().Config = {
 	["Auto Replay"] = false,
 	["AutoRejoin"] = true,
 	["WebhookURL"] = "https://discord.com/api/webhooks/1262069529027149904/wOCuS5p-QWEV0bFYFGtnMuki0zztQI8ubV4xbDELARAwisnT4Dz2oqCa-EpxpbIkt_Bp",
-	["friendSelect"] = false,
+	["AutoStart"] = true,
 	["HosterName"] = "Rayson_Rodel",
 	["Auto Next"] = false,
 	["AutoClaimBattlePass"] = true,
@@ -57,7 +57,7 @@ getgenv().Config = {
 	},
 	["WH_BoothBought"] = true,
 	["TeleportLobbyNewBanner"] = false,
-	["AutoChallenge"] = false,
+	["AutoJoinRaid"] = false,
 	["mapSelect"] = "FooshaVillage",
 	["PlayMacro"] = false,
 	["IgnoreChallenge"] = {
@@ -121,33 +121,32 @@ getgenv().Config = {
 	},
 	["Enable Auto Story"] = false,
 	["Auto Buy Raid"] = false,
-	["Enable Auto Delete Rarity"] = false,
-	["Auto Leave on Wave"] = false,
+	["AutoLeave"] = false,
+	["Auto Leave when No Enemy Spawn"] = false,
 	["AutoSell"] = true,
 	["Enable Delete Rarity"] = false,
 	["AutoReplay"] = true,
 	["Auto Raid"] = false,
-	["ABBHopServer"] = false,
+	["friendSelect"] = false,
 	["BuyItem"] = false,
 	["Raid Buy List"] = {
 
 	},
 	["AutoReturnLobby"] = true,
 	["Auto Sell Wave"] = 30,
-	["AutoJoinWorld"] = true,
+	["PortalRarity"] = {
+		["Legendary"] = true,
+		["Mythic"] = true,
+		["Rare"] = true,
+		["Epic"] = true,
+		["Secret"] = true
+	},
 	["IgnoreChallengeRewards"] = {
 
 	},
-	["AutoStart"] = true,
+	["ABBHopServer"] = false,
 	["Auto Tower"] = false,
-	["Join Priority"] = {
-		["1"] = "Auto Join Player",
-		["3"] = "Auto Raid",
-		["2"] = "Auto Tower",
-		["5"] = "Auto Story",
-		["4"] = "Auto Challenge",
-		["6"] = "Auto Join Map"
-	},
+	["WH_BannerSummoned"] = true,
 	["PlaceGap"] = {
 		["Snowy Woods"] = 3.25,
 		["Cursed Kingdom Portal"] = 3.25,
@@ -163,14 +162,14 @@ getgenv().Config = {
 		["Haunted City"] = 3.25,
 		["Cursed Academy"] = 3.25,
 		["Ancient Dragon Portal"] = 3.25,
-		["Underwater Temple"] = 3.25,
-		["Swordsman Dojo"] = 3.25,
+		["Demon Portal"] = 3.25,
 		["Lunar Temple Portal"] = 3.25,
-		["Demon Portal"] = 3.25
+		["Swordsman Dojo"] = 3.25,
+		["Underwater Temple"] = 3.25
 	},
 	["FirstTime"] = true,
 	["Black Screen"] = false,
-	["SelectChapter"] = "Infinite",
+	["LSBomb"] = 1,
 	["Selected Macro"] = "rayinfi",
 	["AutoConvertTicket"] = true,
 	["LeaveSellWave"] = 32,
@@ -178,20 +177,14 @@ getgenv().Config = {
 	["Raid2 Buy List"] = {
 
 	},
-	["PortalRarity"] = {
-		["Legendary"] = true,
-		["Mythic"] = false,
-		["Secret"] = false,
-		["Epic"] = true,
-		["Rare"] = true
-	},
+	["AutoJoinWorld"] = true,
 	["Play Macro"] = true,
 	["Ping User"] = false,
 	["Hide Additional Frame"] = false,
 	["AutoJoinMirror"] = false,
 	["Auto Start Delay"] = 1,
 	["Auto Leave"] = true,
-	["Auto Joiner Player"] = false,
+	["SelectChapter"] = "Infinite",
 	["IgnoreChallengeMap"] = {
 
 	},
@@ -205,19 +198,19 @@ getgenv().Config = {
 	["MiddlePos"] = {
 		["Snowy Woods"] = "-120.21700286865234, 37.58041000366211, -182.37545776367188",
 		["Solar Temple Portal"] = "-7.814056396484375, 5, -30.46318244934082",
-		["Underwater Temple"] = "540.7630615234375, 339.3208923339844, -1301.0408935546875",
-		["Blue Planet"] = "36.88886642456055, 830.3976440429688, 446.4273681640625",
+		["Windmill Village"] = "-1670.120361328125, 24.114013671875, -535.9500732421875",
+		["Lunar Temple Portal"] = "826.635009765625, 30.46135711669922, -80.959228515625",
 		["Swordsman Dojo"] = "-145.65504455566406, -2.809420108795166, 188.0568389892578",
 		["Cursed Train"] = "-443.6480407714844, 282.38800048828125, 113.71515655517578",
 		["Haunted City"] = "33.77405548095703, 297.7572326660156, 155.17474365234375",
 		["Mob City"] = "50.18944549560547, 297.7572326660156, 155.7317352294922",
 		["Cursed Dungeon"] = "132.8748016357422, 103.12030792236328, 470.3994140625",
-		["Ancient Dragon Portal"] = "1.3536771535873413, 1.9999990463256836, -45.26792907714844",
+		["Blue Planet"] = "36.88886642456055, 830.3976440429688, 446.4273681640625",
 		["Tower of Eternity"] = "-2502.356201171875, 2042.509765625, -1221.6390380859375",
-		["Crystal Cave"] = "163.64454650878906, 89.71666717529297, -192.00692749023438",
 		["Cursed Academy"] = "-1254.17333984375, 532.3055419921875, -328.3988952636719",
-		["Lunar Temple Portal"] = "826.635009765625, 30.46135711669922, -80.959228515625",
-		["Windmill Village"] = "-1670.120361328125, 24.114013671875, -535.9500732421875"
+		["Crystal Cave"] = "163.64454650878906, 89.71666717529297, -192.00692749023438",
+		["Ancient Dragon Portal"] = "1.3536771535873413, 1.9999990463256836, -45.26792907714844",
+		["Underwater Temple"] = "540.7630615234375, 339.3208923339844, -1301.0408935546875"
 	},
 	["SelectChallengeWorld"] = {
 		["Snowy Woods"] = true,
@@ -225,16 +218,18 @@ getgenv().Config = {
 		["Haunted City"] = true,
 		["Mob City"] = true,
 		["Blue Planet"] = true,
-		["Windmill Village"] = true,
-		["Cursed Academy"] = true,
+		["Underwater Temple"] = true,
 		["Crystal Cave"] = true,
-		["Underwater Temple"] = true
+		["Cursed Academy"] = true,
+		["Windmill Village"] = true
 	},
 	["SelectWorld"] = "Crystal Cave",
 	["Enable Auto Challenge"] = false,
 	["Enable Auto Sell Rarity"] = false,
-	["Auto Leave when No Enemy Spawn"] = false,
-	["Auto Join Map"] = false,
+	["Auto Leave on Wave"] = false,
+	["SelectTowerMacro"] = {
+
+	},
 	["JoinerList"] = {
 		["1"] = "freckmanss2",
 		["3"] = "Lizzosflute60",
@@ -245,12 +240,12 @@ getgenv().Config = {
 	["TP Delay"] = 3,
 	["Auto Execute"] = false,
 	["SelectPortal"] = {
-		["Lunar Portal"] = false,
+		["Lunar Portal"] = true,
 		["Solar Temple Portal"] = true,
 		["Cursed Kingdom Portal"] = false,
-		["Solar Portal"] = false,
-		["Ancient Dragon Portal"] = true,
+		["Solar Portal"] = true,
 		["Lunar Temple Portal"] = true,
+		["Ancient Dragon Portal"] = true,
 		["Demon Portal"] = false
 	},
 	["TP Lobby"] = false,
@@ -274,10 +269,10 @@ getgenv().Config = {
 		["Haunted City"] = 4,
 		["Cursed Academy"] = 4,
 		["Ancient Dragon Portal"] = 2,
-		["Underwater Temple"] = 4,
-		["Swordsman Dojo"] = 4,
+		["Demon Portal"] = 2,
 		["Lunar Temple Portal"] = 2,
-		["Demon Portal"] = 2
+		["Swordsman Dojo"] = 4,
+		["Underwater Temple"] = 4
 	},
 	["Summon Mode"] = "All Gems",
 	["ABBHopDelay"] = 0,
@@ -289,20 +284,18 @@ getgenv().Config = {
 		["Risky Dice"] = false,
 		["Spirit Orb"] = true,
 		["Gems"] = false,
-		["Star Rift"] = false,
+		["Star Rift (Light)"] = false,
 		["Lucky Ticket"] = false,
 		["Trait Crystal"] = false,
 		["Gold"] = false,
 		["Solar Portal (Rare)"] = true,
-		["Star Rift (Rainbow)"] = false,
+		["Star Rift"] = false,
 		["Star Rift (Dark)"] = false,
-		["Star Rift (Light)"] = false
+		["Star Rift (Rainbow)"] = false
 	},
 	["Auto Buy Raid2"] = false,
 	["AutoUseAbility"] = true,
-	["SelectTowerMacro"] = {
-
-	},
+	["Auto Join Map"] = false,
 	["Auto Sell Units"] = true,
 	["Summon Banner"] = "Standard",
 	["Summon Gems"] = 0,
@@ -310,25 +303,32 @@ getgenv().Config = {
 
 	},
 	["PingSelected"] = false,
-	["AutoLeaveOnWave"] = 31,
+	["Auto Skip Wave"] = true,
 	["Auto Hide UI on Execute"] = true,
 	["SelectChallengeMacro"] = {
 
 	},
 	["Auto Try Reconnect"] = true,
-	["LSBomb"] = 1,
+	["Auto Joiner Player"] = false,
 	["AutoSummonLimited"] = false,
-	["Auto Skip Wave"] = true,
+	["AutoLeaveOnWave"] = 31,
 	["Friends Only"] = false,
-	["AutoJoinRaid"] = false,
+	["AutoChallenge"] = false,
 	["AutoSellFarmsWave"] = 30,
-	["WH_BannerSummoned"] = true,
+	["Join Priority"] = {
+		["1"] = "Auto Join Player",
+		["3"] = "Auto Raid",
+		["2"] = "Auto Tower",
+		["5"] = "Auto Story",
+		["4"] = "Auto Challenge",
+		["6"] = "Auto Join Map"
+	},
 	["DeleteMap"] = false,
 	["modeSelect"] = "Infinite",
 	["Record Macro"] = false,
 	["LSDelay"] = 0.4,
 	["UnitPrice"] = 1,
-	["AutoLeave"] = false,
+	["Enable Auto Delete Rarity"] = false,
 	["AutoJoinChallenge"] = true,
 	["AutoEquipBest"] = false
 }
