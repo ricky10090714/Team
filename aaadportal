@@ -319,7 +319,7 @@ getgenv().Config = {
 		["Mythic"] = true,
 		["Rare"] = true,
 		["Epic"] = true,
-		["Secret"] = true
+		["Secret"] = false
 	},
 	["AutoSellFarmsWave"] = 30,
 	["AutoChallenge"] = false,
