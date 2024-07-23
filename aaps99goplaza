@@ -1,3 +1,5 @@
+game:GetService("RunService"):Set3dRenderingEnabled(false)
+
 local increment = 0
 local Normal = true
 move_time = 300
