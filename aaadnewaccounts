@@ -50,7 +50,7 @@ getgenv().Config = {
 	},
 	["WH_BoothBought"] = false,
 	["TeleportLobbyNewBanner"] = false,
-	["Auto Sell Wave"] = 30,
+	["Auto Sell Wave"] = 46,
 	["mapSelect"] = "FooshaVillage",
 	["PlayMacro"] = false,
 	["IgnoreChallenge"] = {
@@ -161,7 +161,7 @@ getgenv().Config = {
 	["Black Screen"] = false,
 	["LSBomb"] = 1,
 	["Selected Macro"] = "rayinfi",
-	["Auto Start Time Delay"] = 60,
+	["Auto Start Time Delay"] = 5,
 	["LeaveSellWave"] = 32,
 	["Import Mode"] = "Link",
 	["Raid2 Buy List"] = {
