@@ -35,7 +35,7 @@ getgenv().Config = {
 	["Auto Tower"] = false,
 	["AutoRejoin"] = true,
 	["WebhookURL"] = "https://discord.com/api/webhooks/1262069529027149904/wOCuS5p-QWEV0bFYFGtnMuki0zztQI8ubV4xbDELARAwisnT4Dz2oqCa-EpxpbIkt_Bp",
-	["friendSelect"] = false,
+	["AutoStart"] = true,
 	["HosterName"] = "Rayson_Rodel",
 	["Auto Next"] = false,
 	["AutoClaimBattlePass"] = true,
@@ -139,7 +139,7 @@ getgenv().Config = {
 	["IgnoreChallengeRewards"] = {
 
 	},
-	["Auto Joiner Player"] = false,
+	["LSBomb"] = 1,
 	["WH_BannerSummoned"] = true,
 	["PlaceGap"] = {
 		["Snowy Woods"] = 3.25,
@@ -163,7 +163,7 @@ getgenv().Config = {
 	},
 	["AutoSummonLimited"] = false,
 	["AutoConvertTicket"] = true,
-	["SelectChapter"] = "Infinite",
+	["Auto Joiner Player"] = false,
 	["Selected Macro"] = "rayinfi",
 	["Black Screen"] = false,
 	["LeaveSellWave"] = 32,
@@ -178,7 +178,7 @@ getgenv().Config = {
 	["AutoJoinMirror"] = false,
 	["Auto Start Delay"] = 1,
 	["FPS Boost"] = true,
-	["LSBomb"] = 1,
+	["SelectChapter"] = "Infinite",
 	["IgnoreChallengeMap"] = {
 
 	},
@@ -319,12 +319,12 @@ getgenv().Config = {
 	["modeSelect"] = "Infinite",
 	["FirstTime"] = true,
 	["Auto Replay"] = false,
-	["AutoStart"] = true,
+	["ABBHopServer"] = false,
 	["AutoLeaveOnWave"] = 31,
 	["AutoSellFarmsWave"] = 30,
 	["AutoJoinRaid"] = false,
 	["DeleteMap"] = false,
-	["ABBHopServer"] = false,
+	["friendSelect"] = false,
 	["BuyItem"] = false,
 	["AutoChallenge"] = false,
 	["Enable Delete Rarity"] = false,
