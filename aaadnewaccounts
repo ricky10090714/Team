@@ -5,10 +5,11 @@ getgenv().Config = {
 	["ItemPrice"] = 1,
 	["AutoPlay"] = true,
 	["Enable Auto Join Player"] = false,
-	["JoinerList"] = {
-		["1"] = "freckmanss2",
-		["3"] = "Lizzosflute60",
-		["2"] = "lysithea_raine2020"
+	["Webhook"] = {
+		["ID"] = 0,
+		["Ping"] = false,
+		["Result"] = true,
+		["URL"] = "https://discord.com/api/webhooks/1202487837962936320/1jqGaLrcVD_Hr64IFnv8_AHKWVrLExyk1xH_XHlwLu0Y2J2Tt_ocp4SUitrdrrAlQQGD"
 	},
 	["AutoSummonStandard"] = false,
 	["SelectPortalMacro"] = {
@@ -16,8 +17,7 @@ getgenv().Config = {
 	},
 	["UpgradeMethod"] = "Lowest Level (Spread Upgrade)",
 	["Auto Summon"] = false,
-	["Auto Leave Wave"] = true,
-	["Summon Gems"] = 0,
+	["Large Window"] = false,
 	["Record Options"] = "Money",
 	["LSImplosion"] = 100000,
 	["BlackScreen"] = false,
@@ -50,7 +50,7 @@ getgenv().Config = {
 	},
 	["WH_BoothBought"] = false,
 	["TeleportLobbyNewBanner"] = false,
-	["Auto Sell Wave"] = 46,
+	["AutoJoinRaid"] = false,
 	["mapSelect"] = "FooshaVillage",
 	["PlayMacro"] = false,
 	["IgnoreChallenge"] = {
@@ -64,12 +64,12 @@ getgenv().Config = {
 
 	},
 	["TP Lobby Time"] = 10,
-	["LSLoop"] = 2,
+	["AutoReturnLobby"] = true,
 	["OFARecord"] = false,
 	["HardMode"] = false,
 	["AutoJoinChallenge"] = false,
 	["BuyUnit"] = false,
-	["JoinHighest"] = false,
+	["JoinHighest"] = true,
 	["WebhookPingSelected"] = {
 
 	},
@@ -79,7 +79,7 @@ getgenv().Config = {
 		["Rare"] = true
 	},
 	["AutoJoinMap"] = true,
-	["Hide Key"] = "U",
+	["Result Webhook"] = false,
 	["Macros Selected"] = {
 		["Story"] = {
 			["FooshaVillage"] = "rayinfi"
@@ -107,20 +107,22 @@ getgenv().Config = {
 	["WH_MatchComplete"] = true,
 	["Auto Raid (Lobby)"] = false,
 	["WaitForJoiner"] = false,
-	["AutoUseAbility"] = true,
+	["Ping On Secret Drop"] = false,
 	["AutoPlayNext"] = true,
 	["Auto TP Raid Open"] = false,
 	["Selected Raids"] = {
 
 	},
-	["Enable Auto Story"] = false,
-	["AutoJoinRaid"] = false,
+	["UpgradeAndPlace"] = false,
 	["AutoLeave"] = false,
+	["Enable Auto Delete Rarity"] = false,
 	["Auto Leave on Wave"] = false,
 	["AutoSell"] = false,
-	["UnitPrice"] = 1,
+	["Enable Delete Rarity"] = false,
 	["AutoReplay"] = true,
 	["Auto Raid"] = false,
+	["LSDelay"] = 0.4,
+	["Record Macro"] = false,
 	["Join Priority"] = {
 		["1"] = "Auto Join Player",
 		["3"] = "Auto Raid",
@@ -129,13 +131,12 @@ getgenv().Config = {
 		["4"] = "Auto Challenge",
 		["6"] = "Auto Join Map"
 	},
-	["BuyItem"] = false,
-	["Auto Leave when No Enemy Spawn"] = false,
 	["AutoChallenge"] = false,
-	["AutoReturnLobby"] = true,
+	["Auto Sell Wave"] = 46,
 	["AutoSkip"] = true,
+	["IgnoreMacroTiming"] = true,
+	["LSBomb"] = 1,
 	["Hide Additional Frame"] = false,
-	["Play Macro"] = true,
 	["WH_BannerSummoned"] = true,
 	["PlaceGap"] = {
 		["Snowy Woods"] = 3.25,
@@ -152,71 +153,69 @@ getgenv().Config = {
 		["Haunted City"] = 3.25,
 		["Cursed Academy"] = 3.25,
 		["Ancient Dragon Portal"] = 3.25,
-		["Demon Portal"] = 3.25,
-		["Lunar Temple Portal"] = 3.25,
+		["Underwater Temple"] = 3.25,
 		["Swordsman Dojo"] = 3.25,
-		["Underwater Temple"] = 3.25
+		["Lunar Temple Portal"] = 3.25,
+		["Demon Portal"] = 3.25
 	},
-	["FirstTime"] = true,
+	["AutoSummonLimited"] = false,
 	["Black Screen"] = false,
-	["LSBomb"] = 1,
-	["Selected Macro"] = "rayinfi",
-	["Auto Start Time Delay"] = 5,
-	["LeaveSellWave"] = 32,
-	["Import Mode"] = "Link",
-	["Raid2 Buy List"] = {
-
-	},
-	["Auto Execute"] = false,
-	["Ping User"] = false,
-	["Auto Start Game/Skip"] = false,
-	["AutoJoinMirror"] = false,
-	["Auto Start Delay"] = 1,
-	["Auto Leave"] = true,
 	["Auto Joiner Player"] = false,
-	["IgnoreChallengeMap"] = {
-
-	},
-	["Auto Story"] = false,
-	["Step Delay"] = 1,
-	["Ping On Selected Item"] = false,
+	["Selected Macro"] = "rayinfi",
 	["MiddlePos"] = {
 		["Snowy Woods"] = "-120.21700286865234, 37.58041000366211, -182.37545776367188",
 		["Swordsman Dojo"] = "-152.91851806640625, -2.809420108795166, 283.60296630859375",
 		["Haunted City"] = "36.30354690551758, 297.7572326660156, 154.2310333251953",
 		["Mob City"] = "50.18944549560547, 297.7572326660156, 155.7317352294922",
 		["Blue Planet"] = "23.551956176757812, 830.3976440429688, 447.75531005859375",
-		["Underwater Temple"] = "540.7630615234375, 339.3208923339844, -1301.0408935546875",
-		["Crystal Cave"] = "159.97030639648438, 89.71624755859375, -197.20094299316406",
+		["Windmill Village"] = "-1670.120361328125, 24.114013671875, -535.9500732421875",
 		["Cursed Academy"] = "-1254.17333984375, 532.3055419921875, -328.3988952636719",
-		["Windmill Village"] = "-1670.120361328125, 24.114013671875, -535.9500732421875"
+		["Crystal Cave"] = "159.97030639648438, 89.71624755859375, -197.20094299316406",
+		["Underwater Temple"] = "540.7630615234375, 339.3208923339844, -1301.0408935546875"
 	},
+	["LeaveSellWave"] = 32,
+	["SelectChallengeMacro"] = {
+
+	},
+	["Auto Hide UI on Execute"] = true,
+	["Auto Skip Wave"] = true,
+	["Play Macro"] = true,
+	["Ping User"] = false,
+	["Auto Start Game/Skip"] = false,
+	["AutoJoinMirror"] = false,
+	["Auto Start Delay"] = 1,
+	["Auto Execute"] = false,
+	["SelectChapter"] = "Infinite",
+	["IgnoreChallengeMap"] = {
+
+	},
+	["Auto Story"] = false,
+	["Step Delay"] = 1,
+	["Ping On Selected Item"] = false,
+	["Summon Gems"] = 0,
 	["TP Lobby when RAID OPEN"] = false,
-	["FPS Boost"] = true,
-	["AutoBuyBooth"] = false,
 	["Enable Auto Sell Rarity"] = false,
+	["Auto Leave"] = true,
+	["AutoBuyBooth"] = false,
+	["LSLoop"] = 2,
 	["SelectWorld"] = "Windmill Village",
 	["TPLobbyIfPlayer"] = true,
-	["Auto Skip Wave"] = true,
 	["Auto Join Map"] = false,
-	["Auto Buy Raid"] = false,
-	["Ping On Secret Drop"] = false,
+	["Auto Tower"] = false,
+	["AutoUseAbility"] = true,
 	["Auto Story Mode"] = "Automatic",
 	["TP Delay"] = 3,
-	["AutoJoinPortal"] = false,
-	["modeSelect"] = "Infinite",
-	["Webhook"] = {
-		["ID"] = 0,
-		["Ping"] = false,
-		["Result"] = true,
-		["URL"] = "https://discord.com/api/webhooks/1202487837962936320/1jqGaLrcVD_Hr64IFnv8_AHKWVrLExyk1xH_XHlwLu0Y2J2Tt_ocp4SUitrdrrAlQQGD"
+	["friendSelect"] = false,
+	["SelectTowerMacro"] = {
+
 	},
+	["Friends Only"] = false,
 	["Enable Auto Challenge"] = false,
-	["actSelect"] = 1,
-	["Auto Tower"] = false,
+	["Auto Sell Farms"] = true,
+	["AutoStart"] = true,
 	["difficultySelect"] = "Normal",
 	["Selected Story"] = "FooshaVillage_Chapter1",
-	["Result Webhook"] = false,
+	["Hide Key"] = "U",
 	["HillHeight"] = {
 		["Snowy Woods"] = 5,
 		["Cursed Kingdom Portal"] = 2,
@@ -232,49 +231,50 @@ getgenv().Config = {
 		["Haunted City"] = 2,
 		["Cursed Academy"] = 4,
 		["Ancient Dragon Portal"] = 2,
-		["Demon Portal"] = 2,
-		["Lunar Temple Portal"] = 2,
+		["Underwater Temple"] = 4,
 		["Swordsman Dojo"] = 2,
-		["Underwater Temple"] = 4
+		["Lunar Temple Portal"] = 2,
+		["Demon Portal"] = 2
 	},
 	["Summon Mode"] = "All Gems",
 	["ABBHopDelay"] = 0,
-	["Auto Sell Farms"] = true,
+	["actSelect"] = 1,
 	["UnselectIfSummoned"] = false,
-	["Friends Only"] = false,
-	["Auto Start"] = false,
-	["AutoStart"] = true,
-	["Auto Buy Raid2"] = false,
-	["Large Window"] = false,
-	["SelectTowerMacro"] = {
-
+	["JoinerList"] = {
+		["1"] = "freckmanss2",
+		["3"] = "Lizzosflute60",
+		["2"] = "lysithea_raine2020"
 	},
+	["Auto Start"] = false,
+	["AutoJoinPortal"] = false,
+	["Auto Buy Raid2"] = false,
+	["AutoUpgrade"] = true,
+	["Auto Leave when No Enemy Spawn"] = false,
 	["Auto Sell Units"] = true,
 	["Summon Banner"] = "Standard",
-	["AutoUpgrade"] = true,
+	["Auto Leave Wave"] = true,
 	["Auto Delete Rarity"] = {
 
 	},
 	["PingSelected"] = false,
-	["AutoJoinWorld"] = true,
-	["Auto Hide UI on Execute"] = true,
-	["SelectChallengeMacro"] = {
+	["AutoLeaveOnWave"] = 31,
+	["Raid2 Buy List"] = {
 
 	},
+	["Import Mode"] = "Link",
 	["Auto Try Reconnect"] = true,
+	["FPS Boost"] = true,
+	["FirstTime"] = true,
+	["Auto Start Time Delay"] = 5,
 	["AutoConvertTicket"] = true,
-	["AutoSummonLimited"] = false,
-	["SelectChapter"] = "Infinite",
-	["friendSelect"] = false,
-	["AutoLeaveOnWave"] = 31,
+	["AutoJoinWorld"] = true,
 	["AutoSellFarmsWave"] = 30,
-	["IgnoreMacroTiming"] = true,
+	["Auto Buy Raid"] = false,
 	["DeleteMap"] = true,
+	["modeSelect"] = "Infinite",
+	["BuyItem"] = false,
 	["JoinerCooldown"] = 60,
-	["Record Macro"] = false,
-	["Enable Auto Delete Rarity"] = false,
-	["Enable Delete Rarity"] = false,
-	["LSDelay"] = 0.4,
-	["UpgradeAndPlace"] = false,
+	["UnitPrice"] = 1,
+	["Enable Auto Story"] = false,
 	["AutoEquipBest"] = false
 }
