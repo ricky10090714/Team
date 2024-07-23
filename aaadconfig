@@ -1,3 +1,5 @@
+game:GetService("RunService"):Set3dRenderingEnabled(false)
+
 getgenv().Config = {
 	["Ignore Shiny Sell Rarity"] = false,
 	["AutoSave"] = true,
