@@ -14,9 +14,10 @@ getgenv().Config = {
 	["SelectPortalMacro"] = {
 
 	},
-	["UpgradeMethod"] = "Nearest from Middle Position (until Max)",
+	["UpgradeMethod"] = "Lowest Level (Spread Upgrade)",
 	["Auto Summon"] = false,
 	["Auto Leave Wave"] = true,
+	["Summon Gems"] = 0,
 	["Record Options"] = "Money",
 	["LSImplosion"] = 100000,
 	["BlackScreen"] = false,
@@ -74,9 +75,7 @@ getgenv().Config = {
 	["HosterName"] = "Rayson_Rodel",
 	["Auto Next"] = true,
 	["AutoClaimBattlePass"] = true,
-	["IgnoreChallengeRewards"] = {
-
-	},
+	["AutoSkip"] = true,
 	["Enable Sell Rarity"] = false,
 	["AutoClaimQuest"] = true,
 	["Macro Mode Select"] = "Story",
@@ -97,7 +96,7 @@ getgenv().Config = {
 
 	},
 	["BoostFPS"] = true,
-	["JoinerCooldown"] = 5,
+	["JoinerCooldown"] = 60,
 	["TP Lobby Time"] = 10,
 	["AutoReturnLobby"] = true,
 	["OFARecord"] = false,
@@ -144,27 +143,37 @@ getgenv().Config = {
 	["WaitForJoiner"] = false,
 	["AutoUseAbility"] = true,
 	["AutoPlayNext"] = true,
+	["TP Lobby when RAID OPEN"] = false,
 	["Auto TP Raid Open"] = false,
 	["Selected Raids"] = {
 
 	},
 	["AutoJoinChallenge"] = false,
-	["AutoReplay"] = true,
+	["LSDelay"] = 0.4,
 	["AutoLeave"] = false,
 	["Auto Leave when No Enemy Spawn"] = false,
 	["AutoSell"] = false,
 	["Enable Delete Rarity"] = false,
-	["LSDelay"] = 0.4,
+	["AutoReplay"] = true,
 	["Auto Raid"] = false,
 	["Record Macro"] = false,
-	["AutoChallenge"] = false,
+	["Raid Buy List"] = {
+
+	},
 	["AutoJoinRaid"] = false,
-	["IgnoreMacroTiming"] = true,
-	["AutoLeaveOnWave"] = 31,
-	["ABBHopServer"] = false,
-	["SelectChapter"] = "Infinite",
 	["Enable Auto Delete Rarity"] = false,
-	["AutoUpgrade"] = true,
+	["IgnoreMacroTiming"] = true,
+	["LSBomb"] = 1,
+	["ABBHopServer"] = false,
+	["Auto Joiner Player"] = false,
+	["Join Priority"] = {
+		["1"] = "Auto Join Player",
+		["3"] = "Auto Raid",
+		["2"] = "Auto Tower",
+		["5"] = "Auto Story",
+		["4"] = "Auto Challenge",
+		["6"] = "Auto Join Map"
+	},
 	["PlaceGap"] = {
 		["Snowy Woods"] = 3.25,
 		["Cursed Kingdom Portal"] = 3.25,
@@ -205,29 +214,25 @@ getgenv().Config = {
 		["Cursed Archer"] = false
 	},
 	["Selected Macro"] = "rayinfi",
-	["LeaveSellWave"] = 46,
+	["LeaveSellWave"] = 32,
 	["SelectChallengeMacro"] = {
 
 	},
 	["Auto Hide UI on Execute"] = true,
+	["AutoLeaveOnWave"] = 31,
 	["Auto Execute"] = false,
 	["Ping User"] = false,
-	["Hide Additional Frame"] = false,
+	["Auto Start Game/Skip"] = false,
 	["AutoJoinMirror"] = false,
 	["Auto Start Delay"] = 1,
 	["FPS Boost"] = true,
-	["LSBomb"] = 1,
+	["SelectChapter"] = "Infinite",
 	["IgnoreChallengeMap"] = {
 
 	},
 	["Auto Story"] = false,
 	["Step Delay"] = 1,
 	["Ping On Selected Item"] = false,
-	["Raid Buy List"] = {
-
-	},
-	["TP Lobby when RAID OPEN"] = false,
-	["Auto Leave"] = true,
 	["MiddlePos"] = {
 		["Snowy Woods"] = "-120.21700286865234, 37.58041000366211, -182.37545776367188",
 		["Swordsman Dojo"] = "-152.91851806640625, -2.809420108795166, 283.60296630859375",
@@ -239,14 +244,16 @@ getgenv().Config = {
 		["Crystal Cave"] = "159.97030639648438, 89.71624755859375, -197.20094299316406",
 		["Underwater Temple"] = "540.7630615234375, 339.3208923339844, -1301.0408935546875"
 	},
+	["Auto Leave"] = true,
 	["AutoBuyBooth"] = false,
+	["AutoJoinWorld"] = true,
 	["SelectWorld"] = "Windmill Village",
 	["TPLobbyIfPlayer"] = true,
 	["Enable Auto Sell Rarity"] = false,
-	["Auto Join Map"] = false,
 	["SelectTowerMacro"] = {
 
 	},
+	["Auto Join Map"] = false,
 	["Large Window"] = false,
 	["Ping On Secret Drop"] = false,
 	["Auto Story Mode"] = "Automatic",
@@ -294,40 +301,33 @@ getgenv().Config = {
 	["AutoJoinPortal"] = false,
 	["Auto Buy Raid2"] = false,
 	["Auto Buy Raid"] = false,
-	["LSLoop"] = 2,
+	["AutoUpgrade"] = true,
 	["Auto Sell Units"] = true,
 	["Summon Banner"] = "Standard",
-	["Summon Gems"] = 0,
 	["Auto Delete Rarity"] = {
 
 	},
 	["PingSelected"] = false,
-	["AutoJoinWorld"] = true,
+	["Auto Skip Wave"] = true,
 	["Raid2 Buy List"] = {
 
 	},
 	["Import Mode"] = "Link",
 	["Auto Try Reconnect"] = true,
-	["Auto Joiner Player"] = false,
-	["FirstTime"] = true,
 	["Play Macro"] = true,
-	["Auto Start Game/Skip"] = false,
-	["AutoSkip"] = true,
+	["FirstTime"] = true,
+	["Hide Additional Frame"] = false,
+	["IgnoreChallengeRewards"] = {
+
+	},
 	["AutoSellFarmsWave"] = 30,
 	["Auto Leave on Wave"] = false,
 	["DeleteMap"] = true,
-	["Auto Skip Wave"] = true,
+	["LSLoop"] = 2,
 	["BuyItem"] = false,
 	["WH_BannerSummoned"] = false,
 	["UnitPrice"] = 1,
-	["Join Priority"] = {
-		["1"] = "Auto Join Player",
-		["3"] = "Auto Raid",
-		["2"] = "Auto Tower",
-		["5"] = "Auto Story",
-		["4"] = "Auto Challenge",
-		["6"] = "Auto Join Map"
-	},
+	["AutoChallenge"] = false,
 	["UpgradeAndPlace"] = false,
 	["AutoEquipBest"] = false
 }
