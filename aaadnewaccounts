@@ -38,7 +38,9 @@ getgenv().Config = {
 	["HosterName"] = "Rayson_Rodel",
 	["Auto Next"] = true,
 	["AutoClaimBattlePass"] = true,
-	["AutoSkip"] = true,
+	["IgnoreChallengeRewards"] = {
+
+	},
 	["Enable Sell Rarity"] = false,
 	["AutoClaimQuest"] = true,
 	["Macro Mode Select"] = "Story",
@@ -105,7 +107,7 @@ getgenv().Config = {
 	["Auto Raid (Lobby)"] = false,
 	["WaitForJoiner"] = false,
 	["Ping On Secret Drop"] = false,
-	["AutoPlayNext"] = false,
+	["AutoPlayNext"] = true,
 	["TP Lobby when RAID OPEN"] = false,
 	["Auto TP Raid Open"] = false,
 	["Selected Raids"] = {
@@ -122,6 +124,13 @@ getgenv().Config = {
 
 	},
 	["BuyItem"] = false,
+	["WH_BannerSummoned"] = true,
+	["modeSelect"] = "Infinite",
+	["IgnoreMacroTiming"] = true,
+	["AutoLeaveOnWave"] = 31,
+	["SelectChapter"] = "Infinite",
+	["AutoConvertTicket"] = true,
+	["LSDelay"] = 0.4,
 	["Join Priority"] = {
 		["1"] = "Auto Join Player",
 		["3"] = "Auto Raid",
@@ -130,13 +139,6 @@ getgenv().Config = {
 		["4"] = "Auto Challenge",
 		["6"] = "Auto Join Map"
 	},
-	["Auto Buy Raid"] = false,
-	["IgnoreMacroTiming"] = true,
-	["Auto Skip Wave"] = true,
-	["SelectChapter"] = "Infinite",
-	["AutoConvertTicket"] = true,
-	["LSDelay"] = 0.4,
-	["WH_BannerSummoned"] = true,
 	["PlaceGap"] = {
 		["Snowy Woods"] = 3.25,
 		["Cursed Kingdom Portal"] = 3.25,
@@ -152,10 +154,10 @@ getgenv().Config = {
 		["Haunted City"] = 3.25,
 		["Cursed Academy"] = 3.25,
 		["Ancient Dragon Portal"] = 3.25,
-		["Underwater Temple"] = 3.25,
-		["Swordsman Dojo"] = 3.25,
+		["Demon Portal"] = 3.25,
 		["Lunar Temple Portal"] = 3.25,
-		["Demon Portal"] = 3.25
+		["Swordsman Dojo"] = 3.25,
+		["Underwater Temple"] = 3.25
 	},
 	["FirstTime"] = true,
 	["Black Screen"] = false,
@@ -166,10 +168,10 @@ getgenv().Config = {
 		["Haunted City"] = "36.30354690551758, 297.7572326660156, 154.2310333251953",
 		["Mob City"] = "50.18944549560547, 297.7572326660156, 155.7317352294922",
 		["Blue Planet"] = "23.551956176757812, 830.3976440429688, 447.75531005859375",
-		["Windmill Village"] = "-1670.120361328125, 24.114013671875, -535.9500732421875",
-		["Cursed Academy"] = "-1254.17333984375, 532.3055419921875, -328.3988952636719",
+		["Underwater Temple"] = "540.7630615234375, 339.3208923339844, -1301.0408935546875",
 		["Crystal Cave"] = "159.97030639648438, 89.71624755859375, -197.20094299316406",
-		["Underwater Temple"] = "540.7630615234375, 339.3208923339844, -1301.0408935546875"
+		["Cursed Academy"] = "-1254.17333984375, 532.3055419921875, -328.3988952636719",
+		["Windmill Village"] = "-1670.120361328125, 24.114013671875, -535.9500732421875"
 	},
 	["LeaveSellWave"] = 32,
 	["Import Mode"] = "Link",
@@ -196,7 +198,7 @@ getgenv().Config = {
 	["SelectWorld"] = "Windmill Village",
 	["TPLobbyIfPlayer"] = true,
 	["Enable Auto Sell Rarity"] = false,
-	["modeSelect"] = "Infinite",
+	["Auto Buy Raid"] = false,
 	["Auto Join Map"] = false,
 	["AutoUpgrade"] = true,
 	["AutoUseAbility"] = true,
@@ -232,10 +234,10 @@ getgenv().Config = {
 		["Haunted City"] = 2,
 		["Cursed Academy"] = 4,
 		["Ancient Dragon Portal"] = 2,
-		["Underwater Temple"] = 4,
-		["Swordsman Dojo"] = 2,
+		["Demon Portal"] = 2,
 		["Lunar Temple Portal"] = 2,
-		["Demon Portal"] = 2
+		["Swordsman Dojo"] = 2,
+		["Underwater Temple"] = 4
 	},
 	["Summon Mode"] = "All Gems",
 	["ABBHopDelay"] = 0,
@@ -254,7 +256,7 @@ getgenv().Config = {
 
 	},
 	["PingSelected"] = false,
-	["AutoLeaveOnWave"] = 31,
+	["Auto Skip Wave"] = true,
 	["Auto Hide UI on Execute"] = true,
 	["SelectChallengeMacro"] = {
 
@@ -264,9 +266,7 @@ getgenv().Config = {
 	["AutoSummonLimited"] = false,
 	["Auto Joiner Player"] = false,
 	["Auto Start Game/Skip"] = false,
-	["IgnoreChallengeRewards"] = {
-
-	},
+	["AutoSkip"] = true,
 	["AutoSellFarmsWave"] = 30,
 	["AutoChallenge"] = false,
 	["DeleteMap"] = true,
