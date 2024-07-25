@@ -180,7 +180,7 @@
   ["Mythic"] = true,
   ["Rare"] = true,
   ["Epic"] = true,
-  ["Secret"] = false
+  ["Secret"] = true
  },
  ["Auto Execute"] = false,
  ["Ping User"] = false,
