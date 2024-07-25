@@ -177,12 +177,12 @@ getgenv().Config = {
 		["Spirit Mage"] = true
 	},
 	["Selected Macro"] = "rayinfi",
-	["LeaveSellWave"] = 46,
+	["LeaveSellWave"] = 32,
 	["SelectChallengeMacro"] = {
 
 	},
 	["Auto Hide UI on Execute"] = true,
-	["AutoLeaveOnWave"] = 31,
+	["AutoLeaveOnWave"] = 32,
 	["Play Macro"] = true,
 	["Ping User"] = false,
 	["Hide Additional Frame"] = false,
