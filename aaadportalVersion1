@@ -1,4 +1,4 @@
-getgenv().Config = {
+aaadportalVersion1getgenv().Config = {
 	["Ignore Shiny Sell Rarity"] = false,
 	["AutoSave"] = true,
 	["blackScreen"] = true,
