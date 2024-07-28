@@ -293,12 +293,12 @@ getgenv().Config = {
 	["SelectChapter"] = "Infinite",
 	["SelectPortal"] = {
 		["Lunar Portal"] = true,
-		["Solar Temple Portal"] = true,
-		["Cursed Kingdom Portal"] = true,
-		["Solar Portal"] = true,
+		["Solar Temple Portal"] = false,
+		["Cursed Kingdom Portal"] = false,
+		["Solar Portal"] = false,
 		["Lunar Temple Portal"] = true,
 		["Ancient Dragon Portal"] = true,
-		["Demon Portal"] = true
+		["Demon Portal"] = false
 	},
 	["SelectDeleteRarity"] = {
 		["Legendary"] = false,
