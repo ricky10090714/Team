@@ -1,5 +1,3 @@
-game:GetService("RunService"):Set3dRenderingEnabled(false)
-
 local increment = 0
 local Normal = true
 move_time = 300
@@ -87,6 +85,12 @@ end
 
 if game.PlaceId == 15502339080 or game.PlaceId == 15588442388 then
     repeat wait() until game:IsLoaded()
+
+    if getgenv().booth_sell == false then
+        if game.Players.LocalPlayer:WaitForChild("PlayerGui"):FindFirstChild("ListCounter") then
+            game.Players.LocalPlayer:WaitForChild("PlayerGui"):FindFirstChild("ListCounter"):Destroy()
+        end
+    end
     local booth_func
     for i, v in getgc() do
         if type(v) == "function" and islclosure(v) and not isourclosure(v) then
@@ -109,35 +113,15 @@ if game.PlaceId == 15502339080 or game.PlaceId == 15588442388 then
         end
         return #claimed
     end
-    function AntiIdle()
-        local Players = game:GetService("Players")
-        local LocalPlayer = Players.LocalPlayer
-        local GC = getconnections or getsignal_cons
-    
-        if GC then
-            -- Get the connections to the Idled event
-            for i, v in pairs(GC(LocalPlayer.Idled)) do
-                if v["Disable"] then
-                    v["Disable"](v)
-                elseif v["Disconnect"] then
-                    v["Disconnect"](v)
-                end
-            end
-        else
-            local VirtualUser = Instance.new("VirtualUser")
-            LocalPlayer.Idled:Connect(function()
-                VirtualUser:CaptureController()
-                VirtualUser:ClickButton2(Vector2.new())
-            end)
-        end
-    end
-    AntiIdle()
     local plr = game.Players.LocalPlayer
     local rs = game.ReplicatedStorage
     local Booths_ClaimBooth = rs.Network:WaitForChild("Booths_ClaimBooth")
     local petf = require(rs.Library.Directory.Pets)
     local itemf = require(rs.Library.Items)
     local library = require(rs:WaitForChild("Library"))
+    local v7 = game:GetService("ReplicatedStorage"):WaitForChild("Library")
+    local v8 = v7:WaitForChild("Client")
+    local v_u_10 = require(v8.TabController)
 
     local claim = function()
         local claimed = {}
@@ -157,10 +141,11 @@ if game.PlaceId == 15502339080 or game.PlaceId == 15588442388 then
             end
         end
     end
+    claim()
 
 
     task.spawn(function()
-        while getgenv().booth_sell and wait() do
+        while getgenv().booth_sell and wait(1800) do
             if total_booth_count() <= 10 then
                 Teleport2()
             end
@@ -174,8 +159,7 @@ if game.PlaceId == 15502339080 or game.PlaceId == 15588442388 then
             game.Players.LocalPlayer.Character:MoveTo(game.Players.LocalPlayer.Character:GetModelCFrame().Position + Vector3.new(0,0,-1))
         end
     end)
-    claim()
-
+    
     if booth_func(plr.UserId) == nil then
         Teleport2()
         return
@@ -200,13 +184,15 @@ if game.PlaceId == 15502339080 or game.PlaceId == 15588442388 then
     end
 
     local c_add = function(a)
-        local remainder = a % 100000
-        return a + (100000 - remainder) + 99999
+        -- local remainder = a % 100000
+        -- return a + (100000 - remainder) + 99999
+        return a
     end
 
 
     task.spawn(function()
-        if not game.Players.LocalPlayer:WaitForChild("PlayerGui"):FindFirstChild("ListCounter") then
+        if not game.Players.LocalPlayer:WaitForChild("PlayerGui"):FindFirstChild("ListCounter") and getgenv().booth_sell == true then
+            
             local ListCounter = Instance.new("ScreenGui")
             local ItemCount = Instance.new("Frame")
             local UICorner = Instance.new("UICorner")
@@ -216,15 +202,16 @@ if game.PlaceId == 15502339080 or game.PlaceId == 15588442388 then
             ListCounter.Name = "ListCounter"
             ListCounter.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
             ListCounter.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+            ListCounter.DisplayOrder = 100
 
             ItemCount.Name = "ItemCount"
             ItemCount.Parent = ListCounter
             ItemCount.BackgroundColor3 = Color3.fromRGB(49, 183, 255)
             ItemCount.BorderColor3 = Color3.fromRGB(0, 0, 0)
             ItemCount.BorderSizePixel = 0
-            ItemCount.AnchorPoint = Vector2.new(0.5, 0.5)
-            ItemCount.Position = UDim2.new(0.5, 0, 0.5, 0)
-            ItemCount.Size = UDim2.new(0, 388, 0, 361)
+            ItemCount.AnchorPoint = Vector2.new(0.5, 0)
+            ItemCount.Position = UDim2.new(0.5, 0, 0, 0)
+            ItemCount.Size = UDim2.new(0, 250, 0, 230)
 
             UICorner.CornerRadius = UDim.new(0, 30)
             UICorner.Parent = ItemCount
@@ -235,7 +222,7 @@ if game.PlaceId == 15502339080 or game.PlaceId == 15588442388 then
             value.BorderColor3 = Color3.fromRGB(0, 0, 0)
             value.BorderSizePixel = 0
             value.Position = UDim2.new(0, 44, 0, 30)
-            value.Size = UDim2.new(0, 100, 0, 100)
+            value.Size = UDim2.new(0, 50, 0, 50)
             value.Font = Enum.Font.SourceSans
             value.Text = "0"
             value.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -243,6 +230,7 @@ if game.PlaceId == 15502339080 or game.PlaceId == 15588442388 then
 
             UIScale.Parent = value
             UIScale.Scale = 3.000
+            v_u_10.OpenTab("Inventory")
             wait(.5)
             while task.wait(1) do
                 booth = booth_func(plr.UserId)
@@ -261,11 +249,29 @@ if game.PlaceId == 15502339080 or game.PlaceId == 15588442388 then
         end
     end)
 
-    if getgenv().booth_sell == false then
-        if game.Players.LocalPlayer:WaitForChild("PlayerGui"):FindFirstChild("ListCounter") then
-            game.Players.LocalPlayer:WaitForChild("PlayerGui"):FindFirstChild("ListCounter"):Destroy()
+    function AntiIdle()
+        local Players = game:GetService("Players")
+        local LocalPlayer = Players.LocalPlayer
+        local GC = getconnections or getsignal_cons
+    
+        if GC then
+            -- Get the connections to the Idled event
+            for i, v in pairs(GC(LocalPlayer.Idled)) do
+                if v["Disable"] then
+                    v["Disable"](v)
+                elseif v["Disconnect"] then
+                    v["Disconnect"](v)
+                end
+            end
+        else
+            local VirtualUser = Instance.new("VirtualUser")
+            LocalPlayer.Idled:Connect(function()
+                VirtualUser:CaptureController()
+                VirtualUser:ClickButton2(Vector2.new())
+            end)
         end
     end
+    AntiIdle()
     task.spawn(function()
         while getgenv().booth_sell and wait() do
             local booth = booth_func(plr.UserId)
