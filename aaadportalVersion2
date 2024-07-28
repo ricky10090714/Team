@@ -61,7 +61,7 @@ getgenv().Config = {
 
 	},
 	["BoostFPS"] = true,
-	["JoinerCooldown"] = 5,
+	["JoinerCooldown"] = 30,
 	["TP Lobby Time"] = 10,
 	["LSLoop"] = 2,
 	["OFARecord"] = false,
