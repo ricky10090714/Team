@@ -145,7 +145,7 @@ if game.PlaceId == 15502339080 or game.PlaceId == 15588442388 then
 
 
     task.spawn(function()
-        while getgenv().booth_sell and wait(1800) do
+        while getgenv().booth_sell and wait() do
             if total_booth_count() <= 10 then
                 Teleport2()
             end
