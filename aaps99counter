@@ -245,7 +245,7 @@ if game.PlaceId == 15502339080 or game.PlaceId == 15588442388 then
 
             diamond.Name = "diamond"
             diamond.Parent = ItemCount
-            diamond.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+            diamond.BackgroundColor3 = Color3.fromRGB(49, 183, 255)
             diamond.BorderColor3 = Color3.fromRGB(0, 0, 0)
             diamond.Text = "0"
             diamond.BorderSizePixel = 0
@@ -253,7 +253,7 @@ if game.PlaceId == 15502339080 or game.PlaceId == 15588442388 then
             diamond.Size = UDim2.new(0, 204, 0, 55)
             diamond.Font = Enum.Font.Unknown
             diamond.TextColor3 = Color3.fromRGB(0, 0, 0)
-            diamond.TextSize = 60.000
+            diamond.TextSize = 50.000
 
             UICorner_2.Parent = diamond
 
