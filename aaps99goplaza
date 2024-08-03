@@ -130,7 +130,8 @@ if game.PlaceId == 15502339080 or game.PlaceId == 15588442388 then
     local petf = require(rs.Library.Directory.Pets)
     local numsho = require(game:GetService("ReplicatedStorage").Library.Functions.NumberShorten)
     local itemf = require(rs.Library.Items)
-    local library = require(rs:WaitForChild("Library"))
+    local save_cmd = require(game:GetService("ReplicatedStorage").Library.Client.Save)
+    local getdata = save_cmd.Get
     local v7 = game:GetService("ReplicatedStorage"):WaitForChild("Library")
     local v8 = v7:WaitForChild("Client")
     local v_u_10 = require(v8.TabController)
@@ -261,8 +262,8 @@ if game.PlaceId == 15502339080 or game.PlaceId == 15588442388 then
             wait(.5)
             task.spawn(function()
                 while task.wait(1) do
-                    if diamond.Text ~= tostring(numsho(curcheck(library.Save.Get().Inventory.Currency))) then
-                        diamond.Text = tostring(numsho(curcheck(library.Save.Get().Inventory.Currency)))
+                    if diamond.Text ~= tostring(numsho(curcheck(getdata().Inventory.Currency))) then
+                        diamond.Text = tostring(numsho(curcheck(getdata().Inventory.Currency)))
                     end
                 end
             end)
@@ -310,8 +311,8 @@ if game.PlaceId == 15502339080 or game.PlaceId == 15588442388 then
     task.spawn(function()
         while getgenv().booth_sell and wait() do
             local booth = booth_func(plr.UserId)
-            if booth ~= nil and booth_count(booth.Listings) < library.Save.Get().BoothSlots then
-                for i,v in pairs(library.Save.Get().Inventory.Pet) do
+            if booth ~= nil and booth_count(booth.Listings) < getdata().BoothSlots then
+                for i,v in pairs(getdata().Inventory.Pet) do
                     if v.id:match("Huge") and v._am ~= nil and check_count(booth.Listings, v.id) < v._am or v.id:match("Huge") and v._am == nil and check_count(booth.Listings, v.id) ~= 1 then
                         local pet = itemf.Pet(petf[v.id])
                         for i2,v2 in pairs(v) do
@@ -325,7 +326,7 @@ if game.PlaceId == 15502339080 or game.PlaceId == 15588442388 then
                         end
                         wait(.5)
                     end
-                    if booth_count(booth_func(plr.UserId).Listings) == library.Save.Get().BoothSlots then
+                    if booth_count(booth_func(plr.UserId).Listings) == getdata().BoothSlots then
                         break
                     end
                 end
@@ -334,7 +335,7 @@ if game.PlaceId == 15502339080 or game.PlaceId == 15588442388 then
     end)
     task.spawn(function()
         hugecount = 0
-        for i,v in pairs(library.Save.Get().Inventory.Pet) do
+        for i,v in pairs(getdata().Inventory.Pet) do
             if v.id:match("Huge") and v._am ~= nil then
                 hugecount = hugecount + tonumber(v._am)
             elseif v.id:match("Huge") and v._am == nil then
