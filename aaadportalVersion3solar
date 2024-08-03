@@ -1,0 +1,351 @@
+getgenv().Config = {
+	["Ignore Shiny Sell Rarity"] = false,
+	["AutoSave"] = true,
+	["blackScreen"] = true,
+	["ItemPrice"] = 1,
+	["AutoPlay"] = true,
+	["Enable Auto Join Player"] = false,
+	["Webhook"] = {
+		["ID"] = 0,
+		["Ping"] = false,
+		["Result"] = true,
+		["URL"] = "https://discord.com/api/webhooks/1202487837962936320/1jqGaLrcVD_Hr64IFnv8_AHKWVrLExyk1xH_XHlwLu0Y2J2Tt_ocp4SUitrdrrAlQQGD"
+	},
+	["AutoSummonStandard"] = false,
+	["SelectPortalMacro"] = {
+
+	},
+	["UpgradeMethod"] = "Nearest from Middle Position (until Max)",
+	["Auto Summon"] = false,
+	["Auto Leave Wave"] = true,
+	["Summon Gems"] = 0,
+	["Record Options"] = "Money",
+	["LSImplosion"] = 100000,
+	["BlackScreen"] = false,
+	["Ignore Shiny Auto Sell Rarity"] = true,
+	["AutoJoinTower"] = false,
+	["Auto Lobby TP on Time"] = false,
+	["SelectRaidWorld"] = {
+		["Cursed Dungeon"] = true,
+		["Cursed Train"] = false,
+		["Hall of Mirrors"] = false
+	},
+	["Summon Select"] = 1,
+	["Auto Replay"] = false,
+	["AutoRejoin"] = true,
+	["WebhookURL"] = "https://discord.com/api/webhooks/1262069529027149904/wOCuS5p-QWEV0bFYFGtnMuki0zztQI8ubV4xbDELARAwisnT4Dz2oqCa-EpxpbIkt_Bp",
+	["AutoStart"] = true,
+	["HosterName"] = "Rayson_Rodel",
+	["Auto Next"] = false,
+	["AutoClaimBattlePass"] = true,
+	["AutoSkip"] = true,
+	["Enable Sell Rarity"] = false,
+	["AutoClaimQuest"] = true,
+	["Macro Mode Select"] = "Story",
+	["AutoJoinHoster"] = false,
+	["IgnoreMacroTiming"] = true,
+	["SelectRaidMacro"] = {
+
+	},
+	["WH_BoothBought"] = false,
+	["TeleportLobbyNewBanner"] = false,
+	["Auto Sell Wave"] = 30,
+	["mapSelect"] = "FooshaVillage",
+	["PlayMacro"] = false,
+	["IgnoreChallenge"] = {
+
+	},
+	["Auto Sell Rarity"] = {
+
+	},
+	["BoostFPS"] = true,
+	["Raid Buy List"] = {
+
+	},
+	["TP Lobby Time"] = 10,
+	["LSLoop"] = 2,
+	["OFARecord"] = false,
+	["HardMode"] = false,
+	["AutoJoinChallenge"] = true,
+	["BuyUnit"] = false,
+	["JoinHighest"] = false,
+	["WebhookPingSelected"] = {
+
+	},
+	["DeleteRarity"] = {
+		["Epic"] = true,
+		["Legendary"] = true,
+		["Rare"] = true
+	},
+	["AutoJoinMap"] = true,
+	["actSelect"] = 1,
+	["Macros Selected"] = {
+		["Story"] = {
+			["FooshaVillage"] = "rayinfi"
+		},
+		["Infinite"] = {
+			["FooshaVillage"] = "rayinfi"
+		},
+		["Raid"] = {
+
+		},
+		["Challenge"] = {
+			["FooshaVillage"] = "rayinfi"
+		},
+		["Tower"] = {
+			["Map1"] = "",
+			["Map2"] = "",
+			["Map5"] = "",
+			["Map3"] = "",
+			["Map4"] = ""
+		}
+	},
+	["TP Lobby"] = false,
+	["Auto Claim Quests"] = true,
+	["Auto Hide Name"] = true,
+	["WH_MatchComplete"] = true,
+	["Auto Raid (Lobby)"] = false,
+	["WaitForJoiner"] = false,
+	["AutoJoinTradeHub"] = false,
+	["Selected Raids"] = {
+
+	},
+	["AutoUseAbility"] = true,
+	["AutoPlayNext"] = true,
+	["SelectReward"] = {
+		["Risky Dice"] = false,
+		["Spirit Orb"] = true,
+		["Lucky Ticket"] = false,
+		["Star Rift (Rainbow)"] = true,
+		["Solar Portal (Rare)"] = true,
+		["Star Rift"] = false,
+		["Star Rift (Light)"] = true,
+		["Star Rift (Dark)"] = false
+	},
+	["Auto Buy Raid"] = false,
+	["UpgradeAndPlace"] = false,
+	["Enable Delete Rarity"] = false,
+	["Enable Auto Story"] = false,
+	["Record Macro"] = false,
+	["AutoLeave"] = false,
+	["Auto Leave on Wave"] = false,
+	["AutoSell"] = true,
+	["Auto Leave when No Enemy Spawn"] = false,
+	["AutoReplay"] = true,
+	["Auto Raid"] = false,
+	["UnitPrice"] = 1,
+	["JoinerCooldown"] = 30,
+	["AutoUpgrade"] = true,
+	["AutoJoinRaid"] = true,
+	["Friends Only"] = false,
+	["Delete Map"] = true,
+	["FirstTime"] = true,
+	["PortalRarity"] = {
+		["Legendary"] = true,
+		["Mythic"] = true,
+		["Rare"] = true,
+		["Epic"] = true,
+		["Secret"] = true
+	},
+	["LSBomb"] = 1,
+	["Join Priority"] = {
+		["1"] = "Auto Join Player",
+		["3"] = "Auto Raid",
+		["2"] = "Auto Tower",
+		["5"] = "Auto Story",
+		["4"] = "Auto Challenge",
+		["6"] = "Auto Join Map"
+	},
+	["PlaceGap"] = {
+		["Snowy Woods"] = 3,
+		["Cursed Kingdom Portal"] = 3,
+		["Crystal Cave"] = 3,
+		["Hall of Mirrors"] = 3,
+		["Mob City"] = 3.25,
+		["Cursed Dungeon"] = 3,
+		["Blue Planet"] = 3,
+		["Tower of Eternity"] = 3,
+		["Windmill Village"] = 3,
+		["Solar Temple Portal"] = 3,
+		["Cursed Train"] = 3,
+		["Haunted City"] = 3,
+		["Cursed Academy"] = 3,
+		["Ancient Dragon Portal"] = 3,
+		["Demon Portal"] = 3,
+		["Lunar Temple Portal"] = 3,
+		["Swordsman Dojo"] = 3,
+		["Underwater Temple"] = 3
+	},
+	["Import Mode"] = "Link",
+	["Black Screen"] = false,
+	["Raid2 Buy List"] = {
+
+	},
+	["LimitedSummonUnit"] = {
+		["Spirit Mage"] = true,
+		["Storm Swordsman"] = false,
+		["Zen Swordsman"] = false,
+		["Sky Swordsman"] = false,
+		["Jadefire Knight"] = false,
+		["Storm Slayer"] = false,
+		["Demon Knight"] = false,
+		["Aether Knight"] = true
+	},
+	["Selected Macro"] = "rayinfi",
+	["AutoJoinWorld"] = false,
+	["LeaveSellWave"] = 32,
+	["Auto Start Time Delay"] = 5,
+	["SelectPortal"] = {
+		["Lunar Portal"] = false,
+		["Solar Temple Portal"] = true,
+		["Cursed Kingdom Portal"] = false,
+		["Solar Portal"] = true,
+		["Lunar Temple Portal"] = false,
+		["Ancient Dragon Portal"] = false,
+		["Demon Portal"] = false
+	},
+	["Auto Start Game/Skip"] = false,
+	["Play Macro"] = true,
+	["Ping User"] = false,
+	["Hide Additional Frame"] = false,
+	["AutoJoinMirror"] = false,
+	["Auto Start Delay"] = 1,
+	["SelectDifficulty"] = {
+		["All units lowered range"] = true,
+		["All enemies regen health"] = true,
+		["All enemies +1 shield"] = true,
+		["All units increased cost"] = true,
+		["All enemies 2x health"] = true,
+		["All enemies 2x speed"] = false
+	},
+	["SelectChapter"] = "Infinite",
+	["IgnoreChallengeMap"] = {
+
+	},
+	["Auto Story"] = false,
+	["Step Delay"] = 1,
+	["Ping On Selected Item"] = false,
+	["Auto Leave"] = true,
+	["Auto Sell Farms"] = true,
+	["TP Lobby when RAID OPEN"] = false,
+	["FPS Boost"] = true,
+	["MiddlePos"] = {
+		["Snowy Woods"] = "-120.21700286865234, 37.58041000366211, -182.37545776367188",
+		["Solar Temple Portal"] = "2.9567341804504395, 4, 12.81548023223877",
+		["Windmill Village"] = "-1670.120361328125, 24.114013671875, -535.9500732421875",
+		["Ancient Dragon Portal"] = "1.874727725982666, 1.9999990463256836, 4.43087100982666",
+		["Swordsman Dojo"] = "-145.65504455566406, -2.809420108795166, 188.0568389892578",
+		["Cursed Train"] = "-443.6480407714844, 282.38800048828125, 113.71515655517578",
+		["Haunted City"] = "33.77405548095703, 297.7572326660156, 155.17474365234375",
+		["Mob City"] = "50.18944549560547, 297.7572326660156, 155.7317352294922",
+		["Cursed Dungeon"] = "132.8748016357422, 103.12030792236328, 470.3994140625",
+		["Lunar Temple Portal"] = "823.593505859375, 30.696735382080078, -43.294395446777344",
+		["Tower of Eternity"] = "-2502.356201171875, 2042.509765625, -1221.6390380859375",
+		["Cursed Academy"] = "-1254.17333984375, 532.3055419921875, -328.3988952636719",
+		["Crystal Cave"] = "163.64454650878906, 89.71666717529297, -192.00692749023438",
+		["Blue Planet"] = "36.88886642456055, 830.3976440429688, 446.4273681640625",
+		["Underwater Temple"] = "540.7630615234375, 339.3208923339844, -1301.0408935546875"
+	},
+	["AutoConvertTicket"] = true,
+	["SelectWorld"] = "Crystal Cave",
+	["TPLobbyIfPlayer"] = false,
+	["SelectChallengeWorld"] = {
+		["Cursed Academy"] = true,
+		["Windmill Village"] = true,
+		["Blue Planet"] = true,
+		["Haunted City"] = true,
+		["Swordsman Dojo"] = true,
+		["Crystal Cave"] = true,
+		["Snowy Woods"] = true,
+		["Underwater Temple"] = true
+	},
+	["SelectTowerMacro"] = {
+
+	},
+	["Auto Join Map"] = false,
+	["Large Window"] = false,
+	["Auto Tower"] = false,
+	["Auto Story Mode"] = "Automatic",
+	["TP Delay"] = 3,
+	["AutoChallenge"] = false,
+	["Auto Execute"] = false,
+	["Hide Key"] = "U",
+	["Enable Auto Delete Rarity"] = false,
+	["JoinerList"] = {
+		["1"] = "freckmanss2",
+		["3"] = "Lizzosflute60",
+		["2"] = "lysithea_raine2020"
+	},
+	["friendSelect"] = false,
+	["difficultySelect"] = "Normal",
+	["Ping On Secret Drop"] = false,
+	["Selected Story"] = "FooshaVillage_Chapter1",
+	["HillHeight"] = {
+		["Snowy Woods"] = 4,
+		["Cursed Kingdom Portal"] = 2,
+		["Crystal Cave"] = 2,
+		["Hall of Mirrors"] = 2,
+		["Mob City"] = 4,
+		["Cursed Dungeon"] = 2,
+		["Blue Planet"] = 4,
+		["Tower of Eternity"] = 2,
+		["Windmill Village"] = 4,
+		["Solar Temple Portal"] = 2,
+		["Cursed Train"] = 2,
+		["Haunted City"] = 4,
+		["Cursed Academy"] = 4,
+		["Ancient Dragon Portal"] = 2,
+		["Demon Portal"] = 2,
+		["Lunar Temple Portal"] = 2,
+		["Swordsman Dojo"] = 4,
+		["Underwater Temple"] = 4
+	},
+	["Summon Mode"] = "All Gems",
+	["ABBHopDelay"] = 0,
+	["Result Webhook"] = false,
+	["UnselectIfSummoned"] = true,
+	["AutoBuyBooth"] = false,
+	["Auto Start"] = false,
+	["AutoReturnLobby"] = true,
+	["Auto Buy Raid2"] = false,
+	["Enable Auto Sell Rarity"] = false,
+	["Enable Auto Challenge"] = false,
+	["Auto Sell Units"] = true,
+	["Summon Banner"] = "Standard",
+	["Auto Skip Wave"] = true,
+	["Auto Delete Rarity"] = {
+
+	},
+	["PingSelected"] = false,
+	["AutoLeaveOnWave"] = 32,
+	["Auto Hide UI on Execute"] = true,
+	["SelectChallengeMacro"] = {
+
+	},
+	["Auto Try Reconnect"] = true,
+	["ABBHopServer"] = false,
+	["AutoSummonLimited"] = true,
+	["Auto Joiner Player"] = false,
+	["IgnoreChallengeRewards"] = {
+
+	},
+	["SelectDeleteRarity"] = {
+		["Legendary"] = false,
+		["Shiny Epic"] = false,
+		["Epic"] = true,
+		["Mythic"] = false,
+		["Shiny Rare"] = true,
+		["Shiny Legendary"] = false,
+		["Rare"] = true
+	},
+	["AutoSellFarmsWave"] = 30,
+	["WH_BannerSummoned"] = true,
+	["DeleteMap"] = false,
+	["modeSelect"] = "Infinite",
+	["BuyItem"] = false,
+	["LSDelay"] = 0.4,
+	["AutoDeleteUnit"] = true,
+	["Auto TP Raid Open"] = false,
+	["AutoJoinPortal"] = true,
+	["AutoEquipBest"] = false
+}
