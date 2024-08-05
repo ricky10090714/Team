@@ -145,7 +145,7 @@ getgenv().Config = {
 	},
 	["IgnoreMacroTiming"] = true,
 	["AutoSkip"] = true,
-	["AutoSummonLimited"] = true,
+	["AutoSummonLimited"] = false,
 	["LSBomb"] = 1,
 	["Black Screen"] = false,
 	["WH_BannerSummoned"] = true,
