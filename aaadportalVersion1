@@ -165,14 +165,14 @@ getgenv().Config = {
 
 	},
 	["LimitedSummonUnit"] = {
-		["Spirit Mage"] = true,
+		["Spirit Mage"] = false,
 		["Storm Swordsman"] = false,
 		["Zen Swordsman"] = false,
 		["Sky Swordsman"] = false,
 		["Jadefire Knight"] = false,
 		["Storm Slayer"] = false,
 		["Demon Knight"] = false,
-		["Aether Knight"] = true
+		["Aether Knight"] = false
 	},
 	["Selected Macro"] = "rayinfi",
 	["AutoJoinWorld"] = true,
@@ -311,7 +311,7 @@ getgenv().Config = {
 	},
 	["Auto Try Reconnect"] = true,
 	["ABBHopServer"] = false,
-	["AutoSummonLimited"] = true,
+	["AutoSummonLimited"] = false,
 	["PortalRarity"] = {
 		["Legendary"] = true,
 		["Mythic"] = false,
