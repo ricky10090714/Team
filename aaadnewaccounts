@@ -344,7 +344,7 @@ getgenv().Config = {
 	["Selected Raids"] = {
 
 	},
-	["AutoDeleteUnit"] = true,
+	["AutoDeleteUnit"] = false,
 	["TP Lobby when RAID OPEN"] = false,
 	["AutoJoinTradeHub"] = false
 }
