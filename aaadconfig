@@ -16,7 +16,7 @@ getgenv().Config = {
 
 	},
 	["UpgradeMethod"] = "Nearest from Middle Position (until Max)",
-	["Auto Summon"] = false,
+	["Auto Summon"] = true,
 	["Large Window"] = false,
 	["Record Options"] = "Money",
 	["LSImplosion"] = 100000,
