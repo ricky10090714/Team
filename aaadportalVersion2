@@ -210,7 +210,7 @@ getgenv().Config = {
 	},
 	["Auto Hide UI on Execute"] = true,
 	["Auto Try Reconnect"] = true,
-	["AutoJoinWorld"] = true,
+	["AutoJoinWorld"] = false,
 	["AutoRejoin"] = true,
 	["SelectDeleteRarity"] = {
 		["Epic"] = true,
