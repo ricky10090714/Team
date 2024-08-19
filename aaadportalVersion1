@@ -83,7 +83,7 @@ getgenv().Config = {
 ["PortalRarity"] = {
 ["Legendary"] = true,
 ["Epic"] = true,
-["Mythic"] = true,
+["Mythic"] = false,
 ["Rare"] = true
 },
 ["PlaceGap"] = {
