@@ -1,7 +1,7 @@
 getgenv().Config = {
 	["Ignore Shiny Sell Rarity"] = false,
 	["AutoSave"] = true,
-	["blackScreen"] = false,
+	["blackScreen"] = true,
 	["ItemPrice"] = 1,
 	["AutoPlay"] = true,
 	["Enable Auto Join Player"] = false,
@@ -20,7 +20,7 @@ getgenv().Config = {
 	["Large Window"] = false,
 	["Record Options"] = "Money",
 	["LSImplosion"] = 100000,
-	["BlackScreen"] = false,
+	["BlackScreen"] = true,
 	["Ignore Shiny Auto Sell Rarity"] = true,
 	["Auto Start Time Delay"] = 5,
 	["AutoJoinTower"] = false,
@@ -162,7 +162,7 @@ getgenv().Config = {
 	["SelectChallengeMacro"] = {
 
 	},
-	["Black Screen"] = false,
+	["Black Screen"] = true,
 	["Auto Hide UI on Execute"] = true,
 	["LimitedSummonUnit"] = {
 		["Storm Slayer"] = false,
